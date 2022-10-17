@@ -3,6 +3,8 @@ layout: default
 title: "클래스와 인스턴스 변수·클래스 변수·지역변수"
 nav_order: 1
 parent : Java
+grand_parent: Language
+permalink: docs/Language/Java/classAndVariable
 ---
 
 ## class(클래스)가 왜 필요한가?
@@ -28,7 +30,9 @@ parent : Java
 
 예를 들어 소스파일 이름이 `Helloworld.java` 이고 이 소스 파일 안에 `Hello` 라는 class 와 `Helloworld` 라는 class 가 있다고 할 때
 
-```yaml
+
+{% capture some_var %}
+```java
 public class Hello {
 
 }
@@ -38,6 +42,12 @@ class Helloworld {
 }
 // 소스파일과 이름이 다른 class 앞에 public 이 붙음.
 ```
+{% endcapture %}
+{% assign some_var = some_var | markdownify %}
+{% include fix_linenos.html code=some_var %}
+
+
+
 
 위 상황은 에러가 발생하므로
 
