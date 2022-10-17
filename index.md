@@ -10,6 +10,7 @@ nav_order: 1
 >### **What we have to do is to be forever curiously testing new opinions and courting new impressions.**<br>
 >#### 우리가 해야 할 일은 끊임없이 호기심을 갖고 새로운 생각을 시험해보고 새로운 인상을 받는 것이다.
 
+
 <br>
 <br>
 
@@ -19,7 +20,6 @@ nav_order: 1
 - (22.09.19~) 멋쟁이 사자처럼 백엔드 스쿨 🦁
 {: .fs-3 }
 <br>
-
 
 - 생각없이 코드 짜지 않는 개발자 💪🏻
 - 기록의 중요성을 아는 개발자 ✍🏻
@@ -41,3 +41,6 @@ nav_order: 1
 * [Language](/docs/Language)
 
 ---
+<br>
+
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Finkyu-yoon.github.io&count_bg=%23E6C2FF&title_bg=%23B000E5&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
