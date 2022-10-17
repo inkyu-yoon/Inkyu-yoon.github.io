@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "public class와 인스턴스 변수/클래스 변수/ 지역변수에 대한 이해"
+title: "클래스와 인스턴스 변수·클래스 변수·지역변수"
 nav_order: 1
 parent : Java
 ---

@@ -1,8 +1,9 @@
 ---
 layout: default
-title: Language
+title: Java
 nav_order: 2
 has_children: true
-permalink: docs/Language
+permalink: docs/Java
 ---
 
+//Java 폴더
