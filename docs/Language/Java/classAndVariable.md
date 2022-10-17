@@ -51,7 +51,8 @@ class Helloworld {
 
 위 상황은 에러가 발생하므로
 
-```yaml
+{% capture some_var %}
+```java
 class Hello {
 
 }
@@ -60,6 +61,9 @@ public class Helloworld {
 
 }
 ```
+{% endcapture %}
+{% assign some_var = some_var | markdownify %}
+{% include fix_linenos.html code=some_var %}
 
 소스 파일 명을 `Hello` 로 바꾸던지, `Helloworld` class 앞에 `public`을 붙여야 한다.
 
@@ -73,7 +77,8 @@ public class Helloworld {
 2.  **클래스 변수 (static 변수)** : 인스턴스 변수와 다르게 한 클래스에서 모두 공통된 값을 갖고, 객체 생성과 상관 없이 인스턴스 변수의 저장공간과 별도로 저장되어 있다.
 3.  **지역 변수** : class 내의 메서드에서만 사용, 메서드가 종료되면 소멸된다.
 
-```yaml
+{% capture some_var %}
+```java
 class Tv {
         static int width = 100;    //클래스 변수
         static int height = 50; // 클래스 변수
@@ -98,12 +103,17 @@ class Main {
 
 }
 ```
+{% endcapture %}
+{% assign some_var = some_var | markdownify %}
+{% include fix_linenos.html code=some_var %}
+
 
 위 예문을 보면 static이 붙은 클래스 변수는 객체 생성 없이 바로 사용해도 문제가 없지만, volume의 경우 static 변수가 아니기 때문에, t라는 객체를 생성한 후 객체를 이용해야 사용이 가능하다.
 
 또한, static 변수는 생성한 객체로 변경이 가능하지만, 한번 변경하면 이 변수를 사용하는 모든 곳에 영향을 준다.
 
-```yaml
+{% capture some_var %}
+```java
 class Tv {
         static int width = 100;    //클래스 변수
         static int height = 50; // 클래스 변수
@@ -126,6 +136,10 @@ class Main {
 
 }
 ```
+{% endcapture %}
+{% assign some_var = some_var | markdownify %}
+{% include fix_linenos.html code=some_var %}
+
 
 t를 이용해서 static변수와 volume 값을 변경했다. static변수인 width는 다른 객체인 t2로 불러왔을 때 변화된 값이 나왔다.(공통된 값을 사용하므로) 
 
