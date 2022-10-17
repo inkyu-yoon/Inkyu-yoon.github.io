@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Tech Stack
+title: Language
 nav_order: 2
 has_children: true
 permalink: /language
+{: .no_toc }
 ---
-
-## 프로그래밍 언어 지식
 
 * [Java](/java)
 * [Spring](/spring)
 * [HTML/CSS](/html)
+

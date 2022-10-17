@@ -1,6 +1,8 @@
 ---
 layout: home
+title : HOME
 author_profile: true
+nav_order: 1
 ---
 
 # 🙇🏻‍♂️ Welcome My Github Blog
@@ -14,6 +16,7 @@ author_profile: true
 
 - (2022년 8월 4일~) 개발 공부 시작 👩🏻‍💻
 - (2022년 9월 19일 ~ ) 멋쟁이 사자처럼 백엔드 스쿨 🦁
+  {: .fs-3 }
   <br>
   <br>
 
@@ -22,11 +25,11 @@ author_profile: true
 - 꾸준한 개발자 🔥
 - 성장가능성이 높은 개발자 🌟
 - 뿌린대로 거둔다.🌱
-
+  {: .fs-3 }
 <br>
 
 
-- 🌀 Blog : [yinq.tistory.com/](https://yinq.tistory.com/)
+- 🌀 Blog : [yinq.tistory.com](https://yinq.tistory.com/)
 - 🚀 GitHub : [github.com/inkyu-yoon](https://github.com/inkyu-yoon)
 - 💌 E-mail : [tryingmybest24h@gmail.com](mailto:tryingmybest24h@gmail.com)
 
