@@ -13,10 +13,13 @@ nav_order: 1
 <br>
 <br>
 
-- (2022년 8월 4일~) 개발 공부 시작 👩🏻‍💻
-- (2022년 9월 19일 ~ ) 멋쟁이 사자처럼 백엔드 스쿨 🦁
+<img align='right' src="http://mazassumnida.wtf/api/v2/generate_badge?boj=tryingmybest24h">
+
+- (22.08.04~) 개발 공부 시작 👩🏻‍💻
+- (22.09.19~) 멋쟁이 사자처럼 백엔드 스쿨 🦁
 {: .fs-3 }
-  <br>
+<br>
+
 
 - 생각없이 코드 짜지 않는 개발자 💪🏻
 - 기록의 중요성을 아는 개발자 ✍🏻
@@ -33,11 +36,8 @@ nav_order: 1
   {: .fs-2 }
 ---
 
-#### Table of Contents
+#### Category
 
-* [Language](/language)
-* [Learned](/learned)
-* [Algorithm](/algorithm)
-* [Retrospect](/retrospect)
+* [Language](/docs/Language)
 
 ---
