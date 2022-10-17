@@ -5,14 +5,14 @@ nav_order: 1
 parent : Java
 ---
 
-#### class(클래스)가 왜 필요한가?
+## class(클래스)가 왜 필요한가?
 
 
 -   객체를 생성하기 위해 필요하다.
 
 ---
 
-#### 객체가 왜 필요한가?
+## 객체가 왜 필요한가?
 
 
 
@@ -20,7 +20,7 @@ parent : Java
 
 ---
 
-#### public 이 붙는 class 란?
+## public 이 붙는 class 란?
 
 
 
@@ -28,7 +28,7 @@ parent : Java
 
 예를 들어 소스파일 이름이 `Helloworld.java` 이고 이 소스 파일 안에 `Hello` 라는 class 와 `Helloworld` 라는 class 가 있다고 할 때
 
-```Java
+```yaml
 public class Hello {
 
 }
@@ -41,7 +41,7 @@ class Helloworld {
 
 위 상황은 에러가 발생하므로
 
-```Java
+```yaml
 class Hello {
 
 }
@@ -55,7 +55,7 @@ public class Helloworld {
 
 ---
 
-### class 의 변수
+## class 의 변수
 
 
 
@@ -63,7 +63,7 @@ public class Helloworld {
 2.  **클래스 변수 (static 변수)** : 인스턴스 변수와 다르게 한 클래스에서 모두 공통된 값을 갖고, 객체 생성과 상관 없이 인스턴스 변수의 저장공간과 별도로 저장되어 있다.
 3.  **지역 변수** : class 내의 메서드에서만 사용, 메서드가 종료되면 소멸된다.
 
-```Java
+```yaml
 class Tv {
         static int width = 100;    //클래스 변수
         static int height = 50; // 클래스 변수
@@ -93,7 +93,7 @@ class Main {
 
 또한, static 변수는 생성한 객체로 변경이 가능하지만, 한번 변경하면 이 변수를 사용하는 모든 곳에 영향을 준다.
 
-```Java
+```yaml
 class Tv {
         static int width = 100;    //클래스 변수
         static int height = 50; // 클래스 변수
@@ -127,7 +127,7 @@ static 변수는 생성한 객체로 수정해도 사용하는 모든 곳에 영
 
 ---
 
-### 정리
+## 정리
 
 
 
