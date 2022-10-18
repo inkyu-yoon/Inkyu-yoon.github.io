@@ -7,6 +7,7 @@ grand_parent: Language
 permalink: docs/Language/Java/FormatClass
 ---
 
+
 # 형식화 클래스 DecimalFormat / SimpleDateFormat / ChoiceFormat / MessageFormat 에 대한 이해
 
 <br>
@@ -25,17 +26,15 @@ permalink: docs/Language/Java/FormatClass
 
 - DecimalFormat은 숫자를 형식화 하는데 사용된다
 
-{% capture some_var %}
-```java
+
+```
 DecimalFormat df = new DecimalFormat("형식");
 //DeciamlFormat 클래스를 생성하고
 //숫자를 어떤 형식의 문자열로 받고싶은지 입력한다.
 String result = df.format(숫자);
 // format 메서드를 통해 형식에 맞춰 변형된 숫자를 문자열 result로 얻는다.
 ```
-{% endcapture %}
-{% assign some_var = some_var | markdownify %}
-{% include fix_linenos.html code=some_var %}
+
 
 
 - 숫자를 원하는 형식의 문자열로 출력하기
@@ -225,13 +224,11 @@ public class Main {
 - 특정 범위에 속하는 값을 문자열로 변환해준다.
 - 두개의 배열을 생성하는데, 하나는 오름차순의 double형 경계값 배열과 경계값 배열의 크기와 동일한 String 배열이 필요하다. 경계값을 기준으로 해당하는 문자열을 반환하는 것이다.
 
-{% capture some_var %}
-```java
+
+```
 ChoiceFormat 이름 = new ChoiceFormat(경계값배열,반환 문자열 배열);
 ```
-{% endcapture %}
-{% assign some_var = some_var | markdownify %}
-{% include fix_linenos.html code=some_var %}
+
 
 로 생성한다.
 
@@ -273,13 +270,11 @@ public class main{
 {n} 인덱스가 있는 문자열데이터 str과 채워넣을 문자열이 있는 배열 inputstr 이 있을 때
 
 
-{% capture some_var %}
-```java
+
+```
 String result = MessageFormat.format(str,inputstr);
 ```
-{% endcapture %}
-{% assign some_var = some_var | markdownify %}
-{% include fix_linenos.html code=some_var %}
+
 
 
 위와 같이 사용하면 된다.
@@ -311,17 +306,15 @@ public class Main{
 
 실행 결과는
 
-{% capture some_var %}
-```java
+
+```
 Name: 김경찰 
 Tel:010-112-112
 
 Name: 김소방 
 Tel:010-119-119
 ```
-{% endcapture %}
-{% assign some_var = some_var | markdownify %}
-{% include fix_linenos.html code=some_var %}
+
 
 
 

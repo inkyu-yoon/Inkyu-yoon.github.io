@@ -7,6 +7,7 @@ grand_parent: Language
 permalink: docs/Language/Java/Calendar
 ---
 
+
 # Calendar class 정리
 
 <br>
@@ -16,13 +17,11 @@ permalink: docs/Language/Java/Calendar
 
 - Calendar 클래스는 추상 클래스이므로 인스턴스를 생성할 수 없고, `getInstance()`를 사용해서 객체를 생성해야 한다.
 
-{% capture some_var %}
-```java
+
+```
 Calendar cal = Calendar.getInstance();
 ```
-{% endcapture %}
-{% assign some_var = some_var | markdownify %}
-{% include fix_linenos.html code=some_var %}
+
 
 
 
@@ -32,26 +31,22 @@ Calendar cal = Calendar.getInstance();
 
 ### 1. Calendar를 Date로 변환
 
-{% capture some_var %}
-```java
+
+```
 Calendar cal = Calendar.getInstance(); // Calendar 클래스 호출
 Date day = cal.getTime(); // Date 클래스로 변환
 ```
-{% endcapture %}
-{% assign some_var = some_var | markdownify %}
-{% include fix_linenos.html code=some_var %}
+
 
 ### 2. Date를 Calendar로 변환
 
-{% capture some_var %}
-```java
+
+```
 Date d = new Date(); //Date 클래스 객체 생성
 Calendar cal = Calendar.getInstance(); // Calendar 클래스 호출
 cal.setTime(d); // Calendar의 시간을 d로 맞춤
 ```
-{% endcapture %}
-{% assign some_var = some_var | markdownify %}
-{% include fix_linenos.html code=some_var %}
+
 
 
 ------

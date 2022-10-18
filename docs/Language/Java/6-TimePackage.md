@@ -7,6 +7,7 @@ grand_parent: Language
 permalink: docs/Language/Java/TimePackage
 ---
 
+
 # Time 패키지정리
 
 <br>
@@ -99,26 +100,21 @@ public class NewTimeEx1 {
 ## 타임클래스는 DateTimeFormatter 클래스를 활용하여 형식화 한다.
 
 
-{% capture some_var %}
-```java
+```
 DateTimeFormatter formatter = DateTimeFormatter.형식.format(date)
 ```
-{% endcapture %}
-{% assign some_var = some_var | markdownify %}
-{% include fix_linenos.html code=some_var %}
+
 
 정해진 형식으로 출력하는 방법과
 
-{% capture some_var %}
-```java
+
+```
 LocalDateTime dateTime = LocalDateTime.now();
 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("원하는형식");
 
 dateTime.format(formatter);
 ```
-{% endcapture %}
-{% assign some_var = some_var | markdownify %}
-{% include fix_linenos.html code=some_var %}
+
 
 원하는 형식으로 출력하는 방법을 활용한다.
 

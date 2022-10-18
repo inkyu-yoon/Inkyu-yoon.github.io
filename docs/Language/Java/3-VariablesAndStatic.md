@@ -7,6 +7,7 @@ grand_parent: Language
 permalink: docs/Language/Java/VariablesAndStatic
 ---
 
+
 # 기본형·참조형 매개변수와 Static Method
 
 <br>
@@ -207,15 +208,13 @@ public class test {
 실행 결과는 아래와 같이 나올 것이다.
 
 
-{% capture some_var %}
-```java
+
+```
 100  // ① 에 의해 출력
 1000 // ② 에 의해 출력
 100 // ③ 에 의해 출력
 ```
-{% endcapture %}
-{% assign some_var = some_var | markdownify %}
-{% include fix_linenos.html code=some_var %}
+
 
 
 기본형 데이터를 매개변수로 갖는 경우 그 데이터를 메서드에서 활용은 할 수 있을 뿐 근본적인 데이터 수정은 할 수 없다.
