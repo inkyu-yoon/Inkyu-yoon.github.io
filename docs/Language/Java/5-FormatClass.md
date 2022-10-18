@@ -280,27 +280,7 @@ String result = MessageFormat.format(str,inputstr);
 
 위와 같이 사용하면 된다.
 
-
-```
-import java.text.MessageFormat;
-
-public class Main{
-    public static void main(String[] args) {
-    String msg = "Name: {0} \nTel:{1}\n";
-    // 프레임 역할하는 String
-
-    String[][] info = {{"KIM","010-112-112"},
-                        {"PARK","010-119-119"}};
-    //채워넣을 문자열
-
-    for(int i=0;i<info.length;i++) {
-
-            String result = MessageFormat.format(msg, info[i]);
-            System.out.println(result);
-        }
-    }
-}
-```
+![image-20221018143510411](https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221018143510411.png)
 
 
 실행 결과는 아래와 같을 것 이다.
