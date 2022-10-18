@@ -1,10 +1,10 @@
 ---
 layout: default
 title: "관계 대수(Relational Algebra) 란"
-nav_order: 2
-parent : SQL
-grand_parent: Language
-permalink: docs/Language/SQL/RelationAlgebra
+nav_order: 1
+parent : DataBase
+grand_parent: Learned
+permalink: docs/Learned/DataBase/RelationAlgebra
 ---
 
 # 관계대수란?
