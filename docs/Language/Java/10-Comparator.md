@@ -95,7 +95,7 @@ public interface Comparable{
 
 ------
 
-### Comparable 구현하기
+## Comparable 구현하기
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221018173511692.png" alt="image-20221018173511692" style="zoom: 80%;" />
@@ -125,7 +125,7 @@ public interface Comparable{
 
 ------
 
-### Comparator 구현하기
+## Comparator 구현하기
 
 
 `Comparator`는 새로운 정렬 방법을 제공하는 것이다.
