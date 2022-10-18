@@ -288,8 +288,8 @@ public class Main{
     String msg = "Name: {0} \nTel:{1}\n";
     // 프레임 역할하는 String
 
-    String[][] info = {{"김경찰","010-112-112"},
-                        {"김소방","010-119-119"}};
+    String[][] info = {{"KIM","010-112-112"},
+                        {"PARK","010-119-119"}};
     //채워넣을 문자열
 
     for(int i=0;i<info.length;i++) {
@@ -308,10 +308,10 @@ public class Main{
 
 
 ```
-Name: 김경찰 
+Name: KIM 
 Tel:010-112-112
 
-Name: 김소방 
+Name: PARK 
 Tel:010-119-119
 ```
 
