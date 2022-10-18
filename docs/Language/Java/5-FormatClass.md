@@ -8,6 +8,7 @@ permalink: docs/Language/Java/FormatClass
 ---
 
 
+
 # 형식화 클래스 DecimalFormat / SimpleDateFormat / ChoiceFormat / MessageFormat 에 대한 이해
 
 <br>
