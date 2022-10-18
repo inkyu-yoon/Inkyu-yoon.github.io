@@ -306,15 +306,14 @@ public class Main{
 
 실행 결과는
 
-
 ```
 Name: KIM 
 Tel:010-112-112
 
 Name: PARK 
 Tel:010-119-119
-```
 
+```
 
 
 
