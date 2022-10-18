@@ -19,6 +19,7 @@ permalink: docs/Language/HTML_CSS/HtmlAndCss
 
 
 html의 문서는
+
 {% capture some_var %}
 ```html
 <!DOCTYPE html>
@@ -70,7 +71,9 @@ html의 문서는
 
 위와 같이 코드를 입력하면
 
+<p align="center">
 <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221017160724358.png" alt="image-20221017160724358" style="zoom: 67%;" />
+</p>
 
 
 
@@ -142,8 +145,9 @@ footer{
 위와 같이 css 파일을 적용한다면,
 
 
-
+<p align="center">
 <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221017161514131.png" alt="image-20221017161514131" style="zoom:67%;" />
+</p>
 
 위와 같이, footer 부분의 스타일이 검은색 배경에 하얀색 글자, 그리고 가운데 정렬이 된 것을 확인할 수 있다.
 
@@ -230,8 +234,9 @@ footer{
 위와 같이, 정해준 이름 앞에 `.` 을 붙여주고 스타일을 적용시켜주면
 
 
-
+<p align="center">
 <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221017162536519.png" alt="image-20221017162536519" style="zoom:67%;" />
+</p>
 
 위와 같이 각 <p> 태그마다 스타일이 적용된 것을 볼 수 있다.
 
@@ -333,8 +338,9 @@ footer{
 그리고 위와 같은 css 파일을 적용시켰을 때
 
 
-
+<p align="center">
 <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221017164442667.png" alt="image-20221017164442667" style="zoom:67%;" />
+</p>
 
 위와 같은 결과를 얻을 수 있다.
 
@@ -353,8 +359,9 @@ footer{
 ## 박스 꾸미기
 
 
-
+<p align="center">
 <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221017170033588.png" alt="image-20221017170033588" style="zoom: 67%;" />
+</p>
 
 
 
@@ -400,8 +407,9 @@ footer{
 css파일을 위와 같이 적용해보면
 
 
-
+<p align="center">
 <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221017171220159.png" alt="image-20221017171220159" style="zoom: 50%;" />
+</p>
 
 
 
@@ -437,11 +445,13 @@ css파일을 위와 같이 적용해보면
 
 다섯번째 인자는, 그림자의 색을 결정한다. 
 
+<p align="center">
 <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221017173756804.png" alt="image-20221017173756804" style="zoom:67%;" />
+</p>
 
 <br>
 
-` box-shadow: 20px 20px 20px 10px red;` 를 적용한 박스의 예시이다.
+`box-shadow: 20px 20px 20px 10px red;` 를 적용한 박스의 예시이다.
 
 
 
@@ -464,18 +474,22 @@ https://fonts.google.com/
 위 사이트에서 원하는 폰트를 찾은다음에
 
 
-
+<p align="center">
 <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221017174222064.png" alt="image-20221017174222064" style="zoom: 67%;" />
-
+</p>
 
 
 원하는 폰트 스타일을 찾은 뒤, `+` 를 클릭하고, 열리는 창에서 
 
+<p align="center">
 <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221017174519042.png" alt="image-20221017174519042" style="zoom:80%;" />
+</p>
 
 이 부분을 복사해서 css 파일에 입력하고
 
+<p align="center">
 <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221017174621132.png" alt="image-20221017174621132" style="zoom:80%;" />
+</p>
 
 위 사진 처럼, 원하는 박스에 `font-family: 'Montserrat';` 를 입력하면 된다. (이름은 폰트마다 다르다.)
 
@@ -518,8 +532,9 @@ https://fonts.google.com/
 위와 같은 코드는
 
 
-
+<p align="center">
 <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221017192148774.png" alt="image-20221017192148774" style="zoom:80%;" />
+</p>
 
 위와 같이 붙어서 출력될 것이다.
 
@@ -559,9 +574,9 @@ https://fonts.google.com/
 하지만, 각각 <p> 태그로 감싼 후, float 속성을 css 에서 위와 같이 부여하면,
 
 
-
+<p align="center">
 <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221017192328132.png" alt="image-20221017192328132" style="zoom:80%;" />
-
+</p>
 
 
 이렇게, 안녕하세요는 왼쪽정렬, 작성자는 오른쪽 정렬이 된다.
@@ -588,7 +603,9 @@ https://fonts.google.com/
 
 하지만, 아래에 문장을 하나 추가했을때,
 
+<p align="center">
 <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221017192457676.png" alt="image-20221017192457676" style="zoom:80%;" />
+</p>
 
 위와 같이 출력이 이상하게 될 수 있다. 이런 경우는 , float 속성을 부여한 태그들을 묶어서 `overflow : hidden;` 속성을 부여해주면 된다.
 
@@ -636,9 +653,9 @@ https://fonts.google.com/
 위와 같이 section으로 묶고, overflow 속성을 부여하면
 
 
-
+<p align="center">
 <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221017192713097.png" alt="image-20221017192713097" style="zoom:80%;" />
-
+</p>
 
 
 정상적으로 출력이 되는 것을 확인할 수 있다.
