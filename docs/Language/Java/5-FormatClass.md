@@ -304,16 +304,10 @@ public class Main{
 {% assign some_var = some_var | markdownify %}
 {% include fix_linenos.html code=some_var %}
 
-실행 결과는
+실행 결과는 아래와 같을 것 이다.
 
-```
-Name: KIM 
-Tel:010-112-112
+![image-20221018142544448](https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221018142544448.png)
 
-Name: PARK 
-Tel:010-119-119
-
-```
 
 
 
