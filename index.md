@@ -5,7 +5,7 @@ author_profile: true
 nav_order: 1
 ---
 
-# 🙇🏻‍♂️ Welcome My Github Blog
+# 🙇🏻‍♂️ Welcome My GitHub Blog
 
 >### **What we have to do is to be forever curiously testing new opinions and courting new impressions.**<br>
 >#### 우리가 해야 할 일은 끊임없이 호기심을 갖고 새로운 생각을 시험해보고 새로운 인상을 받는 것이다.
