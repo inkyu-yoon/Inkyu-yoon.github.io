@@ -14,7 +14,7 @@ permalink: docs/Language/HTML_CSS/HtmlAndCss
 {: .no_toc .text-delta }
 
 1. TOC
-   {:toc}
+{:toc}
 
 ---
 

@@ -14,7 +14,7 @@ permalink: docs/Language/Java/classAndVariable
 {: .no_toc .text-delta }
 
 1. TOC
-   {:toc}
+{:toc}
 
 ---
 
