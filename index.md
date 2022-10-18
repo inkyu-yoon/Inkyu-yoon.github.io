@@ -5,10 +5,10 @@ author_profile: true
 nav_order: 1
 ---
 
-# 🙇🏻‍♂️ Welcome My GitHub Blog
+# 🙇🏻‍♂️ Welcome My  Blog
 
->## **What we have to do is to be forever curiously testing new opinions and courting new impressions.**<br>
->### 우리가 해야 할 일은 끊임없이 호기심을 갖고 새로운 생각을 시험해보고 새로운 인상을 받는 것이다.
+>### **What we have to do is to be forever curiously testing new opinions and courting new impressions.**<br>
+>#### 우리가 해야 할 일은 끊임없이 호기심을 갖고 새로운 생각을 시험해보고 새로운 인상을 받는 것이다.
 
 
 
@@ -31,7 +31,7 @@ nav_order: 1
 <br>
 
 
-- 🌀 Blog : [yinq.tistory.com](https://yinq.tistory.com/)
+- 🌀 PS Blog : [yinq.tistory.com](https://yinq.tistory.com/m/category/%F0%9F%91%A8%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BB%20Algorithm)
 - 🚀 GitHub : [github.com/inkyu-yoon](https://github.com/inkyu-yoon)
 - 💌 E-mail : [tryingmybest24h@gmail.com](mailto:tryingmybest24h@gmail.com)
   {: .fs-2 }
