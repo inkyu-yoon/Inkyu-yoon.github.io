@@ -139,6 +139,8 @@ public class DateFormatterEx1 {
 {% include fix_linenos.html code=some_var %}
 
 ------
+
+
 {: .note-title }
 > 정리
 > 1. time 패키지는 LocalTime 과 LocalDate 그리고 LocalDateTime 클래스가 있다. of() 메서드를 활용하여 값을 설정할 수 있고 withYear, withMonth, withDayOfMonth 등의 메서드를 활용하여 데이터를 수정할 수 있다.
