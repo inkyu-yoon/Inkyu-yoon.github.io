@@ -1,6 +1,6 @@
 ---
 layout: default
-title: SPRING
+title: Spring
 parent: Language
 nav_order: 2
 has_children: true
