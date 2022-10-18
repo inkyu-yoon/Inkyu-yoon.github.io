@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://inkyu-yoon.github.io/sitemap.xml
