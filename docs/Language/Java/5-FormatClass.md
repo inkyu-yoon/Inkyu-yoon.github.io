@@ -279,8 +279,8 @@ String result = MessageFormat.format(str,inputstr);
 
 위와 같이 사용하면 된다.
 
-{% capture some_var %}
-```java
+
+```
 import java.text.MessageFormat;
 
 public class Main{
@@ -300,9 +300,7 @@ public class Main{
     }
 }
 ```
-{% endcapture %}
-{% assign some_var = some_var | markdownify %}
-{% include fix_linenos.html code=some_var %}
+
 
 실행 결과는 아래와 같을 것 이다.
 
