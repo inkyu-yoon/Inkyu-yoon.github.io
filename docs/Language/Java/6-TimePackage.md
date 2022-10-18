@@ -9,8 +9,17 @@ permalink: docs/Language/Java/TimePackage
 
 
 # Time 패키지정리
+{: .no_toc }
 
-<br>
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+   {:toc}
+
+---
+
+
 
 ## Time 패키지 데이터 출력
 

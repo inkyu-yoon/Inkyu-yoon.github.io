@@ -8,8 +8,16 @@ permalink: docs/Language/SQL/RelationAlgebra
 ---
 
 # 관계대수란?
+{: .no_toc }
 
-<br>
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+   {:toc}
+
+---
+
 
 
 ## 관계 대수(Relational algebra)

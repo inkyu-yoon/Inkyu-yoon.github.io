@@ -41,7 +41,7 @@ nav_order: 1
 
 * [Language](/docs/Language)
 * [Learned](/docs/Learned)
-* [Language](/docs/Retrospect)
+* [Retrospect](/docs/Retrospect)
 
 ---
 <br>

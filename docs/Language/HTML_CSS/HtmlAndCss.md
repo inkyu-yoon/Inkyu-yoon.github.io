@@ -2,16 +2,21 @@
 layout: default
 title: "HTML / CSS 기초"
 nav_order: 1
-parent : HTML
+parent : FrontEnd
 grand_parent: Language
 permalink: docs/Language/HTML_CSS/HtmlAndCss
 ---
 
-
 # HTML / CSS 기초
-<br>
+{: .no_toc }
 
+## Table of contents
+{: .no_toc .text-delta }
 
+1. TOC
+   {:toc}
+
+---
 
 
 ## html 기본 형식

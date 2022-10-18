@@ -7,11 +7,17 @@ grand_parent: Language
 permalink: docs/Language/Java/FormatClass
 ---
 
-
-
 # 형식화 클래스 DecimalFormat / SimpleDateFormat / ChoiceFormat / MessageFormat 에 대한 이해
+{: .no_toc }
 
-<br>
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+   {:toc}
+
+---
+
 
 ### 형식화 클래스
 

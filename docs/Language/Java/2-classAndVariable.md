@@ -8,8 +8,17 @@ permalink: docs/Language/Java/classAndVariable
 ---
 
 # public class와 인스턴스·클래스·지역변수
+{: .no_toc }
 
-<br>
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+   {:toc}
+
+---
+
+
 
 ## class(클래스)가 왜 필요한가?
 

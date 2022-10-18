@@ -7,10 +7,17 @@ grand_parent: Language
 permalink: docs/Language/Java/VariablesAndStatic
 ---
 
-
 # 기본형·참조형 매개변수와 Static Method
+{: .no_toc }
 
-<br>
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+   {:toc}
+
+---
+
 
 ## 매개변수
 
