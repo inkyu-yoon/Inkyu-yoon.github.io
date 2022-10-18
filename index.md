@@ -39,6 +39,8 @@ nav_order: 1
 #### Category
 
 * [Language](/docs/Language)
+* [Learned](/docs/Learned)
+* [Language](/docs/Retrospect)
 
 ---
 <br>
