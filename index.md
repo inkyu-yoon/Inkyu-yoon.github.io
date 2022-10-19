@@ -37,13 +37,16 @@ nav_order: 1
   
 ---
 
-#### Category
+## Category
 
-[Language](/docs/Language){: .btn .btn-purple }
+---
+<br>
 
-[Learned](/docs/Learned){: .btn .btn-purple }
+[ 👩🏻‍💻Language ](/docs/Language){: .btn .btn-purple }
 
-[Retrospect](/docs/Retrospect){: .btn .btn-purple }
+[ 📚Learned  ](/docs/Learned){: .btn .btn-purple }
+
+[✍🏻Retrospect](/docs/Retrospect){: .btn .btn-purple }
 
 ---
 <br>
