@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Learned
+title: 📚Learned
 nav_order: 3
 has_children: true
 permalink: docs/Learned

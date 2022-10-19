@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Error
-parent: Learned
+parent: 📚Learned
 nav_order: 5
 has_children: true
 permalink: docs/Learned/Error

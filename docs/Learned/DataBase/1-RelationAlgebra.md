@@ -3,7 +3,7 @@ layout: default
 title: "관계 대수(Relational Algebra) 란"
 nav_order: 1
 parent : DataBase
-grand_parent: Learned
+grand_parent: 📚Learned
 permalink: docs/Learned/DataBase/RelationAlgebra
 ---
 
