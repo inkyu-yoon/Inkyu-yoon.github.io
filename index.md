@@ -17,20 +17,24 @@ nav_order: 1
 
 <img align='right' src="http://mazassumnida.wtf/api/v2/generate_badge?boj=tryingmybest24h">
 
+About Me
+{: .label .label-purple }
+
 - (22.08.04~) 개발 공부 시작 👩🏻‍💻
 - (22.09.19~) 멋쟁이 사자처럼 백엔드 스쿨 🦁
 {: .fs-3 }
 <br>
+
+Who am I
+{: .label .label-purple }
 
 - **생각없이 코드 짜지 않는** 개발자 💡
 - **기록의 중요성을 아는** 개발자 ✍🏻
 - **꾸준한** 개발자 🔥
 - **배움을 즐기는** 개발자 📖
 - **성장가능성이 큰** 개발자 🌟
-<br>
 
-- 뿌린대로 거둔다.🌱
-{: .fs-3 }
+<br>
 <br>
 
 
