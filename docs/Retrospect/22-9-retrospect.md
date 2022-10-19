@@ -20,6 +20,7 @@ permalink: docs/Retrospect/September22
 
 ## 원없이 놀았던 2주
 
+<br>
 
 벌써 9월이 끝나서, 2번째 회고를 쓴다!
 
@@ -77,7 +78,7 @@ permalink: docs/Retrospect/September22
 
 ## 멋쟁이 사자처럼 백엔드 스쿨 2기 시작.
 
-
+<br>
 
 9월 19일 간단한 아이스브레이킹과 OT를 시작으로 백엔드 스쿨이 시작되었다.
 
@@ -121,7 +122,7 @@ permalink: docs/Retrospect/September22
 
 ## 어수선했던 백엔드 스쿨 초기
 
-
+<br>
 
 스쿨 초기에는 굉장히 어수선했다.
 
@@ -189,7 +190,7 @@ permalink: docs/Retrospect/September22
 
 ## 알고리즘 1일 1커밋 시작
 
-------
+<br>
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221019101418625.png" alt="image-20221019101418625" style="zoom: 80%;" />
@@ -235,6 +236,7 @@ permalink: docs/Retrospect/September22
 
 ## 스터디 그룹 시작
 
+<br>
 
 알고리즘 공부는 개인적으로 원하는 커리큘럼 따라가고, 내가 직접 풀어보고 원리를 파악하는게 더 편하기도 하고
 
@@ -265,6 +267,8 @@ permalink: docs/Retrospect/September22
 ------
 
 ## When life gives you lemons, make lemonade.
+
+<br>
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221019101503790.png" alt="image-20221019101503790" style="zoom:80%;" />
