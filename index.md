@@ -49,10 +49,12 @@ Who am I
 
 ---
 
+<br>
+
 Category
 {: .fs-8 .fw-700 }
 
----
+<br>
 
 [ 👩🏻‍💻Language ](/docs/Language){: .btn .btn-purple }
 
