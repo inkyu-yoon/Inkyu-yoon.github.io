@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "· Execution failed for task :test. 오류"
+title: "· 【IntelliJ】 Execution failed for task :test. 오류"
 nav_order: 3
 parent : Error
 grand_parent: 📚Learned
