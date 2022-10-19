@@ -40,11 +40,10 @@ nav_order: 1
 ## Category
 
 ---
-<br>
 
 [ 👩🏻‍💻Language ](/docs/Language){: .btn .btn-purple }
 
-[ 📚Learned  ](/docs/Learned){: .btn .btn-purple }
+[ 📚Learned   ](/docs/Learned){: .btn .btn-purple }
 
 [✍🏻Retrospect](/docs/Retrospect){: .btn .btn-purple }
 
