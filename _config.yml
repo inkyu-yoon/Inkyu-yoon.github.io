@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Eager to Learn🌀
-description: inkyu-yoon.github.io
+description: 개발자를 꿈꾸는 인규의 기술 블로그
 baseurl: ""
 url: "https://inkyu-yoon.github.io/"
 
@@ -148,7 +148,7 @@ callouts:
 
 # Google Analytics Tracking (optional)
 # e.g, UA-1234567-89
-ga_tracking: UA-2709176-10
+ga_tracking: G-Q61KYHY2PH
 ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
 
 plugins:
