@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "22년 8월 회고"
+title: "· 22년 8월 회고"
 nav_order: 1
-parent : 회고
+parent : ✍🏻회고
 permalink: docs/Retrospect/August22
 ---
 

@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "기본형·참조형 매개변수와 Static Method"
+title: "· 기본형·참조형 매개변수와 Static Method"
 nav_order: 3
 parent : Java
-grand_parent: Language
+grand_parent: 👩🏻‍💻Language
 permalink: docs/Language/Java/VariablesAndStatic
 ---
 
@@ -21,7 +21,7 @@ permalink: docs/Language/Java/VariablesAndStatic
 
 ## 매개변수
 
-
+<br>
 
 1. 기본형 매개변수 : 변수의 값을 읽기만 할 수 있다.
 2. 참조형 매개변수 : 변수의 값을 읽고 변경할 수 있다.
@@ -34,7 +34,7 @@ permalink: docs/Language/Java/VariablesAndStatic
 
 ## class 메서드
 
-
+<br>
 
 - 메서드란 함수의 역할을 한다고 생각하면 된다. 코드의 중복을 없에고 간소화 하는데 도움을 준다.어떤 기능을 하는 메서드를 만들어 놓으면 그 메서드만 호출해서 사용하면 코드의 작성이 간편해지기 때문이다.
 
@@ -48,7 +48,7 @@ permalink: docs/Language/Java/VariablesAndStatic
 
 ## 예문
 
-
+<br>
 
 예를 들어 Main과 다른, Data 클래스의 change 메서드를 사용하고 싶을 때,
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "관계 대수(Relational Algebra) 란"
+title: "· 관계 대수(Relational Algebra) 란"
 nav_order: 1
 parent : DataBase
 grand_parent: 📚Learned
@@ -22,6 +22,8 @@ permalink: docs/Learned/DataBase/RelationAlgebra
 
 ## 관계 대수(Relational algebra)
 
+<br>
+
 - 관계 모델을 위한 기본적인 연산의 집합을 관계 대수라고 한다.
 - 릴레이션을 피연산자 · 결과로 사용하는 연산자라고 생각하면 된다.
 - 대표적으로 **순수 관계 연산자와 일반 집합 연산자** 가 있다.
@@ -34,6 +36,8 @@ permalink: docs/Learned/DataBase/RelationAlgebra
 
 
 ## 순수 관계 연산자
+
+<br>
 
 * 순수 관계 연산자는, 관계 데이터베이스에 적용하기 위해 개발한 연산자 이다.
 
@@ -188,6 +192,8 @@ A ÷ B
 
 
 ## 일반 집합 연산자
+
+<br>
 
 * UNION (합집합) : 집합의 합집합과 동일
 

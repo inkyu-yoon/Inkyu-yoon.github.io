@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "@Controller 와 @GetMapping"
+title: "· @Controller 와 @GetMapping"
 nav_order: 1
 parent : Spring
-grand_parent: Language
+grand_parent: 👩🏻‍💻Language
 permalink: docs/Language/Spring/ControllerAndMapping
 ---
 

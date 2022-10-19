@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "IP · TCP · UDP 특징"
+title: "· IP · TCP · UDP 특징"
 nav_order: 1
 parent : HTTP
 grand_parent: 📚Learned
@@ -36,7 +36,6 @@ permalink: docs/Learned/HTTP/Protocol
 
 ### IP의 문제점
 
-<br>
 
 1. 데이터를 받을 대상이 없거나 서비스 불능 상태여도 전송하고, 송신자는 이를 알 수 없다.
 
@@ -74,7 +73,7 @@ permalink: docs/Learned/HTTP/Protocol
 
 ### TCP의 특징
 
-<br>
+
 
 1. **3 way handshake 방식을 통해 연결지향적이고 IP 의 첫번째 문제점을 해결해준다.**
 

@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "형식화 클래스 정리"
+title: "· 형식화 클래스 정리"
 nav_order: 5
 parent : Java
-grand_parent: Language
+grand_parent: 👩🏻‍💻Language
 permalink: docs/Language/Java/FormatClass
 ---
 
@@ -19,17 +19,17 @@ permalink: docs/Language/Java/FormatClass
 ---
 
 
-### 형식화 클래스
+## 형식화 클래스
 
-
+<br>
 
 - 데이터를 패턴에 맞춰 형식화 할 수 있을 뿐만 아니라 역으로 형식화된 데이터에서 원해의 데이터를 얻어낼 수도 있다.
 
 ------
 
-### DecimalFormat
+## DecimalFormat
 
-
+<br>
 
 - DecimalFormat은 숫자를 형식화 하는데 사용된다
 
@@ -145,9 +145,9 @@ public class Main {
 
 ------
 
-### SimpleDateFormat
+## SimpleDateFormat
 
-
+<br>
 
 - Date와 Calendar클래스를 이용하여 날짜 데이터를 원하는 형태로 쉽게 출력할 수 있다.
 
@@ -224,9 +224,9 @@ public class Main {
 
 ------
 
-### ChoiceFormat
+## ChoiceFormat
 
-
+<br>
 
 - 특정 범위에 속하는 값을 문자열로 변환해준다.
 - 두개의 배열을 생성하는데, 하나는 오름차순의 double형 경계값 배열과 경계값 배열의 크기와 동일한 String 배열이 필요하다. 경계값을 기준으로 해당하는 문자열을 반환하는 것이다.
@@ -269,8 +269,9 @@ public class main{
 
 ------
 
-### MessageFormat
+## MessageFormat
 
+<br>
 
 - 데이터가 들어갈 자리를 {0} {1} {2}.... 과 같이 표시하고 다수의 데이터를 같은 양식으로 출력할 수 있도록 도와준다.
 

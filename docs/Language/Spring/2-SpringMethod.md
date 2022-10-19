@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "Getter and Setter / Optional.ofNullable / Assertions / AfterEach / assertThrows"
+title: "· Getter and Setter / Optional.ofNullable / Assertions / AfterEach / assertThrows"
 nav_order: 2
 parent : Spring
-grand_parent: Language
+grand_parent: 👩🏻‍💻Language
 permalink: docs/Language/Spring/SpringMethod
 ---
 
@@ -20,7 +20,7 @@ permalink: docs/Language/Spring/SpringMethod
 
 ## 클래스 인스턴스 변수 입력 및 출력 메서드 구현하기
 
-
+<br>
 
 
 <p align="center">
@@ -62,6 +62,7 @@ get, set 메서드를 생성할 변수를 선택한 후 ok 버튼을 누르면
 
 ## Optional 을 사용하는 이유
 
+<br>
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221018180301802.png" alt="image-20221018180301802" style="zoom:80%;" />
@@ -154,7 +155,7 @@ get, set 메서드를 생성할 변수를 선택한 후 ok 버튼을 누르면
 
 ## Test Case 작성
 
-
+<br>
 
 윈도우 인텔리 제이의 경우
 
@@ -221,6 +222,8 @@ create New Test 를 클릭하면 된다.
 
 ## AfterEach
 
+<br>
+
 테스트를 하는 과정에서 여러 메서드를 한번에 테스트 하다보면, 데이터가 겹쳐서 다른 메서드 테스트에 영향을 줄 수 있다. 그러므로 테스트 메서드가 끝날 때마다 메모리를 비워주는 것이 중요하다.
 
 
@@ -241,6 +244,8 @@ create New Test 를 클릭하면 된다.
 ------
 
 ## Extract Method 생성
+
+<br>
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221018180622550.png" alt="image-20221018180622550" style="zoom:80%;" />
@@ -288,7 +293,7 @@ Extract Method를 클릭하고 메서드 이름을 지정해주면 된다.
 
 ## assertThrows
 
-
+<br>
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221018180728385.png" alt="image-20221018180728385" style="zoom:80%;" />

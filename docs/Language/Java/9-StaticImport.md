@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "Static import"
+title: "· Static import"
 nav_order: 9
 parent : Java
-grand_parent: Language
+grand_parent: 👩🏻‍💻Language
 permalink: docs/Language/Java/StaticImport
 ---
 

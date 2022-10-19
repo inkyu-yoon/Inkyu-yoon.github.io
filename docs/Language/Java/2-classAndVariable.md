@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "클래스와 인스턴스 변수·클래스 변수·지역변수"
+title: "· 클래스와 인스턴스 변수·클래스 변수·지역변수"
 nav_order: 2
 parent : Java
-grand_parent: Language
+grand_parent: 👩🏻‍💻Language
 permalink: docs/Language/Java/classAndVariable
 ---
 
@@ -23,13 +23,15 @@ permalink: docs/Language/Java/classAndVariable
 ## class(클래스)가 왜 필요한가?
 
 
+<br>
+
 -   객체를 생성하기 위해 필요하다.
 
 ---
 
 ## 객체가 왜 필요한가?
 
-
+<br>
 
 -   객체가 가진 속성과 기능을 사용하기 위해 필요하다.
 
@@ -37,6 +39,7 @@ permalink: docs/Language/Java/classAndVariable
 
 ## public 이 붙는 class 란?
 
+<br>
 
 
 -   하나의 소스 파일에 여러 클래스를 작성할 수 있다. 하지만, 클래스 중에 `public class` 의 이름은 소스파일의 이름과 일치해야 한다.
@@ -84,7 +87,7 @@ public class Helloworld {
 
 ## class 의 변수
 
-
+<br>
 
 1.  **인스턴스 변수 (instance 변수)** : 클래스 영역에 선언되어 메인 클래스에서 객체를 생성할 때 생성되는 데이터
 2.  **클래스 변수 (static 변수)** : 인스턴스 변수와 다르게 한 클래스에서 모두 공통된 값을 갖고, 객체 생성과 상관 없이 인스턴스 변수의 저장공간과 별도로 저장되어 있다.

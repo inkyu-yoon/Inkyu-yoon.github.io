@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "Comparator 와 Comparable"
+title: "· Comparator 와 Comparable"
 nav_order: 10
 parent : Java
-grand_parent: Language
+grand_parent: 👩🏻‍💻Language
 permalink: docs/Language/Java/Comparator
 ---
 
@@ -19,6 +19,8 @@ permalink: docs/Language/Java/Comparator
 ---
 
 ## Collections.sort()
+
+<br>
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221018173441982.png" alt="image-20221018173441982" style="zoom:67%;" />
@@ -97,6 +99,8 @@ public interface Comparable{
 
 ## Comparable 구현하기
 
+<br>
+
 <p align="center">
 <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221018173511692.png" alt="image-20221018173511692" style="zoom: 80%;" />
 </p>
@@ -126,6 +130,8 @@ public interface Comparable{
 ------
 
 ## Comparator 구현하기
+
+<br>
 
 
 `Comparator`는 새로운 정렬 방법을 제공하는 것이다.

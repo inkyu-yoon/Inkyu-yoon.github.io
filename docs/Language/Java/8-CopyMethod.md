@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "배열을 복사하는 3가지 방법"
+title: "· 배열을 복사하는 3가지 방법"
 nav_order: 8
 parent : Java
-grand_parent: Language
+grand_parent: 👩🏻‍💻Language
 permalink: docs/Language/Java/CopyMethod
 ---
 
@@ -20,7 +20,7 @@ permalink: docs/Language/Java/CopyMethod
 
 ## System.arraycopy()
 
-
+<br>
 
 ```
 System.arraycopy(복사할 배열, 복사할 인덱스 시작점, 붙여넣을 배열, 붙여넣을 배열의 시작점, 복사할 갯수);
@@ -36,11 +36,11 @@ arraycopy의 경우 import 없이 사용할 수 있는 복사 방법이다.
 
 ------
 
-<br>
+
 
 ## Arrays.copyOf()
 
-
+<br>
 
 ```
 붙여넣을 배열 = Arrays.copyOf(복사할 배열, 복사할 갯수);
@@ -70,10 +70,9 @@ copyOf의 경우 복사 시작 인덱스는 0으로 고정되어 있어, 특정 
 
 ------
 
-<br>
-
 ## clone()
 
+<br>
 
 ```
 붙여넣을 배열 = 복사할 배열.clone();
@@ -89,10 +88,10 @@ clone() 메서드의 경우 가장 간단하고 직관적으로 보이는 장점
 
 ------
 
-<br>
 
 ## 예제
 
+<br>
 
 {% capture some_var %}
 ```java
@@ -134,11 +133,10 @@ public class binary {
 
 ------
 
-<br>
 
 ## 속도 비교
 
-
+<br>
 
 
 <p align="center">

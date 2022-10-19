@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "10진수를 2진수, 8진수, 16진수로 변환하기"
+title: "· 10진수를 2진수, 8진수, 16진수로 변환하기"
 nav_order: 7
 parent : Java
-grand_parent: Language
+grand_parent: 👩🏻‍💻Language
 permalink: docs/Language/Java/toStringMethod
 ---
 
@@ -21,7 +21,7 @@ permalink: docs/Language/Java/toStringMethod
 
 ## 10진수를 8진수, 16진수로 변환하여 출력
 
-
+<br>
 
 10진수의 수를 8진수, 16진수로 출력하는 방법은 매우 간단하다.
 
@@ -45,7 +45,7 @@ permalink: docs/Language/Java/toStringMethod
 
 ## toBinaryString
 
-
+<br>
 
 10진수의 수가 `int`형이라고 가정할때,
 
@@ -73,7 +73,7 @@ permalink: docs/Language/Java/toStringMethod
 
 ## 예제
 
-
+<br>
 
 31이라는 10진수의 수가 있을 때, 2진수, 8진수, 16진수로 변환을 해보겠다.
 

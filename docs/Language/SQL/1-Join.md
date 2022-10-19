@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "JOIN(조인) 이란"
+title: "· JOIN(조인) 이란"
 nav_order: 1
 parent : SQL
-grand_parent: Language
+grand_parent: 👩🏻‍💻Language
 permalink: docs/Language/SQL/Join
 ---
 
@@ -22,7 +22,7 @@ permalink: docs/Language/SQL/Join
 
 ## JOIN 문법
 
-
+<br>
 
 - 2개 또는 그 이상의 테이블(릴레이션)을 결합하여 의미있는 데이터를 만들 수 있도록 돕는 메커니즘이다.
 
@@ -57,7 +57,7 @@ permalink: docs/Language/SQL/Join
 
 ## JOIN의 여러가지 방법
 
-
+<br>
 
 ### 1. INNER JOIN
 
@@ -187,6 +187,7 @@ LEFT와는 반대로 B 테이블의 외래키 속성을 먼저 다 표현하고,
 
 ## 테이블 별칭 지정
 
+<br>
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221017234227496.png" alt="image-20221017234227496" style="zoom: 50%;" />

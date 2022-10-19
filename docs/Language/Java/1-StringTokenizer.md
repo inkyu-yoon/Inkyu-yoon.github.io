@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "StringTokenizer 이해하기"
+title: "· StringTokenizer 이해하기"
 nav_order: 1
 parent : Java
-grand_parent: Language
+grand_parent: 👩🏻‍💻Language
 permalink: docs/Language/Java/StringTokenizer
 ---
 
@@ -21,6 +21,8 @@ permalink: docs/Language/Java/StringTokenizer
 
 ## StringTokenizer란?
 
+<br>
+
 - 문자열을 토큰 단위로 구분해서 만들어주는 클래스
 
 ```
@@ -37,6 +39,8 @@ StringTokenizer(String str ,String delim, boolean returnDelims)
 ------
 
 ## 예시를 통해 알아보기
+
+<br>
 
 예를 들어 "I love you" 라는 문자열이 들어있다고 가정해보자. (※ StringTokenizer 클래스를 import 해주어야 사용가능하다.)
 

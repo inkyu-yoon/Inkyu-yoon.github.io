@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "Calendar class 정리"
+title: "· Calendar class 정리"
 nav_order: 4
 parent : Java
-grand_parent: Language
+grand_parent: 👩🏻‍💻Language
 permalink: docs/Language/Java/Calendar
 ---
 
@@ -22,6 +22,7 @@ permalink: docs/Language/Java/Calendar
 
 ## Calendar 클래스
 
+<br>
 
 - Calendar 클래스는 추상 클래스이므로 인스턴스를 생성할 수 없고, `getInstance()`를 사용해서 객체를 생성해야 한다.
 
@@ -61,7 +62,7 @@ cal.setTime(d); // Calendar의 시간을 d로 맞춤
 
 ## Calendar 클래스의 사용
 
-
+<br>
 
 {% capture some_var %}
 ```java

@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "프로젝트 경로 내 텍스트 파일 읽기"
+title: "· 프로젝트 경로 내 텍스트 파일 읽기"
 nav_order: 11
 parent : Java
-grand_parent: Language
+grand_parent: 👩🏻‍💻Language
 permalink: docs/Language/Java/FileReader
 ---
 

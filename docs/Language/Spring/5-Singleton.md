@@ -3,7 +3,7 @@ layout: default
 title: "싱글톤 방식과 컴포넌트 스캔"
 nav_order: 5
 parent : Spring
-grand_parent: Language
+grand_parent: 👩🏻‍💻Language
 permalink: docs/Language/Spring/Singleton
 ---
 
@@ -20,6 +20,7 @@ permalink: docs/Language/Spring/Singleton
 
 ## 싱글톤의 존재 이유
 
+<br>
 
 - 웹 애플리케이션은 보통 여러 고객이 동시에 요청한다. 여러 고객이 수백 수천번 객체를 요청할때마다 새로 생성하면 메모리 낭비가 심해진다. 
 
@@ -32,7 +33,7 @@ permalink: docs/Language/Spring/Singleton
 
 ## 싱글톤 패턴의 예시 중 하나
 
-
+<br>
 
 - `Car` 클래스가 있다고 가정해보자.
 
@@ -119,7 +120,7 @@ public class Car{
 
 ## @ComponentScan의 작동 방식과 @Component 등록
 
-
+<br>
 
 1. 사용할 구현클래스 앞에 `@Component` 에너테이션을 붙인다. (참고로 `@Configuration` 에너테이션은 `@Component` 에너테이션을 포함한다.)
 

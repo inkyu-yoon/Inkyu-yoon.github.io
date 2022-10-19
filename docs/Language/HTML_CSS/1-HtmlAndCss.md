@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "HTML / CSS 기초"
+title: "· HTML / CSS 기초"
 nav_order: 1
 parent : FrontEnd
-grand_parent: Language
+grand_parent: 👩🏻‍💻Language
 permalink: docs/Language/HTML_CSS/HtmlAndCss
 ---
 
@@ -19,9 +19,10 @@ permalink: docs/Language/HTML_CSS/HtmlAndCss
 ---
 
 
+
 ## html 기본 형식
 
-
+<br>
 
 html의 문서는
 
@@ -52,7 +53,7 @@ html의 문서는
 ## html의 간단한 구조
 
 
-
+<br>
 
 {% capture some_var %}
 ```html
@@ -100,7 +101,7 @@ html의 문서는
 
 ## CSS 적용
 
-
+<br>
 
 html 은 간단하게 말하면, 골격과 구조를 결정하는 코드이고, 그 외에 내용의 색이나, 크기 등 스타일을 설정하기 위해서는 css 코드를 작성해야 한다.
 
@@ -176,7 +177,7 @@ footer{
 
 ## style를 구분해서 적용하기
 
-
+<br>
 
 위와 같은 방법으로는, 스타일이 적용된 모든 태그가 스타일이 결정되므로, 원하는 부분만 스타일을 적용할 수 없다.
 
@@ -259,7 +260,7 @@ https://htmlcolorcodes.com/
 
 ## div 태그 적용
 
-
+<br>
 
 여러 태그의 스타일을 한번에 적용하기 위해서는 `<div></div>` 태그로 감싸주고 스타일을 적용시키면 된다.
 
@@ -363,6 +364,7 @@ footer{
 
 ## 박스 꾸미기
 
+<br>
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221017170033588.png" alt="image-20221017170033588" style="zoom: 67%;" />
@@ -468,7 +470,7 @@ css파일을 위와 같이 적용해보면
 
 ## html 폰트 적용하기
 
-
+<br>
 
 기본 폰트는 너무 딱딱하기 때문에, 폰트를 적용해본다.
 
@@ -506,7 +508,7 @@ https://fonts.google.com/
 
 ## float
 
-
+<br>
 
 한 라인에서 특정 부분을 왼쪽, 특정 부분을 오른쪽으로 정렬시키기 위해서는 `float : (right/left); ` 를 이용해서 정렬해야 한다.
 
@@ -672,6 +674,8 @@ https://fonts.google.com/
 
 
 ## 하이퍼링크 걸기
+
+<br>
 
 {% capture some_var %}
 ```html

@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "JavaScript 기초"
+title: "· JavaScript 기초"
 nav_order: 2
 parent : FrontEnd
-grand_parent: Language
+grand_parent: 👩🏻‍💻Language
 permalink: docs/Language/HTML_CSS/JavaScript
 ---
 
@@ -13,7 +13,7 @@ permalink: docs/Language/HTML_CSS/JavaScript
 
 ## JavaScript 의 기본
 
-
+<br>
 
 JavaScript 코드는 보통 `<body>`  태그 안에 넣고, `<script>` 태그로 감싸야 인식이 된다.
 

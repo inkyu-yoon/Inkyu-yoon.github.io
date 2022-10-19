@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "isEqualTo 와 isSameAs 차이점"
+title: "· isEqualTo 와 isSameAs 차이점"
 nav_order: 3
 parent : Spring
-grand_parent: Language
+grand_parent: 👩🏻‍💻Language
 permalink: docs/Language/Spring/IsEqualIsSame
 ---
 

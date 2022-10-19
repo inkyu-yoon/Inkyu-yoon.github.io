@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "스프링 빈 컨테이너(Bean Container)의 원리 "
+title: "· 스프링 빈 컨테이너(Bean Container)의 원리 "
 nav_order: 4
 parent : Spring
-grand_parent: Language
+grand_parent: 👩🏻‍💻Language
 permalink: docs/Language/Spring/SpringBean
 ---
 

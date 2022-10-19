@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "Time 패키지 정리"
+title: "· Time 패키지 정리"
 nav_order: 6
 parent : Java
-grand_parent: Language
+grand_parent: 👩🏻‍💻Language
 permalink: docs/Language/Java/TimePackage
 ---
 
@@ -23,7 +23,7 @@ permalink: docs/Language/Java/TimePackage
 
 ## Time 패키지 데이터 출력
 
-------
+<br>
 
 - Time 패키지는 Date와 Calendar의 단점들을 해소하기위해 새로 추가되었다. 하지만, 기존에 작성된 프로그램과의 호환성 때문에 Date와 Calendar는 여전히 사용될 것이다.
 
@@ -108,6 +108,7 @@ public class NewTimeEx1 {
 
 ## 타임클래스는 DateTimeFormatter 클래스를 활용하여 형식화 한다.
 
+<br>
 
 ```
 DateTimeFormatter formatter = DateTimeFormatter.형식.format(date)
