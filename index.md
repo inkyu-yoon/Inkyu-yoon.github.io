@@ -31,17 +31,19 @@ nav_order: 1
 <br>
 
 
-- 🌀 PS Blog : [yinq.tistory.com](https://yinq.tistory.com/m/category/%F0%9F%91%A8%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BB%20Algorithm)
-- 🚀 GitHub : [github.com/inkyu-yoon](https://github.com/inkyu-yoon)
-- 💌 E-mail : [tryingmybest24h@gmail.com](mailto:tryingmybest24h@gmail.com)
-  {: .fs-2 }
+[🌀 PS Blog](https://yinq.tistory.com/category/%F0%9F%91%A8%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BB%20Algorithm){: .btn .mr-2 }
+[🚀 GitHub](https://github.com/inkyu-yoon){: .btn .mr-2 }
+[💌 E-mail](mailto:tryingmybest24h@gmail.com){: .btn .mr-2 }
+  
 ---
 
 #### Category
 
-* [Language](/docs/Language)
-* [Learned](/docs/Learned)
-* [Retrospect](/docs/Retrospect)
+[Language](/docs/Language){: .btn .btn-purple }
+
+[Learned](/docs/Learned){: .btn .btn-purple }
+
+[Retrospect](/docs/Retrospect){: .btn .btn-purple }
 
 ---
 <br>
