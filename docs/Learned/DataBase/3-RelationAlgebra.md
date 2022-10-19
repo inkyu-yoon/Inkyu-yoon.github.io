@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "· 관계 대수(Relational Algebra) 란"
-nav_order: 1
+title: "· 관계 대수(Relational Algebra)"
+nav_order: 3
 parent : DataBase
 grand_parent: 📚Learned
 permalink: docs/Learned/DataBase/RelationAlgebra
