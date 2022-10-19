@@ -5,8 +5,8 @@ author_profile: true
 nav_order: 1
 ---
 
-# 🙇🏻‍♂️ Welcome My  Blog
-{: .fw-700 }
+🙇🏻‍♂️ Welcome My  Blog 
+{: .fs-9 .fw-700 }
 
 >### **What we have to do is to be forever curiously testing new opinions and courting new impressions.**<br>
 >#### 우리가 해야 할 일은 끊임없이 호기심을 갖고 새로운 생각을 시험해보고 새로운 인상을 받는 것이다.
@@ -35,7 +35,7 @@ Who am I
 - 꾸준한 개발자 🔥
 - 배움을 즐기는 개발자 📖
 - 성장가능성이 큰 개발자 🌟
-  {: .fs-3 }
+{: .fs-3 }
 
 <br>
 <br>
@@ -49,8 +49,8 @@ Who am I
 
 ---
 
-## Category
-{: .fw-700 }
+Category
+{: .fs-8 .fw-700 }
 
 ---
 
