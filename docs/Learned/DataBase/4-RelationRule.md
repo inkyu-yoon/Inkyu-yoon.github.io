@@ -14,18 +14,16 @@ permalink: docs/Learned/DataBase/RelationRule
 {: .no_toc .text-delta }
 
 1. TOC
-   {:toc}
+{:toc}
 
 ---
-
-## 릴레이션 분석 지침이란?
 
 - 릴레이션이 잘 설계되었는지, 문제는 없는지 간단히 확인하는 기본 지침
 - 기본 지침을 체크해보면, 잘 설계되었는지 대략적으로 확인할 수 있다.
 
 <br>
 
-### 1. 스키마에서 속성의 의미가 명확한지 확인한다.
+## 1. 스키마에서 속성의 의미가 명확한지 확인한다.
 
 <br>
 
@@ -41,11 +39,11 @@ permalink: docs/Learned/DataBase/RelationRule
 
 
 
-### 2. 튜플들에서 중복되는 값들이 있는지 확인한다.
+## 2. 튜플들에서 중복되는 값들이 있는지 확인한다.
 
 <br>
 
-#### 1. 삽입 이상
+### 1. 삽입 이상
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221020204711064.png" alt="image-20221020204711064" style="zoom:80%;" />
@@ -55,7 +53,7 @@ permalink: docs/Learned/DataBase/RelationRule
 
 <br>
 
-#### 2. 수정 이상
+### 2. 수정 이상
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221020204918115.png" alt="image-20221020204918115" style="zoom:80%;" />
@@ -65,7 +63,7 @@ permalink: docs/Learned/DataBase/RelationRule
 
 <br>
 
-#### 3. 삭제 이상
+### 3. 삭제 이상
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221020205118889.png" alt="image-20221020205118889" style="zoom:80%;" />
@@ -75,11 +73,11 @@ permalink: docs/Learned/DataBase/RelationRule
 
 <br>
 
-### 3. 튜플들에 저장된 NULL 값을 확인한다.
+## 3. 튜플들에 저장된 NULL 값을 확인한다.
 
 <br>
 
-#### 속성에 NULL 값이 빈번하게 저장되면, 불필요한 저장 공간을 사용하게 된다.
+### 속성에 NULL 값이 빈번하게 저장되면, 불필요한 저장 공간을 사용하게 된다.
 
 - -> 속성에 빈번하게 NULL 값이 저장된다는 의미가, 불필요한 정보라는 의미로 받아들일 수 있다. 따라서, 메모리 관점에서 이러한 속성이 해당 릴레이션에서 필수적인 속성인지 검토해볼 필요가 있다.
 
@@ -91,7 +89,7 @@ permalink: docs/Learned/DataBase/RelationRule
 
 <br>
 
-### 4. 가짜 튜플이 생성되는지 확인한다.
+## 4. 가짜 튜플이 생성되는지 확인한다.
 
 ---
 
