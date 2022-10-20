@@ -27,7 +27,7 @@ permalink: docs/Learned/DataBase/RelationRule
 
 <br>
 
-- 속성의 이름을 의미적으로 **모호하지 않게** 작명해야 합니다.
+- 속성의 이름을 의미적으로 **모호하지 않게** 작명해야 한다.
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221020204206141.png" alt="image-20221020204206141" style="zoom: 80%;" />
@@ -49,7 +49,8 @@ permalink: docs/Learned/DataBase/RelationRule
 <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221020204711064.png" alt="image-20221020204711064" style="zoom:80%;" />
 </p>
 
-실수로 작성자의 이름을 `김수민`으로 잘 못 입력될 수 있다. 나중에, 릴레이션의 튜플들을 확인했을 때, 회원 번호 1번이 `김민수` 인지 `김수민` 인지 확실하게 알 수 없어 릴레이션의 신뢰성을 잃게됩니다.
+실수로 작성자의 이름을 `김수민`으로 잘 못 입력될 수 있다. 나중에, 릴레이션의 튜플들을 확인했을 때, 
+회원 번호 1번이 `김민수` 인지 `김수민` 인지 확실하게 알 수 없어 릴레이션의 신뢰성을 잃게된다.
 
 <br>
 
