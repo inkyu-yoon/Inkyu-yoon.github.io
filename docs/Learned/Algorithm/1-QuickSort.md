@@ -4,7 +4,7 @@ title: "· Quick Sort(퀵 정렬)"
 nav_order: 1
 parent : Algorithm
 grand_parent: 📚Learned
-permalink: docs/Language/Spring/SpringMethod
+permalink: docs/Learned/Algorithm/QuickSort
 ---
 
 # Quick Sort(퀵 정렬) 알고리즘
