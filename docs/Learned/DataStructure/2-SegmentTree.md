@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "· 세그먼트 트리 구현"
-nav_order: 1
+nav_order: 2
 parent : 자료구조
 grand_parent: 📚Learned
 permalink: docs/Learned/DataStructure/SegmentTree
