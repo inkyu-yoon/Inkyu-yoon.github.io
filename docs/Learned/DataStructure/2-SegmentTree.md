@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· 세그먼트 트리 구현"
 nav_order: 2
 parent : 자료구조
