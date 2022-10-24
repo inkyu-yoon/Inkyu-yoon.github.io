@@ -88,7 +88,7 @@ DI 주입에 의해 입력된 `dataSource` 는 기본 생성자에서 `JdbcTempl
 
 
 
-```JAVA
+```java
 public class UserDao {
 
 	public void insert(final User user) throws ClassNotFoundException, SQLException {
