@@ -180,10 +180,6 @@ update 메서드는 배열의 원소가 변경되었을 때, 트리구조에 반
 
 
 ```java
-ppackage Tree;
-
-import java.util.Arrays;
-
 public class SegmentTree {
    
     long tree[];
