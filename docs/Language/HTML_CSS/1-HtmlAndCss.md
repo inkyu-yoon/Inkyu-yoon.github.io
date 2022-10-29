@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· HTML / CSS 기초"
 nav_order: 1
 parent : FrontEnd
