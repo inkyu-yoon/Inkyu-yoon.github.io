@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· 10진수를 2진수, 8진수, 16진수로 변환하기"
 nav_order: 7
 parent : Java

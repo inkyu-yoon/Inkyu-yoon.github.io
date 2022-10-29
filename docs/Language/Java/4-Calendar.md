@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· Calendar class 정리"
 nav_order: 4
 parent : Java

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· 릴레이션의 분석 지침"
 nav_order: 4
 parent : DataBase

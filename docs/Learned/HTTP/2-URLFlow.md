@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· URI (Uniform Resource Identifier)"
 nav_order: 2
 parent : HTTP

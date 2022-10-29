@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· 데이터 무결성 조건과 ERD"
 nav_order: 2
 parent : DataBase

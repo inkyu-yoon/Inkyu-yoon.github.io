@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· JOIN(조인) 이란"
 nav_order: 1
 parent : SQL

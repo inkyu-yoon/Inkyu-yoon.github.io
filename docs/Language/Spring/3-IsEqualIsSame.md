@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· isEqualTo 와 isSameAs 차이점"
 nav_order: 3
 parent : Spring

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· Time 패키지 정리"
 nav_order: 6
 parent : Java

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· 클래스와 인스턴스 변수·클래스 변수·지역변수"
 nav_order: 2
 parent : Java

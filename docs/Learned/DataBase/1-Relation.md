@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· 릴레이션 · 키의 특징과 종류"
 nav_order: 1
 parent : DataBase

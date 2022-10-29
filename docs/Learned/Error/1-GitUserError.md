@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· 【Git】 user.name & user.email 변경 오류"
 nav_order: 1
 parent : Error

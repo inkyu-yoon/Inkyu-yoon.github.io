@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· 형식화 클래스 정리"
 nav_order: 5
 parent : Java

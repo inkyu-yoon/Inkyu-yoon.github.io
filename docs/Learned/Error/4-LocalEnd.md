@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· cmd를 이용해서 localhost 종료"
 nav_order: 4
 parent : Error

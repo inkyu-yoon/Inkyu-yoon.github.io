@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· Static import"
 nav_order: 9
 parent : Java

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· 2진 탐색 트리(BST) 구현"
 nav_order: 1
 parent : 자료구조

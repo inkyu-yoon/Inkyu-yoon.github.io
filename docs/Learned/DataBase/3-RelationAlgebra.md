@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· 관계 대수(Relational Algebra)"
 nav_order: 3
 parent : DataBase

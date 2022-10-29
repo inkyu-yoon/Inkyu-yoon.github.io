@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· 싱글톤 방식과 컴포넌트 스캔"
 nav_order: 5
 parent : Spring

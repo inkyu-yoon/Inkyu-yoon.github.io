@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· Comparator 와 Comparable"
 nav_order: 10
 parent : Java

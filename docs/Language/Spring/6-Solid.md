@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· 객체 지향 설계 SOLID 원칙"
 nav_order: 6
 parent : Spring

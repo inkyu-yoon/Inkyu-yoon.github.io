@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· 함수적 종속성과 정규화"
 nav_order: 5
 parent : DataBase

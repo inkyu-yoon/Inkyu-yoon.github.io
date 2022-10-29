@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· Getter and Setter / Optional.ofNullable / Assertions / AfterEach / assertThrows"
 nav_order: 2
 parent : Spring

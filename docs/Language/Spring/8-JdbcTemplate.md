@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· Jdbc Template으로 쉽게 DB 활용하기"
 nav_order: 8
 parent : Spring

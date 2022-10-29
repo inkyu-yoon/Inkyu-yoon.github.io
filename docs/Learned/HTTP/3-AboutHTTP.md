@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "·  HTTP의 특징과 구조"
 nav_order: 3
 parent : HTTP

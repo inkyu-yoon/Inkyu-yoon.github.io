@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· @Controller 와 @GetMapping"
 nav_order: 1
 parent : Spring

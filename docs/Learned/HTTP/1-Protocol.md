@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· IP · TCP · UDP 특징"
 nav_order: 1
 parent : HTTP

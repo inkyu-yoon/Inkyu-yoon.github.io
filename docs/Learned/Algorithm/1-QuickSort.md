@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· Quick Sort(퀵 정렬)"
 nav_order: 1
 parent : Algorithm

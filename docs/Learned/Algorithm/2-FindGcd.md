@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· 유클리드 호제법 (최대공약수·최소공배수)"
 nav_order: 2
 parent : Algorithm

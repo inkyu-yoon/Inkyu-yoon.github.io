@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· 【IntelliJ】 Execution failed for task :test. 오류"
 nav_order: 3
 parent : Error

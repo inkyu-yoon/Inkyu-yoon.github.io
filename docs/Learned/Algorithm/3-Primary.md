@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· 소수 구하기 (에라토스테네스의 체)"
 nav_order: 3
 parent : Algorithm

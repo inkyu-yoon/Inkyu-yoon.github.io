@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· 【IntelliJ】 Java file outside of source root 오류"
 nav_order: 2
 parent : Error

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· 기본형·참조형 매개변수와 Static Method"
 nav_order: 3
 parent : Java

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· ExecuteQuery() 메서드 분리하기"
 nav_order: 7
 parent : Spring

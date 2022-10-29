@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· 프로젝트 경로 내 텍스트 파일 읽기"
 nav_order: 11
 parent : Java

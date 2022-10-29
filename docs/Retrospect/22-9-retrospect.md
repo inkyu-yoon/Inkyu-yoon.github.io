@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· 22년 9월 회고"
 nav_order: 2
 parent : ✍🏻회고

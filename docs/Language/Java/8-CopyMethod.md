@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· 배열을 복사하는 3가지 방법"
 nav_order: 8
 parent : Java

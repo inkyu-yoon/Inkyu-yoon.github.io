@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· API 활용 에너테이션 정리"
 nav_order: 9
 parent : Spring

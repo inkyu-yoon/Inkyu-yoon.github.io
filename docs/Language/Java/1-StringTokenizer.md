@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "· StringTokenizer 이해하기"
 nav_order: 1
 parent : Java
