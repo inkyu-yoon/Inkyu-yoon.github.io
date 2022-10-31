@@ -133,7 +133,7 @@ public class Hospital {
 ---
 <br>
 
-## .persist() / .find() / .remove() / .createQuery
+## .persist() / .find() / .remove() / .createQuery()
 
 <br>
 
@@ -179,14 +179,6 @@ public class JpaTest {
 ### 1. .persist()
 
 ```java
-package hellojpa;
-
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
-import javax.persistence.Persistence;
-import java.util.List;
-
 public class JpaTest {
     public static void main(String[] args) {
 
@@ -242,14 +234,6 @@ public class JpaTest {
 데이터베이스의 데이터를 `em.find()` 메서드를 사용해서 찾을 수 있다.
 
 ```java
-package hellojpa;
-
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
-import javax.persistence.Persistence;
-import java.util.List;
-
 public class JpaTest {
     public static void main(String[] args) {
 
@@ -302,14 +286,6 @@ public class JpaTest {
 삭제하려는 데이터를 먼저 찾은 뒤, 그 객체를 파라미터로 넣으면 된다.
 
 ```java
-package hellojpa;
-
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
-import javax.persistence.Persistence;
-import java.util.List;
-
 public class JpaTest {
     public static void main(String[] args) {
 
@@ -416,6 +392,14 @@ public class JpaTest {
 위와 같이 입력하면, 데이터베이스에 있는 모든 데이터를 가져올 수 있다.
 
 `em.createQuery(JPQL구문, @Entity되어있는 객체).getResultList()` 하면, 객체가 담긴 리스트를 반환받을 수 있다.
+
+JPQL 구문은, SQL 구문을 객체지향적으로 바꿔서 생각하면 쉽다.
+
+위의 예시에서 사용한 JQPL 구문의 경우, Hospital 테이블의 한 레코드를 row라는 변수로서 지정하고 가져온다라고 생각하면 된다.
+
+<br>
+
+범위를 지정해서 데이터를 가져올 수도 있다.
 
 `.setFirstResult()`로 가져오고 싶은 데이터의 시작 인덱스를 지정하고
 
