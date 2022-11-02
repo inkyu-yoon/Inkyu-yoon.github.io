@@ -202,7 +202,7 @@ docker 설치를 위해
 
 
 ```
-git clone https://github.com/Kyeongrok/docker_minikube_kubectl_install
+git clone https://github.com/inkyu-yoon/docker_install
 ```
 
 
@@ -211,14 +211,15 @@ git clone https://github.com/Kyeongrok/docker_minikube_kubectl_install
 
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221102185120767.png" alt="image-20221102185120767" style="zoom:80%;" />
-</p>
-
-`ll` 로 확인해보니 docker_minikube_kubectl_install 폴더가 있고
 
 
+<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221102193850439.png" alt="image-20221102193850439" style="zoom:150%;" /></p>
 
-`cd docker_minikube_kubectl_install` 로 이동한다.
+`dir` 로 확인해보면 docker_install 폴더가 있고
+
+
+
+`cd docker_install` 로 이동한다.
 
 
 
@@ -400,9 +401,9 @@ mkdir git
 
 cd git
 
-git clone https://github.com/Kyeongrok/docker_minikube_kubectl_install
+git clone https://github.com/inkyu-yoon/docker_install
 
-cd docker_minikube_kubectl_install
+cd docker_install
 
 sh docker_install.sh
 
