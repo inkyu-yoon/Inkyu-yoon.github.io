@@ -244,7 +244,146 @@ git clone https://github.com/Kyeongrok/docker_minikube_kubectl_install
 `docker ps` 를 입력했을때 mysql 이 있다면 성공적으로 설치된 것이다.
 
 <br>
+
 ---
+
+## MYSQL 프로그램 실행
+
+<br>
+
+다시 인스턴스 생성 페이지로 간다.
+
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221102191145453.png" alt="image-20221102191145453" style="zoom:80%;" />
+</p>
+
+
+
+
+`보안` -> `보안 그룹 하이퍼링크` 클릭 을 한다.
+
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221102191156537.png" alt="image-20221102191156537" style="zoom:80%;" />
+</p>
+
+
+`인바운드 규칙 편집`을 클릭한다.
+
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221102191208170.png" alt="image-20221102191208170" style="zoom:80%;" />
+</p>
+
+
+`규칙 추가`를 클릭하고
+
+
+
+`MYSQL/Aurora` 유형을 클릭한 뒤 `0.0.0.0/0` 까지 추가를 해준다.
+
+
+
+아래 사이트를 가서 MYSQL workbench를 설치한다.
+
+[https://dev.mysql.com/downloads](https://dev.mysql.com/downloads/file/?id=513229)
+
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221102191258441.png" alt="image-20221102191258441" style="zoom:80%;" />
+</p>
+
+
+워크벤치를 설치하고 실행한다.
+
+
+
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221102191309458.png" alt="image-20221102191309458" style="zoom:80%;" />
+</p>
+
+
+
+
+`+` 아이콘을 클릭한다.
+
+
+
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221102191318485.png" alt="image-20221102191318485" style="zoom:80%;" />
+</p>
+
+
+
+
+그리고 인스턴스 주소를 다시 복사한다.
+
+
+
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221102191331552.png" alt="image-20221102191331552" style="zoom: 80%;" />
+</p>
+
+Connection name 에는 원하는 이름을 작성하고
+
+
+
+Hostname 에는 복사한 주소를 붙여넣고
+
+
+
+Password 는 아까 mysql을 설치할 때,
+
+
+
+```
+docker run -p 3306:3306 -e MYSQL\_ROOT\_PASSWORD=password -d mysql
+```
+
+
+
+PASSWORD 를 password 로 지정했으므로 `password`를 입력한다.
+
+
+
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221102191346270.png" alt="image-20221102191346270" style="zoom:80%;" />
+</p>
+
+
+
+
+`Test Connection` 버튼을 눌렀을 때, 위와 같은 창이 뜨면 성공이다.
+
+
+
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221102191356776.png" alt="image-20221102191356776" style="zoom:67%;" />
+</p>
+
+
+생성한 Connections 를 클릭하면
+
+
+
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221102191408325.png" alt="image-20221102191408325" style="zoom:80%;" />
+</p>
+
+
+
+
+위와 같은 화면이 나온다.
+
+
+<br>
 <br>
 
 Short Cut
