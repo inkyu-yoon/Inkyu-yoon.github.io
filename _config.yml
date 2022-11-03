@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Eager to Learn🌀
-description: 개발자를 꿈꾸는 인규의 기술 블로그
+description: 👩🏻‍💻 지식 창고 📚
 baseurl: ""
 url: "https://inkyu-yoon.github.io"
 
