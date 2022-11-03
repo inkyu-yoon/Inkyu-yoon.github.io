@@ -85,35 +85,45 @@ permalink: docs/Learned/Algorithm/Primary
 2부터 N-1까지의 수 중에서 2의 배수를 제외하고, 3의 배수를 제외하고 ····· 제곱근N이하의 정수까지 나눠서 걸러지지 않고 남은 수들이 모두 소수가 된다.
 
 ```java
-import  java.util.*; //사용자에게 입력받기 위해 import 선언
 
-public  class  Primenumber {
-            public  static  void  main(String[] args){
-            Scanner  scanner = new  Scanner(System.in); 
-            System.out.println("1~N까지의 소수를 구해드립니다 N을 입력하세요.(3이상)"); 
-            int  N = scanner.nextInt();
-            //사용자에게 N을 입력받음
+import java.util.*; //사용자에게 입력받기 위해 import 선언
 
-            boolean [] prime = new  boolean[N+1];
-            //boolean 배열을 선언, 배열은 index가 0부터 시작하므로 입력받은 N 보다 1 큰 size로 설정
-            prime[0] = true; prime[1] = true;
-            //boolean의 기본값은 false 이고 0과 1은 true로 미리 지정한다.
-                for(int  i =2 ; i*i<=N;i++){ // N의 제곱근보다 작은 정수의 배수들만 지우면 됨.
-                        for(int  j =i*i;j<=N;j+=i){ 
-                    //i*i로 시작해야 자기 자신은 제외할 수 있다. 
-                    //i*i로 시작한 j는 i만큼 더하여 증가하기 때문에, j는 N보다 작은 i의 배수가 될 것.
-                            prime[j]=true;
-                        //boolean의 기본값은 false 이기 때문에 배수에 속하는 것들을 true로 지정    
-                        }
-                }
-            //배수들은 모두 true가 된 상태이고 남은 소수들은 false 상태가 된다.
-                for(int  i =0;i<=N;i++){
-                        if(!prime[i]){
-                        System.out.println(i);
-                        {
-                        //false인 소수를 index를 이용해 추출
-                }
+public class PrimeNumber {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("1~N까지의 소수를 구해드립니다 N을 입력하세요.(3이상)");
+
+        //사용자에게 N을 입력받음
+        int N = scanner.nextInt();
+
+        //boolean 배열을 선언, 배열은 index가 0부터 시작하므로 입력받은 N 보다 1 큰 size로 설정
+        boolean[] prime = new boolean[N + 1];
+
+        //boolean의 기본값은 false 이고 0과 1은 true로 미리 지정한다.
+        prime[0] = true;
+        prime[1] = true;
+
+        for (int i = 2; i * i <= N; i++) { // N의 제곱근보다 작은 정수의 배수들만 지우면 됨.
+            for (int j = i * i; j <= N; j += i) { //i*i로 시작해야 자기 자신은 제외할 수 있다.
+                //i*i로 시작한 j는 i만큼 더하여 증가하기 때문에, j는 N보다 작은 i의 배수가 될 것.
+
+                //boolean의 기본값은 false 이기 때문에 배수에 속하는 것들을 true로 지정
+                prime[j] = true;
+
             }
+        }
+
+        //　∴ 배수들은 모두 true가 된 상태이고 남은 소수들은 false 상태가 된다.
+
+
+        //false인 소수를 index를 이용해 추출
+        for (int i = 0; i <= N; i++) {
+            if (!prime[i]) {
+                System.out.println(i);
+            }
+
+        }
+    }
 }
 ```
 
