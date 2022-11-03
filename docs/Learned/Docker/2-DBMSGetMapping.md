@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "· 데이터베이스 데이터 GetMapping 하기"
-nav_order: 10
-parent : Spring
-grand_parent: 👩🏻‍💻Language
-permalink: docs/Language/Spring/DBMSGetMapping
+nav_order: 2
+parent : Docker
+grand_parent: 📚Learned
+permalink: docs/Learned/Docker/DBMSGetMapping
 ---
 
 # 도커로 서버열고, 데이터베이스 데이터 GetMapping 하기

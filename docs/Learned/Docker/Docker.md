@@ -1,8 +1,8 @@
 ---
 layout: default
-title: 이것저것
+title: Docker
 parent: 📚Learned
 nav_order: 7
 has_children: true
-permalink: docs/Learned/OddsAndEnds
+permalink: docs/Learned/Docker
 ---

@@ -132,9 +132,33 @@ public class Hospital {
 
 `@Id` 는 기본키에 해당하는 변수위에, 기본키 임을 표시하는 에너테이션이다.
 
-`@Colunm` 을 사용하면, 실제 데이터베이스에 해당하는 속성명을 JPA에 알려준다.
+<br>
+
+### @Column
+
+`@Column` 을 사용하면, 실제 데이터베이스에 해당하는 속성명을 JPA에 알려준다.
 
 따라서, 위의 경우 자바에서 사용하는 변수명이 꼭 `name`이 아니여도 매핑해준다.
+
+<br>
+
+```java
+//등록 변경 가능 여부
+@Column(name = "이름", insertable = true/false, updatable = true/false)
+
+
+// 널 제약조건 & length 지정 (DDL) 
+@Column(nullable = false , length = 10)
+// -> 기본값 true이고, false로 할 시, NOT NULL 제약조건이 붙는다.
+// -> length를 10으로 주면 VARCHAR(10)이 된다.
+
+
+//직접 속성 정보 제공 (DDL)
+@Column(columnDefinition = "varchar(100) default 'EMTPTY'")
+// -> 컬럼 정보를 직접 줄 수 있다.
+```
+
+
 
 ---
 <br>

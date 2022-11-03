@@ -2,9 +2,9 @@
 layout: post
 title: "· Git Bash로 Docker 설치하고 MYSQL 연결하기"
 nav_order: 1
-parent : 이것저것
+parent : Docker
 grand_parent: 📚Learned
-permalink: docs/Learned/OddsAndEnds/Docker
+permalink: docs/Learned/Docker/DockerAndEc2
 ---
 
 #  Git Bash로 Docker 설치하고 MYSQL 연결하기
