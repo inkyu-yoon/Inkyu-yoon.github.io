@@ -20,7 +20,7 @@ permalink: docs/Learned/Docker/DBMSGetMapping
 
 
 
-[Git Bash로 Docker 설치하고 MYSQL 연결하기](https://inkyu-yoon.github.io/docs/Learned/OddsAndEnds/Docker)
+[Git Bash로 Docker 설치하고 MYSQL 연결하기](https://inkyu-yoon.github.io/docs/Learned/Docker/DockerAndEc2)
 
 
 
