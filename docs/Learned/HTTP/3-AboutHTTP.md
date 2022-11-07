@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "·  HTTP의 특징과 구조"
+title: "· HTTP의 특징과 구조"
 nav_order: 3
 parent : HTTP
 grand_parent: 📚Learned

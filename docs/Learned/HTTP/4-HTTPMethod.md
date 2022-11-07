@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "·  HTTP 메서드의 특징"
+title: "· HTTP 메서드의 특징"
 nav_order: 4
 parent : HTTP
 grand_parent: 📚Learned
