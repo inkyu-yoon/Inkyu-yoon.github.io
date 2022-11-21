@@ -1,8 +1,8 @@
 ---
 layout: default
-title: TIP
+title: Network
 parent: 📚Learned
-nav_order: 9
+nav_order: 8
 has_children: true
-permalink: docs/Learned/TIP
+permalink: docs/Learned/Network
 ---
