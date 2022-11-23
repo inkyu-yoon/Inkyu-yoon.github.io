@@ -2,9 +2,9 @@
 layout: post
 title: "· 네트워크의 정의와 장단점"
 nav_order: 1
-parent : HTTP
+parent : Network
 grand_parent: 📚Learned
-permalink: docs/Learned/HTTP/Protocol
+permalink: docs/Learned/Network/NetworkDef
 ---
 
 # 네트워크의 정의와 장단점
