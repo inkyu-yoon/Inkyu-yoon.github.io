@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Eager to Learn🌀
 description: 👩🏻‍💻 지식 창고 📚
-baseurl: "/"
+baseurl: ""
 url: "https://inkyu-yoon.github.io"
 
 permalink: pretty
