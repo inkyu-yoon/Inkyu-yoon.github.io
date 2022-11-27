@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "· NotEmpty 어노테이션"
+title: "· @NotEmpty 사용을 위한 라이브러리 추가"
 nav_order: 3
 parent : TIP
 grand_parent: 📚Learned
 permalink: docs/Learned/TIP/NotEmpty
 ---
+
+# @NotEmpty 사용을 위한 라이브러리 추가
 
 <br>
 
@@ -21,4 +23,3 @@ implementation 'org.springframework.boot:spring-boot-starter-validation'
 
 ```
 
-위 구문을 직접 라이브러리에 추가해주어야 사용할 수 있다.

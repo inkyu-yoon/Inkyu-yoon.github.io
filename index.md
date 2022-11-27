@@ -51,6 +51,20 @@ Who am I
 
 <br>
 
+NEW POSTs
+{: .label .label-yellow }
+
+- 2022.11.24 [【@NotEmpty 사용을 위한 라이브러리 추가】](https://inkyu-yoon.github.io/docs/Learned/TIP/NotEmpty)
+
+
+
+<br>
+
+---
+
+
+<br>
+
 Category
 {: .fs-8 .fw-700 }
 
