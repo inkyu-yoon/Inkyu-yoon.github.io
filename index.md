@@ -54,7 +54,7 @@ Who am I
 NEW POSTs
 {: .label .label-yellow }
 
-- 2022.11.29 [WebMvcTest 중 NoSuchBeanDefinitionException 에러](https://inkyu-yoon.github.io/docs/Learned/Error/WebMvcError)
+- 2022.11.29 [【WebMvcTest 중 NoSuchBeanDefinitionException 에러】](https://inkyu-yoon.github.io/docs/Learned/Error/WebMvcError)
 - 2022.11.24 [【@NotEmpty 사용을 위한 라이브러리 추가】](https://inkyu-yoon.github.io/docs/Learned/TIP/NotEmpty)
 
 
