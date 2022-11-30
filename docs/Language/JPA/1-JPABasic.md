@@ -145,6 +145,9 @@ public class Hospital {
 
 `@Id` 는 기본키에 해당하는 변수위에, 기본키 임을 표시하는 어노테이션이다.
 
+{: .highlight }
+엔티티의 경우, JPA에서 내부적으로 사용하기 위해 매개변수가 없는 기본생성자가 있어야하며, 매개변수가 있는 생성자를 추가할 시, 기본생성자를 추가해주어야 한다.
+
 <br>
 
 ### @Column
@@ -211,7 +214,7 @@ public class JpaTest {
 
 ```
 
-{: .참고 }
+{: .warning }
 > persist 과정에서 `Unknown Entity` 오류가 발생한다면, Gradle로 빌드했기 때문이고, Gradle로 빌드한 경우
 > 
 > persistence.xml 파일 unit-name 아래   
