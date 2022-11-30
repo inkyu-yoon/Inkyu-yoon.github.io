@@ -18,8 +18,6 @@ permalink: docs/Language/JPA/JPABasic
 
 ---
 
-{:TOC}
-
 
 
 # JPA 기초
