@@ -54,6 +54,7 @@ Who am I
 NEW POSTs
 {: .label .label-yellow }
 
+- 2022.11.30 [【Persistence Context(영속성 컨텍스트)와 변경감지】](https://inkyu-yoon.github.io/docs/Language/JPA/PersistenceContext)
 - 2022.11.30 [【스프링 부트 라이브러리 버전 선택 팁】](https://inkyu-yoon.github.io/docs/Learned/TIP/SelectLibraryVersion)
 - 2022.11.29 [【WebMvcTest 중 NoSuchBeanDefinitionException 에러】](https://inkyu-yoon.github.io/docs/Learned/Error/WebMvcError)
 - 2022.11.24 [【@NotEmpty 사용을 위한 라이브러리 추가】](https://inkyu-yoon.github.io/docs/Learned/TIP/NotEmpty)
