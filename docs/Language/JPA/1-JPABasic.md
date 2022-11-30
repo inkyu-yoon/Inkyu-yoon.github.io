@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "· JPA 기본 에너테이션과 메서드"
+title: "· JPA 기본 어노테이션과 EntityManager 메서드"
 nav_order: 1
 parent : JPA
 grand_parent: 👩🏻‍💻Language
 permalink: docs/Language/JPA/JPABasic
 ---
 
-# JPA 기본 에너테이션과 메서드
+# JPA 기본 어노테이션과 메서드
 {: .no_toc }
 
 ## Table of contents
@@ -30,7 +30,9 @@ permalink: docs/Language/JPA/JPABasic
 
 <br>
 
-- JPA 하이버네이트 라이브러리를 추가한다.
+스프링 부트를 사용하지 않는 순수 JPA 환경설정에 대해 알아보겠다.
+
+- JPA 하이버네이트 라이브러리를 추가한다. (혹은) jpa 라이브러리 추가
 
 ```java
 	<dependency>
@@ -40,7 +42,7 @@ permalink: docs/Language/JPA/JPABasic
     </dependency>
 ```
 
-- JPA를 사용하기 위해서는 `persistence.xml` 설정파일이 필요하다.
+- 순수 JPA를 사용하기 위해서는 `persistence.xml` 설정파일이 필요하다.
 
 -> 설정 파일의 위치는 반드시 resource 폴더의 **/META-INF/persistence.xml**  위치에 있어야한다.
 
@@ -48,15 +50,16 @@ permalink: docs/Language/JPA/JPABasic
 <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221031233423438.png" alt="image-20221031233423438" style="zoom:80%;" />
 </p>
 
-```java
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence version="2.2"
              xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
-    <persistence-unit name="hello">
+<!--    EntityManagerFactory 객체 생성시 참고해야할 persistence 이름 -->
+    <persistence-unit name="hello"> 
         <properties>
-            <!-- 필수 속성 -->
-            <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
+            <!-- 필수 속성 사용하는 db, 패스워드, 버전에 따라 적절한 값 입력  -->
+            <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/> 
             <property name="javax.persistence.jdbc.user" value="sa"/>
             <property name="javax.persistence.jdbc.password" value=""/>
             <property name="javax.persistence.jdbc.url" value="jdbc:h2:tcp://localhost/~/test"/>
@@ -75,6 +78,16 @@ permalink: docs/Language/JPA/JPABasic
 그리고 위와 같이 `persistence.xml` 파일을 채운다. `jdbc.driver`와 `hibernate.dialect` 부분은, 어떤 데이터베이스를 사용하느냐에 따라 달라질 수 있는 부분이다.
 
 주목해야할 부분은 **persistence-unit name을 "hello"로 지정했다는 것이다.**
+
+jpa를 통해 데이터를 관리하려면 `EntityManager` 객체의 다양한 메서드를 사용해야하는데, 위 unit name을 통해서
+
+`EntityManagerFactory emf = Persistence.createEntityManagerFactory("hello");`
+
+로 `EntityManagerFactory` 를 먼저 생성한 후, 
+
+`EntityManager em = emf.createEntityManager();` 를 통해 객체를 생성할 수 있다.
+
+나중에 스프링 부트와 결합해서 사용하면, 어노테이션을 통해서 위 과정이 생략되긴 한다.
 
 ---
 
@@ -122,15 +135,15 @@ public class Hospital {
 
 `LOMBOK` 라이브러리의 기능인 `@Getter`와 `@Setter` 를 사용하려 코드를 간결화 시켰다.
 
-`@Entity` 에너테이션은, JPA 가 관리해야하는 객체임을 알려주는 에너테이션이다.
+`@Entity` 어노테이션은, JPA 가 관리해야하는 객체임을 알려주는 어노테이션이다.
 
 `@Entity(name=" ")` 으로 엔티티 이름도 지정해줄 수 있지만, 같은 클래스가 존재하는 상황이 아니면, 웬만하면 따로 지정하지 않고,
 
 따로 지정하지 않을 시, 클래스의 이름을 그대로 사용한다.
 
-`@Table(name=" ")`을 통해서, **매핑할 테이블의 이름을 직접 지정**해줄 수도 있다. 따로 지정해주지 않을 시 엔티티 이름을 사용하여 매핑한다.
+`@Table(name=" ")`을 통해서, 데이터베이스에서 사용하는 **매핑할 테이블의 이름을 직접 지정**해줄 수도 있다. 따로 지정해주지 않을 시 엔티티 이름을 사용하여 매핑한다.
 
-`@Id` 는 기본키에 해당하는 변수위에, 기본키 임을 표시하는 에너테이션이다.
+`@Id` 는 기본키에 해당하는 변수위에, 기본키 임을 표시하는 어노테이션이다.
 
 <br>
 
@@ -198,11 +211,29 @@ public class JpaTest {
 
 ```
 
+{: .참고 }
+> persist 과정에서 `Unknown Entity` 오류가 발생한다면, Gradle로 빌드했기 때문이고, Gradle로 빌드한 경우
+> 
+> persistence.xml 파일 unit-name 아래   
+> 
+> `<class>jpabasic.ex1hellojpa.domain.entity.Member</class>`
+> 
+> 위 구문을 추가해서 엔티티 위치를 명시해주어야 한다.
+> 
+> 순수 JPA를 사용할때, 필요한 설정이고 스프링부트 사용시에는 하지 않아도 된다.
+
+<br>
+ 
 전체적인 구성은 위와 같다.
 
 `EntityManagerFactory` -> `EntityManger` -> `EntityTransaction` 순으로 생성한 뒤,
 
 트랜잭션을 시작하고, `EntityManager` 객체를 통해서 원하는 작업을 수행하면 된다.
+
+<br>
+
+{: .highlight }
+EntityManagerFactory는 하나만 생성해서 애플리케이션 전체에서 공유하고, EntityManager는 쓰레드간 공유되지 않는다.
 
 <br>
 
