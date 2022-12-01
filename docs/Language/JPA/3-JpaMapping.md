@@ -340,3 +340,9 @@ public class Child extends Parent {
 `@Embeddable` 의 경우 참조할때, `엔티티.임베디블객체.임베디블객체변수` 와 같은 방법으로 사용할 수 있지만
 
 `@MappedSuperclass` 의 경우, 엔티티가 변수의 묶음인 객체를 갖는 것이 아닌, 변수 하나하나를 갖기 때문에, `엔티티.상속받은변수` 와 같은 방법으로 사용할 수 있다.
+
+> 참고로, `@Embeddable` 클래스를 `@Embedded` 해서 사용할 때, 같은 임베디드 클래스를 한 객체에서 중복해서 사용할 일이 있는 경우
+> 
+> `@AttributeOverrides` 어노테이션을 추가로 붙여준 뒤
+> 
+> `@AttributeOverride(name="임베디블 클래스 변수명",column="테이블에서 사용할 속성명") 으로 재정의 해서 사용해야한다.

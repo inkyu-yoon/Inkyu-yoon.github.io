@@ -54,7 +54,7 @@ Who am I
 NEW POSTs
 {: .label .label-yellow }
 
-
+- 2022.12.02 [【【IntelliJ】 콘솔 창 한글 깨짐 에러】](https://inkyu-yoon.github.io/docs/Learned/Error/KoreanError)
 - 2022.12.01 [【JPA 프록시와 영속성 전이】](https://inkyu-yoon.github.io/docs/Language/JPA/ProxyAndCascade)
 - 2022.12.01 [【JPA 객체 간 연관 관계 매핑】](https://inkyu-yoon.github.io/docs/Language/JPA/JPAMapping)
 - 2022.11.30 [【Persistence Context(영속성 컨텍스트)와 변경감지】](https://inkyu-yoon.github.io/docs/Language/JPA/PersistenceContext)
