@@ -164,6 +164,8 @@ public class CountStatement implements StatementStrategy {
 
 ### 1. ResultSet 반환 시 에러가 발생!!
 
+---
+
 ```java
 public ResultSet StatementStrategyForExecute1(StatementStrategy stmt) throws SQLException, ClassNotFoundException {
         ResultSet rs=null;
@@ -326,6 +328,8 @@ Operation not allowed after ResultSet closed
 <br>
 
 ### 2. ArrayList 에 ResultSet을 저장하자!!
+
+---
 
 ```java
 public ArrayList<HashMap<String, Object>> StatementStrategyForExecute(StatementStrategy stmt) throws SQLException, ClassNotFoundException {

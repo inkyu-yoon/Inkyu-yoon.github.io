@@ -248,6 +248,8 @@ EntityManagerFactory는 하나만 생성해서 애플리케이션 전체에서 �
 
 ### 1. .persist()
 
+---
+
 ```java
 public class JpaTest {
     public static void main(String[] args) {
@@ -301,6 +303,8 @@ public class JpaTest {
 
 ### 2. .find()
 
+---
+
 데이터베이스의 데이터를 `em.find()` 메서드를 사용해서 찾을 수 있다.
 
 ```java
@@ -350,6 +354,8 @@ public class JpaTest {
 
 
 ### 3. .remove()
+
+---
 
 데이터를 삭제할 수도 있다.
 
@@ -404,6 +410,8 @@ public class JpaTest {
 
 
 ### 4. .createQuery()
+
+---
 
 `createQuery()`는 쿼리문을 전달하는 메서드이다.
 

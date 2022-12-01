@@ -86,7 +86,7 @@ DI 주입에 의해 입력된 `dataSource` 는 기본 생성자에서 `JdbcTempl
 
 ### jdbcTemplate.update()
 
-
+---
 
 ```java
 public class UserDao {
@@ -114,7 +114,7 @@ public class UserDao {
 
 ### jdbcTemplate.queryForObject()
 
-
+---
 
 ```java
 public class UserDao {
@@ -166,7 +166,7 @@ public class UserDao {
 
 ### jdbcTemplate.query()
 
-
+---
 
 `query()` 메서드는 `ResultSet` 의 모든 로우를 열람하면서, 로우마다 `rowMapper` 로 구현한 `mapRow` 메서드를 사용한다. 따라서, DB에서 가져오는 로우의 개수만큼 호출될 것이다. 그리고, 이러한 결과를 `List` 객체에 담아서 반환해준다.
 

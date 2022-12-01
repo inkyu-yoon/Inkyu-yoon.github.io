@@ -28,6 +28,8 @@ permalink: docs/Language/JPA/JPAMapping
 
 ### ManyToOne 과 OneToMany
 
+---
+
 Member 와 Team 은 1대 다 관계라고 볼 수 있다.
 
 한 팀은 여러명의 회원들을 가질 수 있고, 회원은 하나의 팀만 갖을 수 있기 때문이다.
@@ -91,6 +93,8 @@ public void changeTeam(Team team){
 <br>
 
 ### OnetoOne
+
+---
 
 다 대 1 관계와 구현은 비슷하지만, 외래키에 유니크 제약조건을 추가한다. ( 1대 1을 유지하려고)
 
@@ -188,6 +192,8 @@ public class Child extends Parent {
 
 ### 1. 조인전략 (starategy = InheritanceType.JOINED)
 
+---
+
 각 자식 테이블은 부모 테이블의 기본키를 갖고 있다.
 
 <p align="center">
@@ -265,6 +271,8 @@ public class Child extends Parent {
 
 ### 2. 단일 테이블 전략 (strategy = InheritanceType.SINGLE_TABLE)
 
+---
+
 부모 테이블과 자식 테이블의 속성을 모두 합쳐서 하나의 테이블로 만든다. 그리고 자식 객체를 구분할 수 있는 속성을 추가해서 사용한다.
 
 <p align="center">
@@ -288,6 +296,8 @@ public class Child extends Parent {
 <br>
 
 ### 3. 구현 클래스마다 테이블 전략 (strategy = InheritanceType.TABLE_PER_CLASS)
+
+---
 
 자식 테이블 각각이 부모 테이블의 모든 속성과 데이터를 보관한다.
 
@@ -316,6 +326,8 @@ public class Child extends Parent {
 
 
 ### 4. @MappedSuperclass
+
+---
 
 `@MappedSuperclass` 어노테이션을 명시한 객체를 상속하면, 그 객체가 갖고 있는 변수가 마치 `@Embeddable` 을 사용했을 때와 비슷한 기능을 수행한다.
 
