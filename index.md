@@ -54,6 +54,7 @@ Who am I
 NEW POSTs
 {: .label .label-yellow }
 
+- 2022.12.04 [【22년 11월 회고】](https://inkyu-yoon.github.io/docs/Retrospect/November22)
 - 2022.12.03 [【캐시와 검증헤더】](https://inkyu-yoon.github.io/docs/Learned/HTTP/Cache)
 - 2022.12.02 [【【IntelliJ】 콘솔 창 한글 깨짐 에러】](https://inkyu-yoon.github.io/docs/Learned/Error/KoreanError)
 - 2022.12.01 [【JPA 프록시와 영속성 전이】](https://inkyu-yoon.github.io/docs/Language/JPA/ProxyAndCascade)
