@@ -54,6 +54,7 @@ Who am I
 NEW POSTs
 {: .label .label-yellow }
 
+- 2022.12.04 [【Querydsl 기본적인 쿼리문 작성하기】](https://inkyu-yoon.github.io/docs/Language/JPA/QuerydslCreateQuery)
 - 2022.12.04 [【Querydsl 환경 세팅하기】](https://inkyu-yoon.github.io/docs/Language/JPA/QuerydslEnv)
 - 2022.12.04 [【22년 11월 회고】](https://inkyu-yoon.github.io/docs/Retrospect/November22)
 - 2022.12.03 [【캐시와 검증헤더】](https://inkyu-yoon.github.io/docs/Learned/HTTP/Cache)
