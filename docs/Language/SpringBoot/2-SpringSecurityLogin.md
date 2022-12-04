@@ -112,7 +112,7 @@ public class UserService {
 
 먼저, userId로 DB에 해당하는 아이디가 저장되어 있는지 확인한다. `Optional` 클래스 메서드인 `orElseThrow()`로 null 값인 경우 예외를 발생시키게끔 한다.
 
-이전에 `ErrorCode` Enum 클래스에 만들어둔  ` USER_NOT_FOUNDED(HttpStatus.NOT_FOUND, "not found error")` 를 `HospitalReviewAppException` 에 전달한다.
+이전에 `ErrorCode` Enum 클래스에 만들어둔  `USER_NOT_FOUNDED(HttpStatus.NOT_FOUND, "not found error")` 를 `HospitalReviewAppException` 에 전달한다.
 
 `ExceptionManager` 는 에러 발생시 404 NOT FOUND 상태코드로 응답할 것이고  `not found error` 라는 메세지와 null 응답을 할 것이다.
 
