@@ -1,4 +1,4 @@
 User-agent: *
-Allow: /
+Disallow:
 
-Sitemap: http://inkyu-yoon.github.io/sitemap.xml
+Sitemap: https://inkyu-yoon.github.io/sitemap.xml
