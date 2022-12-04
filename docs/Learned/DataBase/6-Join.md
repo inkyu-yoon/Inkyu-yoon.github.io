@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "· JOIN(조인) 이란"
-nav_order: 1
-parent : SQL
-grand_parent: 👩🏻‍💻Language
-permalink: docs/Language/SQL/Join
+title: "· SQL JOIN(조인) 이해하기"
+nav_order: 6
+parent : DataBase
+grand_parent: 📚Learned
+permalink: docs/Learned/DataBase/Join
 ---
 
 #  JOIN(조인) 이해하기

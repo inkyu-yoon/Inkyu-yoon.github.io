@@ -1,9 +1,9 @@
 ---
 layout: default
-title: SQL
+title: SpringBoot
 parent: 👩🏻‍💻Language
 nav_order: 4
 has_children: true
-permalink: docs/Language/SQL
+permalink: docs/Language/SpringBoot
 ---
 
