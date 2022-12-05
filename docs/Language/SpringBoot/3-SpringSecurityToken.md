@@ -330,7 +330,7 @@ public class JwtTokenUtil {
 
 <br>
 
-{. :highlight }
+{: .highlight }
 3번째 파라미터로 권한을 설정해주면 FilterChain에 `.antMatchers("/user").hasRole("USER")`  와 같은 구문으로 리소스 접근 제어를 할 수 있는 것 같다...?
 
 <br>
