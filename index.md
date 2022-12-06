@@ -54,7 +54,8 @@ Who am I
 NEW POSTs
 {: .label .label-yellow }
 
-- 2022.12.06 [【Jwt 토큰으로 특정 POST 접근 제한하기】](docs/Language/SpringBoot/SpringSecurityToken)
+- 2022.12.06 [【간단한 예제로 Spring Security & Jwts 흐름 정리】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/SecurityWithJwts)
+- 2022.12.06 [【Jwt 토큰으로 특정 POST 접근 제한하기】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/SpringSecurityToken)
 - 2022.12.05 [【Jwts를 이용한 로그인 구현】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/SpringSecurityLogin)
 - 2022.12.04 [【Spring Security를 이용한 회원가입 구현】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/SpringSecurityJoin)
 - 2022.12.04 [【Querydsl 기본적인 쿼리문 작성하기】](https://inkyu-yoon.github.io/docs/Language/JPA/QuerydslCreateQuery)
