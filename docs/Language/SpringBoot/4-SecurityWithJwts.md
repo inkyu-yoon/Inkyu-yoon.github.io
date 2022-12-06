@@ -324,7 +324,7 @@ public class UserController {
 }
 ```
 
-> join POST 요청이 오면, 요청이 온**패스워드**는 암호화를 시킨 뒤, 저장한다. (나중에 해독할 수 있으니 암호화된 상태로 저장한다.)
+> join POST 요청이 오면, 요청이 온 **패스워드**는 암호화를 시킨 뒤, 저장한다. (나중에 해독할 수 있으니 암호화된 상태로 저장한다.)
 >
 > 정상적으로 회원가입이 완료되면, `Response.success()`로 응답한다.
 
@@ -423,7 +423,7 @@ public class JwtTokenUtil {
 
 ## UserService 로그인 메서드 추가
 
-```JAVA
+```java
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -831,5 +831,7 @@ public class UserController {
 
 > 원하던, 안녕이라는 단어가 나왔다.
 
+<br>
 
-
+{: .highlight}
+[완성 소스 코드 github repo](https://github.com/inkyu-yoon/Spring_Security_Jwts)
