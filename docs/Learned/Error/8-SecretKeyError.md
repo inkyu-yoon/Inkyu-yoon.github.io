@@ -30,7 +30,7 @@ Jwts 로 토큰 발급하는 과정에서 이러한 에러가 발생했고, `app
 
 <br>
 
-```
+```java
  public static String createToken(String userId, String key, long expiredTimeMs) {
         Claims claims = Jwts.claims();
         claims.put("userId", userId);
