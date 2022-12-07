@@ -258,7 +258,7 @@ wordpress
 - 컨테이너를 삭제하면 컨테이너에 존재하던 파일 시스템이나 애플리케이션 파일 뿐만 아니라, 그동안 쌓아놨던 로그인 정보나 게시글 등과 같은 데이터가 함께 삭제될 수 있다. 이를 방지하기 위해 사용하는 것이 **볼륨**이다.
 - **볼륨을 활용하면, 데이터베이스 컨테이너를 삭제해도 데이터는 삭제되지 않도록 할 수 있다.**
 
-```
+```dockerfile
 docker run -d \
 --name wordpressdb_hostvolume \
 -e MYSQL_ROOT_PASSWORD=password \
@@ -267,7 +267,7 @@ docker run -d \
 mysql:5.7
 ```
 
-```
+```dockerfile
   docker run -d \
   -e WORDPRESS_DB_PASSWORD=password  \
   --name wordpress_hostvolume  \
