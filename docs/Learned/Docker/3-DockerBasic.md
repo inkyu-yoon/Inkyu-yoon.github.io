@@ -27,6 +27,7 @@ permalink: docs/Learned/Docker/DockerBasic
 
 ---
 
+<br>
 
 ## 도커를 사용하는 이유는?
 <br>
@@ -68,125 +69,145 @@ permalink: docs/Learned/Docker/DockerBasic
 
   (💡 예시. 웹 서버 도커 이미지에서 여러개의 컨테이너를 생성하면, 생성된 컨테이너 개수만큼 웹 서버가 생성될 것이다.)
 
----
 
-## 도커 실습해보기
-
-<br>
-
-### 도커 이미지를 이용한 컨테이너 생성
+### 3. 도커 정상 작동을 위한 체크 사항
 
 <br>
 
-```
-// run으로 이미지 생성 시, 생성 후 컨테이너 내부로 들어간다.
-docker run -i -t ubuntu:22.04
-
-// create로 이미지 생성 시, 컨테이너 내부로 바로 들어가지 않는다.
-// 그래서 컨테이너 start(실행)후 attach(접속) 해야한다.
-docker create -i -t ubuntu:22.04
-
-```
-
-를 입력해서 `ubuntu:22.04` 이미지를 도커 중앙 저장소인 도커 허브에서 내려받을 수 있다.
-
-<p align="center">
-<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221103164650942.png" alt="image-20221103164650942" style="zoom: 67%;" />
-</p>
-
-다운이 완료되면, 컨테이너 내부로 들어올 수 있다.
-
-`root@~~: /#` 로 바뀌면 컨테이너에 들어온 상태인 것이고, `exit` 를 입력하면 컨테이너에서 나올 수 있다.
-
-단, `exit`로 컨테이너를 나오는 경우, 컨테이너를 정지하면서 나오기 때문에, `Ctrl + P, Q` 를 사용하면, 정지시키지 않고 나올 수 있다.
-
-
+1. 호스트 운영체제가 최소 3.10 버전 이상인지 `uname -r` 로 확인
+2. 64 비트 리눅스인지 확인
+3. sudo 명령어 혹은 root 권한으로 설치하기
 
 <br>
 
-<p align="center">
-<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221103170056960.png" alt="image-20221103170056960" style="zoom:67%;" />
-</p>
-
-이번에는 `create`로 이미지를 생성한 뒤, `docker ps`로 확인해보니, 실행되고 있지 않음을 확인할 수 있다.
-
-<p align="center">
-<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221103170308693.png" alt="image-20221103170308693" style="zoom:67%;" />
-</p>
-
-`docker ps -a` 명령어로 컨테이너의 이름을 확인할 수 있었다. `silly_napier` 이므로, 해당 이름을 이용해서 `start`와 `attach`를 하면 된다.
-
-컨테이너 생성 시에 이름을 직접 지정해줄 수도 있다.
-
-```
-docker create -i -t --name <원하는이름> 이미지
-```
-
-위 구문을 입력하면 된다. 이름을 `thisismine`으로 테스트 해보겠다.
-
-<p align="center">
-<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221103170652797.png" alt="image-20221103170652797" style="zoom:67%;" />
-</p>
-
-원하는 이름으로 잘 지정되어 생성된 것을 확인할 수 있다.
+## 도커 명령어 정리
 
 <br>
 
-### 도커 컨테이너 제거하기
+### 컨테이너 생성 후 들어가기
+
+```dockerfile
+docker run -i -t 이미지:버전
+
+//컨테이너 이름 부여하기
+docker run -i -t --name 원하는이름 이미지:버전
+
+//예시
+docker run -i -t --name MyUbuntu ubuntu:14.04
+```
 
 <br>
 
-<p align="center">
-<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221103171024275.png" alt="image-20221103171024275" style="zoom:80%;" />
-</p>
+### 컨테이너 생성하기 (실행 X , 내부로 들어가는 것 X )
 
-현재 `silly_napier`라는 이름의 컨테이너가 실행 중인데, 이 컨테이너를 제거해보겠다.
+```dockerfile
+docker create -i -t 이미지:버전
+```
+
+<br>
+
+
+### 컨테이너 create시 컨테이너 실행 및 내부로 들어가기
+
+```dockerfile
+//컨테이너 실행
+docker start 컨테이너ID(혹은 이름)
+
+//컨테이너 입장
+docker attach 컨테이너ID(혹은 이름)
 
 ```
-//원하는 컨테이너 삭제
-docker rm -f <컨테이너 이름>
 
-//실행 중지된 컨테이너들을 한번에 다 삭제하고 싶은 경우
+<br>
+
+
+### 컨테이너 나가기
+
+```dockerfile
+//컨테이너 종료하면서 나가기
+exit
+
+//컨테이너 종료 없이 나가기
+Ctrl + P + Q
+```
+
+<br>
+
+
+### 컨테이너 목록 확인
+
+```dockerfile
+docker ps
+
+//정지된 컨테이너까지 출력하고 싶은 경우
+docker ps -a
+
+//컨테이너 목록 깔끔하게 보고 싶은 경우
+docker ps --format "table {{.ID}}\t{{.Status}}\t{{.Image}}\t{{.Names}}"
+
+//컨테이너 이름 변경
+docker rename 원래이름 변경이름
+```
+
+<br>
+
+
+### 컨테이너 삭제
+
+```dockerfile
+// 컨테이너 정지 후 삭제
+docker stop 컨테이너ID(혹은 이름)
+docker rm 컨테이너ID(혹은 이름)
+
+//컨테이너 강제 삭제
+docker rm -f 컨테이너ID(혹은 이름)
+
+//모든 컨테이너 삭제
 docker container prune
+
+//도커 ID 리스트화 후 삭제
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
 ```
-
-실행중인 컨테이너는 `stop` 명령어를 사용한 뒤 `rm` 명령어로 제거해도 되지만, `-f`를 붙이면 실행중인 컨테이너도 한번에 제거할 수 있다.
-
-<p align="center">
-<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221103171321747.png" alt="image-20221103171321747" style="zoom:80%;" />
-</p>
-
-원하는 컨테이너를 삭제했다.
-
-
-
-### 도커 포트 연결하기
 
 <br>
 
-```
+
+### 컨테이너 외부 노출
+
+{: .important }
+> 아무런 설정을 하지 않으면, **외부에서 접근할 수 없으며 도커가 설치된 호스트에서만 접근할 수 있다.**
+> 도커의 `NAT IP` 인 `eth0`와 포트를 호스트의 IP와 포트에 바인딩해야한다.
+
+
+
+```dockerfile
 docker run -i -t --name myserver -p <호스트의 포트>:<컨테이너의 포트> 이미지
 ```
 
-위와 같은 형식으로 `-p` 옵션을 통해, 호스트의 포트와 컨테이너의 포트를 연결할 수 있다.
+> 위와 같은 형식으로 `-p` 옵션을 통해, 호스트의 포트와 컨테이너의 포트를 연결할 수 있다.
+>
+> 만약 호스트의 7777번 포트와 컨테이너의 80번 포트와 연결하고 싶다면 `-p 7777:80` 으로 사용하면 된다.
+>
+> 💡 컨테이너 내부에서 지원하는 포트인지 잘 확인하고 지원하는 컨테이너 포트와 연결하는 것이 중요하다.
 
-만약 호스트의 7777번 포트와 컨테이너의 80번 포트와 연결하고 싶다면 `-p 7777:80` 으로 사용하면 될 것이다.
-
-💡 컨테이너 내부에서 지원하는 포트인지 잘 확인하고 연결하는 것이 중요하다.
+<br>
 
 
+## 애플리케이션 구축 예제
 
-### 데이터베이스와 워드프레스 웹 서버 연동해보기
-
-```
+```dockerfile
 docker run -d \
 --name wordpressdb \
--e MYSQL_ROOT_PASSWORD=password \
--e MYSQL_DATABASE=wordpress \
-mysql:5.7 
+-e MYSQL_ROOT_PASSWORD = password \
+-e MYSQL_DATABASE = wordpress \
+mysql:5.7
+
+// mysql 5.7버전 이미지를 컨테이너 이름을 wordpressdb 로서 실행했고, 환경변수를 전달했다.
+// 참고로, 패스워드는 도커 스웜모드를 이용해서 안전하게 전달하는 것이 좋다.
 ```
 
-> 💡 [**-d**] 옵션과 [**-i -t**] 옵션의 차이
+>  [**-d**] 옵션과 [**-i -t**] 옵션의 차이
 >
 > - -d 옵션 : 컨테이너 내부에서 사용자의 입력을 받지 않고, 컨테이너를 백그라운드에서 동작하는 애플리케이션으로서 실행하도록 설정하는 것이다.
 > - -i -t 옵션 : 사용자와 상호작용이 가능한 컨테이너 환경을 만들때 쓰인다.
@@ -195,47 +216,40 @@ mysql:5.7
 >
 > - 컨테이너 내부의 환경변수를 설정하는 것이다.
 
-위 구문을 입력하여 mysql 이미지로 컨테이너를 생성 후 실행시키고
+<br>
 
+```dockerfile
+docker run -d \
+-e WORDPRESS_DB_HOST = mysql \
+-e WORDPRESS_DB_USER = root \
+-e WORDPRESS_DB_PASSWORD = password \
+--name wordpress \
+--link wordpressdb:mysql \
+-p 80 \
+wordpress
 
-
+//참고로 --link 기능은 deprecated된 옵션이고 도커 브리지 네트워크를 사용하는 것이 좋다.
 ```
-  docker run -d  \
-  -e WORDPRESS_DB_HOST=mysql  \
-  -e WORDPRESS_DB_USER=root  \
-  -e WORDPRESS_DB_PASSWORD=password  \
-  --name wordpress  \
-  --link wordpressdb:mysql  \
-  -p 80  \
-  wordpress
-```
 
-> --link 옵션으로 mysql 컨테이너의 이름이 wordpressdb로 설정되어 있는데, 이를 mysql 이라는 별명으로 설정하여 ip를 몰라도 wordpressdb 컨테이너로 쉽게 접근할 수 있게 설정하는 것이다.
+> 마찬가지로 환경변수를 전달했고, wordpress 이미지를 wordpress로 컨테이너 이름을 설정했다.
+>
+> -p 80 을 했으므로 **docker ps** 로 호스트의 어떤 포트와 연결되어 있는지 확인한다.
 
 
-
-두개의 컨테이너를 설치했으면, 워드프레스로 접속해보겠다.
+<br>
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221103143200567.png" alt="image-20221103143200567" style="zoom: 150%;" />
+<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221207140608148.png" alt="image-20221207140608148" style="zoom:150%;" />
 </p>
 
-`docker ps` 를 입력해서 wordpress 의 port 번호를 확인해보니 `49153` 임을 확인하였고, 컨테이너 포트는 80이다.
-
-
-<p align="center">
-<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221103143629431.png" alt="image-20221103143629431" style="zoom:67%;" />
-</p>
-
-접속하기 위해서 ec2 인바운드 규칙에서 49153 포트를 추가한다.
-
-<p align="center">
-<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221103143657383.png" alt="image-20221103143657383" style="zoom: 50%;" />
-</p>
-
-`ec2주소:49153` 으로 접속하면 위와 같은 화면이 나올 것이다.
-
+> 49153 포트와 컨테이너의 80 포트가 연결되었다.
+>
+> ec2를 사용한다면 인바운드 규칙을 편집해서 49153 포트를 추가하고,
+>
+> `ec2주소:49153` 으로 접속하면 어플리케이션을 확인할 수 있다.
 ---
+
+<br>
 
 ## 도커 볼륨
 
@@ -272,6 +286,8 @@ mysql:5.7
 
 컨테이너가 삭제되어도 `/home/wordpress_db` 디렉터리에 파일이 남아있게 되는 것이다.
 
+<br>
+
 <p align="center">
 <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221103194714191.png" alt="image-20221103194714191" style="zoom:67%;" />
 </p>
@@ -281,11 +297,14 @@ mysql:5.7
 한번, 컨테이너를 삭제하고도 남아있는지 확인해보겠다.
 
 
+<br>
+
 <p align="center">
 <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221103194921016.png" alt="image-20221103194921016" style="zoom: 67%;" />
 </p>
 
 `docker rm -f wordpressdb_hostvolume`을 했음에도 여전히 파일이 남아있는 것을 확인할 수 있다.
 
-> ❗ **이 상황에서 또 다른 컨테이너의 디렉터리와 `/home/wordpress_db`와 연결하면, 새로 연결된 디렉터리의 파일들로 완전히 덮어 씌워지므로 조심해야한다.**
+{: .highlight }
+❗ **이 상황에서 또 다른 컨테이너의 디렉터리와 `/home/wordpress_db`와 연결하면, 새로 연결된 디렉터리의 파일들로 완전히 덮어 씌워지므로 조심해야한다.**
 
