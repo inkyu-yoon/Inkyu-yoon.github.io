@@ -261,6 +261,9 @@ wordpress
 - 컨테이너를 삭제하면 컨테이너에 존재하던 파일 시스템이나 애플리케이션 파일 뿐만 아니라, 그동안 쌓아놨던 로그인 정보나 게시글 등과 같은 데이터가 함께 삭제될 수 있다. 이를 방지하기 위해 사용하는 것이 **볼륨**이다.
 - **볼륨을 활용하면, 데이터베이스 컨테이너를 삭제해도 데이터는 삭제되지 않도록 할 수 있다.**
 
+### -v 옵션 활용
+
+
 ```dockerfile
 docker run -d \
 --name wordpressdb_hostvolume \
@@ -310,4 +313,61 @@ mysql:5.7
 
 {: .highlight }
 ❗ **이 상황에서 또 다른 컨테이너의 디렉터리와 `/home/wordpress_db`와 연결하면, 새로 연결된 디렉터리의 파일들로 완전히 덮어 씌워지므로 조심해야한다.**
+
+<br>
+
+### docker volume 명령어 활용
+
+
+<br>
+
+도커 자체에서 제공하는 볼륨 기능을 활용할 수 있다.
+
+```
+// 볼륨 생성
+docker volume create --name 볼륨이름
+
+// 볼륨 확인
+docker volume ls
+```
+
+> 볼륨을 생성한다.
+
+
+
+<br>
+
+```
+docker run -i -t --name myContainer \
+-v myvolume:/root/ \
+이미지
+```
+
+> 위와 같이 컨테이너를 생성할 때, root 디렉토리와 미리 생성해 둔 my volume 을 연결한다.
+>
+> 이후에 이 root 디렉토리에 생성되는 파일은 myvolume 에 들어가게 되고, 새로운 컨테이너를 생성할때 위와 같이 생성하면
+>
+> 볼륨을 공유하기 때문에, 이전 컨테이너가 저장해 둔 파일을 공유할 수 있다.
+
+
+
+<br>
+
+```
+docker run -i -t --name myContainer \
+-v /root/ \
+이미지
+```
+
+> 위와 같이 생성 시, 이름이 무작위인 새로운 volume 이 만들어진다.
+
+
+
+<br>
+
+```
+docker volume prune
+```
+
+> 도커를 볼륨을 삭제하고 싶다면 위 구문을 입력한다.
 
