@@ -54,6 +54,7 @@ Who am I
 NEW POSTs
 {: .label .label-yellow }
 
+- 2022.12.07 [【Jwt 토큰 생성 시 에러】](https://inkyu-yoon.github.io/docs/Learned/Error/SecretKeyError)
 - 2022.12.06 [【Querydsl Join & 서브쿼리 & Concat】](https://inkyu-yoon.github.io/docs/Language/JPA/QuerydslJoin)
 - 2022.12.06 [【간단한 예제로 Spring Security & Jwts 흐름 정리】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/SecurityWithJwts)
 - 2022.12.06 [【Jwt 토큰으로 특정 POST 접근 제한하기】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/SpringSecurityToken)
