@@ -54,6 +54,7 @@ Who am I
 NEW POSTs
 {: .label .label-yellow }
 
+- 2022.12.07 [【JPA BaseEntity Auditing 적용】](https://inkyu-yoon.github.io/docs/Language/JPA/JpaAuditing)
 - 2022.12.07 [【Querydsl Projection 과 동적 쿼리】](https://inkyu-yoon.github.io/docs/Language/JPA/QuerydslProjection)
 - 2022.12.07 [【Jwt 토큰 생성 시 에러】](https://inkyu-yoon.github.io/docs/Learned/Error/SecretKeyError)
 - 2022.12.06 [【Querydsl Join & 서브쿼리 & Concat】](https://inkyu-yoon.github.io/docs/Language/JPA/QuerydslJoin)
