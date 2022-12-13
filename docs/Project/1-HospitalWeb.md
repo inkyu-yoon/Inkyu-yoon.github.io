@@ -74,11 +74,10 @@ permalink: docs/Project/HospitalWeb
 
 <br>
 
+
 ### DDL 사용해서 데이터 테이블 생성 및 DB에 데이터 입력
 
-<br>
-
-#### 1. application.yml 설정
+1. application.yml 설정
 
 ```yaml
 server:
@@ -88,7 +87,7 @@ server:
       
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/project-db #ec2 서버 사용시, 환경변수 사용
+    url: jdbc:mysql://ec2주소/db명?&rewriteBatchedStatements=true #batchupdate 사용
     username: root
     password: 12341234
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -97,8 +96,6 @@ spring:
     hibernate:
       ddl-auto: create  #테이블 생성 후 update 로 변경
     show-sql: true
-    database-platform: org.hibernate.dialect.MySQL55Dialect
-    database: mysql
 
 logging:
   level:
@@ -109,42 +106,40 @@ jwt:
     secret: hello # Jwt 토큰 생성 시 사용, 실제 사용하는 값은 환경변수로 입력
 ```
 
-<br>
 
-#### 2. 데이터베이스 연결 & Jwt 토큰 사용을 위한 환경변수 추가
+
+2. 스프링 부트 어플리케이션 클래스의 데이터베이스 연결 & Jwt 토큰 사용을 위한 환경변수 추가
 ```
-SPRING_DATASOURCE_URL=jdbc:mysql://데이터베이스연결된ec2주소 :3306/db명 ;SPRING_DATASOURCE_PASSWORD=비밀번호 ; JWT_TOKEN_SECRET=비밀키
+SPRING_DATASOURCE_URL=jdbc:mysql://ec2주소/DB명;SPRING_DATASOURCE_PASSWORD=비밀번호;JWT_TOKEN_SECRET=helloo
 ```
 
-<br>
 
-#### 3. Hospital 클래스 생성
+
+3. Hospital 클래스 생성
 
 [Hospital Entity 소스코드](https://github.com/inkyu-yoon/hospital_web/blob/main/src/main/java/hospital/web/domain/entity/Hospital.java)
 
-<br>
 
-#### 4. 데이터 파일(txt) 한 줄 씩 읽어와서 객체 리스트를 생성하는 클래스 ReadData
+
+4. 데이터 파일(txt) 한 줄 씩 읽어와서 객체 리스트를 생성하는 클래스 ReadData
 
 [ReadData 소스코드](https://github.com/inkyu-yoon/hospital_web/blob/main/src/main/java/hospital/web/parser/ReadData.java)
 
-<br>
 
-#### 5. 읽어온 한 줄을 객체로 정의하고, List 컬렉션에 저장하기 위한 HospitalParser
+
+5. 읽어온 한 줄을 객체로 정의하고, List 컬렉션에 저장하기 위한 HospitalParser
 
 [HospitalParser 소스코드](https://github.com/inkyu-yoon/hospital_web/blob/main/src/main/java/hospital/web/parser/HospitalParser.java)
 
-<br>
 
-#### 6. List 에 담긴 객체들을 데이터베이스에 입력하는 HospitalJpaRepository 소스 코드
+6. List 에 담긴 객체들을 데이터베이스에 입력하는 HospitalJdbcRepository 소스 코드
 
-데이터베이스에 저장하기 위해, 스프링 부트가 아닌 `resources.META-INF.persistence.xml` 을 생성하고, 순수 JPA의 persist로 입력하였다.
+jpa가 아닌 jdbc batchupdate 기능으로 약 12만건의 데이터를 빠르게 입력할 수 있었다.
 
-- [persistence.xml 소스 코드](https://github.com/inkyu-yoon/hospital_web/blob/main/src/main/resources/META-INF/persistence.xml)
-
-- [HospitalJpaRepository 소스코드](https://github.com/inkyu-yoon/hospital_web/blob/main/src/main/java/hospital/web/repository/HospitalJpaRepository.java)
+- [HospitalJdbcRepository 소스코드](https://github.com/inkyu-yoon/hospital_web/blob/main/src/main/java/hospital/web/repository/HospitalJdbcRepository.java)
 
 - [데이터 입력 실행 메인 소스 코드](https://github.com/inkyu-yoon/hospital_web/blob/main/src/main/java/hospital/web/InsertData.java)
+
 
 
 <br>
