@@ -54,6 +54,8 @@ Who am I
 NEW POSTs
 {: .label .label-yellow }
 
+
+- 2022.12.14 [【JdbcTemplate batchUpdate() 사용하여 대용량 데이터 입력 최적화】](https://inkyu-yoon.github.io/docs/Language/Spring/JdbcBatchUpdate)
 - 2022.12.14 [【전국 병·의원 데이터 웹 페이지 만들기 미니 프로젝트】](https://inkyu-yoon.github.io/docs/Project/HospitalWeb)
 - 2022.12.08 [【Querydsl 사용자 정의 레포지토리 & 페이징】](https://inkyu-yoon.github.io/docs/Language/JPA/QuerydslRepo)
 - 2022.12.08 [【JPA BaseEntity Auditing 적용】](https://inkyu-yoon.github.io/docs/Language/JPA/JpaAuditing)
