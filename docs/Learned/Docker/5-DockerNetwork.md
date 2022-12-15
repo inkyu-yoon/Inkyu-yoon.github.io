@@ -78,7 +78,7 @@ veth9196c38: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 
 > mysql 이미지 컨테이너를 실행시킨 뒤, `ifconfig` 를 입력하니, 위와 같이 나타났다.
 >
-> `docker0`, `eth0`, `lo`, `veth9196c38` 를 브리지 라고 한다.
+> `docker0`, `eth0`, `lo`, `veth9196c38` 네트워크가 보인다.
 
 <br>
 
