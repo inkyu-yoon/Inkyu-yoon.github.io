@@ -224,7 +224,7 @@ docker network disconnect <네트워크모드> <컨테이너이름>
 <br>
 
 <p align="center">
-<img src="C:\Users\ikyoo\AppData\Roaming\Typora\typora-user-images\image-20221215210716333.png" alt="image-20221215210716333" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221215210716333.png" alt="image-20221215210716333" style="zoom:80%;" />
 </p>
 
 > 위 그림과 같은 상황이 되는 것이다.
