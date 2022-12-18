@@ -54,11 +54,12 @@ Who am I
 
 NEW
 {: .label .label-yellow }
-- 2022.12.15 [【도커 네트워크 & Bridge】](https://inkyu-yoon.github.io/docs/Learned/Docker/DockerNetwork)
-- 2022.12.15 [【crontab 설정을 통한 자동 업데이트 배포 pipeline 구축】](https://inkyu-yoon.github.io/docs/Learned/Docker/DockerCICDCrontab)
+- 2022.12.18 [【Dockerfile 최적화 작성 및 빌드】](https://inkyu-yoon.github.io/docs/Learned/Docker/DockerDockerfile)
 
 December's post
 {: .label .label-yellow }
+- 2022.12.15 [【도커 네트워크 & Bridge】](https://inkyu-yoon.github.io/docs/Learned/Docker/DockerNetwork)
+- 2022.12.15 [【crontab 설정을 통한 자동 업데이트 배포 pipeline 구축】](https://inkyu-yoon.github.io/docs/Learned/Docker/DockerCICDCrontab)
 - 2022.12.14 [【JdbcTemplate batchUpdate() 사용하여 대용량 데이터 입력 최적화】](https://inkyu-yoon.github.io/docs/Language/Spring/JdbcBatchUpdate)
 - 2022.12.14 [【전국 병·의원 데이터 웹 페이지 만들기 미니 프로젝트】](https://inkyu-yoon.github.io/docs/Project/HospitalWeb)
 - 2022.12.08 [【Querydsl 사용자 정의 레포지토리 & 페이징】](https://inkyu-yoon.github.io/docs/Language/JPA/QuerydslRepo)
