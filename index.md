@@ -54,10 +54,11 @@ Who am I
 
 NEW
 {: .label .label-yellow }
-- 2022.12.18 [【Dockerfile 최적화 작성 및 빌드】](https://inkyu-yoon.github.io/docs/Learned/Docker/DockerDockerfile)
+- 2022.12.18 [【Gradle 프로젝트 swagger-ui 적용】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/Swagger)
 
 December's post
 {: .label .label-yellow }
+- 2022.12.18 [【Dockerfile 최적화 작성 및 빌드】](https://inkyu-yoon.github.io/docs/Learned/Docker/DockerDockerfile)
 - 2022.12.15 [【도커 네트워크 & Bridge】](https://inkyu-yoon.github.io/docs/Learned/Docker/DockerNetwork)
 - 2022.12.15 [【crontab 설정을 통한 자동 업데이트 배포 pipeline 구축】](https://inkyu-yoon.github.io/docs/Learned/Docker/DockerCICDCrontab)
 - 2022.12.14 [【JdbcTemplate batchUpdate() 사용하여 대용량 데이터 입력 최적화】](https://inkyu-yoon.github.io/docs/Language/Spring/JdbcBatchUpdate)
