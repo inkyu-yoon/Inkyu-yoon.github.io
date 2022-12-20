@@ -87,3 +87,47 @@ Failed to start bean 'documentationPluginsBootstrapper'; nested exception is jav
 ```
 
 위와 같은 에러가 발생하게 됨.
+
+이 방식은 `주소/swagger-ui.html` 로 접근할 수 있다.
+
+
+<br>
+
+## 다른 swagger dependency 사용
+
+```groovy
+implementation 'io.springfox:springfox-swagger-ui:3.0.0'
+implementation 'io.springfox:springfox-boot-starter:3.0.0'
+```
+
+아니면, 위 라이브러리를 사용하면 application.yml을 수정하지 않아도 에러가 발생하지 않는다.
+
+
+```java
+@Configuration
+@EnableSwagger2
+public class SwaggerConfig {
+    @Bean
+    public Docket api() {
+        return new Docket(DocumentationType.OAS_30)
+                .apiInfo(apiInfo())
+                .select()
+                .apis(RequestHandlerSelectors.any())
+                .paths(PathSelectors.any())
+                .build();
+    }
+
+    private ApiInfo apiInfo() {
+        return new ApiInfoBuilder()
+                .title("Mutsa SNS Swagger")
+                .version("1.0.0")
+                .description("윤인규 개인프로젝트")
+                .build();
+
+    }
+}
+```
+
+`(DocumentationType.OAS_30` 이 부분이 달라졌다.
+
+또한, 이 방식은 `주소/swagger-ui/` 로 접근할 수 있다.
