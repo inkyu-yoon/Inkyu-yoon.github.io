@@ -54,7 +54,8 @@ Who am I
 
 NEW
 {: .label .label-yellow }
-- 2022.12.18 [【Gradle 프로젝트 swagger-ui 적용】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/Swagger)
+- 2022.12.20 [【pull 명령 시 denied: access forbidden 에러】](https://inkyu-yoon.github.io/docs/Learned/Error/AccessDeniedError)
+- 2022.12.20 [【Gradle 프로젝트 swagger-ui 적용】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/Swagger)
 
 December's post
 {: .label .label-yellow }
