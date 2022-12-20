@@ -100,8 +100,6 @@ implementation 'io.springfox:springfox-swagger-ui:3.0.0'
 implementation 'io.springfox:springfox-boot-starter:3.0.0'
 ```
 
-아니면, 위 라이브러리를 사용하면 application.yml을 수정하지 않아도 에러가 발생하지 않는다.
-
 
 ```java
 @Configuration
