@@ -51,14 +51,14 @@ Who am I
 
 <br>
 
-
 NEW
 {: .label .label-yellow }
-- 2022.12.20 [【pull 명령 시 denied: access forbidden 에러】](https://inkyu-yoon.github.io/docs/Learned/Error/AccessDeniedError)
-- 2022.12.20 [【Gradle 프로젝트 swagger-ui 적용】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/Swagger)
+- 2022.12.21 [【Security Filter에서 발생하는 Exception 처리하기】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/FilterExceptionHandle)
 
 December's post
 {: .label .label-yellow }
+- 2022.12.20 [【pull 명령 시 denied: access forbidden 에러】](https://inkyu-yoon.github.io/docs/Learned/Error/AccessDeniedError)
+- 2022.12.20 [【Gradle 프로젝트 swagger-ui 적용】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/Swagger)
 - 2022.12.18 [【Dockerfile 최적화 작성 및 빌드】](https://inkyu-yoon.github.io/docs/Learned/Docker/DockerDockerfile)
 - 2022.12.15 [【도커 네트워크 & Bridge】](https://inkyu-yoon.github.io/docs/Learned/Docker/DockerNetwork)
 - 2022.12.15 [【crontab 설정을 통한 자동 업데이트 배포 pipeline 구축】](https://inkyu-yoon.github.io/docs/Learned/Docker/DockerCICDCrontab)
