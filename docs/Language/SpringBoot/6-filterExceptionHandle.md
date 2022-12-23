@@ -75,6 +75,7 @@ public class SecurityConfig  {
 ```
 
 이 부분과
+
 ```
  .addFilterBefore(new ExceptionHandlerFilter(), JwtTokenFilter.class)
 ```
@@ -88,7 +89,7 @@ public class SecurityConfig  {
 
 <br>
 
-그리고 `exceptionHandling()` 메서드를 활용해서 ` .antMatchers(HttpMethod.POST, "/api/v1/**").authenticated()`
+그리고 `exceptionHandling()` 메서드를 활용해서 `.antMatchers(HttpMethod.POST, "/api/v1/**").authenticated()`
 
 에서 발생하는 예외를 `new CustomAuthenticationEntryPointHandler()` 라는 새로운 Handler를 정의해서 처리했다.
 
@@ -97,8 +98,6 @@ public class SecurityConfig  {
 <br>
 
 ```java
-package likelion.sns.configuration;
-
 import com.google.gson.Gson;
 import likelion.sns.Exception.ErrorCode;
 import likelion.sns.Exception.ErrorDto;
@@ -125,11 +124,11 @@ public class CustomAuthenticationEntryPointHandler implements AuthenticationEntr
         final String authorization = request.getHeader(HttpHeaders.AUTHORIZATION);
 
         if (authorization == null ) {
+            log.error("토큰이 존재하지 않습니다.");
             setResponse(response, ErrorCode.TOKEN_NOT_FOUND);
         }
-
-
     }
+    
     private void setResponse(HttpServletResponse response, ErrorCode errorCode) throws IOException {
 
         Gson gson = new Gson();
@@ -181,13 +180,15 @@ public class ExceptionHandlerFilter extends OncePerRequestFilter {
             filterChain.doFilter(request, response);
         } catch (ExpiredJwtException e) {
             //토큰의 유효기간 만료
-            setErrorResponse(response, ErrorCode.INVALID_TOKEN);
+            log.error("만료된 토큰입니다");
+            setErrorResponse(response, ErrorCode.EXPIRED_TOKEN);
         } catch (JwtException | IllegalArgumentException e) {
             //유효하지 않은 토큰
+            log.error("유효하지 않은 토큰이 입력되었습니다.");
             setErrorResponse(response, ErrorCode.INVALID_TOKEN);
-            
         } catch (NoSuchElementException e){
             //사용자 찾을 수 없음
+            log.error("사용자를 찾을 수 없습니다.");
             setErrorResponse(response, ErrorCode.USERNAME_NOT_FOUND);
         }
     }
@@ -203,8 +204,6 @@ public class ExceptionHandlerFilter extends OncePerRequestFilter {
         }
     }
 }
-
-
 ```
 
 그리고 필터 예외 핸들러는 위와 같이 구현하였다.
@@ -215,29 +214,7 @@ public class ExceptionHandlerFilter extends OncePerRequestFilter {
 
 <br>
 
-<p align="center">
-<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221223234439178.png" alt="image-20221223234439178" style="zoom:80%;" />
-</p>
+참고 블로그
 
-> 토큰을 담지 않고 POST 요청을 하는 경우
-
-<br>
-
-<p align="center">
-<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221222001103442.png" alt="image-20221222001103442" style="zoom:80%;" />
-</p>
-
-> 만료된 토큰이거나, 토큰이 일치하지 않는 경우
-
-<br>
-
-<p align="center">
-<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221222001321041.png" alt="image-20221222001321041" style="zoom:80%;" />
-</p>
-
-> 토큰을 담지 않은 경우
-
-<br>
-
-참고 블로그 : [https://velog.io/@hellonayeon/spring-boot-jwt-expire-exception](https://velog.io/@hellonayeon/spring-boot-jwt-expire-exception)
-
+- [https://velog.io/@hellonayeon/spring-boot-jwt-expire-exception](https://velog.io/@hellonayeon/spring-boot-jwt-expire-exception)
+- [https://velog.io/@dltkdgns3435/%EC%8A%A4%ED%94%84%EB%A7%81%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0-JWT-%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC](https://velog.io/@dltkdgns3435/%EC%8A%A4%ED%94%84%EB%A7%81%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0-JWT-%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC)
