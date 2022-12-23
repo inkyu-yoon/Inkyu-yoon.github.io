@@ -92,16 +92,20 @@ public class SecurityConfig  {
 
 에서 발생하는 예외를 `new CustomAuthenticationEntryPointHandler()` 라는 새로운 Handler를 정의해서 처리했다.
 
+**토큰을 아예 담지 않고 `authenticated()` 설정되어있는 요청에 들어가면 필터까지 가기전에 에러가 발생하기 때문이다.**
+
 <br>
 
 ```java
+package likelion.sns.configuration;
+
 import com.google.gson.Gson;
 import likelion.sns.Exception.ErrorCode;
 import likelion.sns.Exception.ErrorDto;
 import likelion.sns.Exception.SNSAppException;
 import likelion.sns.domain.Response;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.MediaType;
+import org.springframework.http.HttpHeaders;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.stereotype.Component;
@@ -118,10 +122,13 @@ public class CustomAuthenticationEntryPointHandler implements AuthenticationEntr
 
     @Override
     public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException authException) throws IOException, ServletException {
-        String exception = (String)request.getAttribute("exception");
-        if(exception == null) {
-            setResponse(response, ErrorCode.INVALID_PERMISSION);
+        final String authorization = request.getHeader(HttpHeaders.AUTHORIZATION);
+
+        if (authorization == null ) {
+            setResponse(response, ErrorCode.TOKEN_NOT_FOUND);
         }
+
+
     }
     private void setResponse(HttpServletResponse response, ErrorCode errorCode) throws IOException {
 
@@ -133,11 +140,14 @@ public class CustomAuthenticationEntryPointHandler implements AuthenticationEntr
         } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
 }
 ```
 
 `AuthenticationEntryPoint` 를 상속받아 구현체를 오버라이딩하면 된다.
+
+토큰 정보가 담겨있는 `authorization` 이 null 인 경우, 토큰을 발견할 수 없다는 예외 처리를 해주었다.
 
 ```java
 import com.google.gson.Gson;
@@ -147,6 +157,7 @@ import likelion.sns.Exception.ErrorCode;
 import likelion.sns.Exception.ErrorDto;
 import likelion.sns.Exception.SNSAppException;
 import likelion.sns.domain.Response;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;
 import org.springframework.web.filter.OncePerRequestFilter;
 
@@ -155,10 +166,17 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.NoSuchElementException;
 
+@Slf4j
 public class ExceptionHandlerFilter extends OncePerRequestFilter {
     @Override
-    protected void doFilterInternal( HttpServletRequest request,HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
+    protected void doFilterInternal(
+            HttpServletRequest request,
+            HttpServletResponse response,
+            FilterChain filterChain
+    ) throws ServletException, IOException {
+
         try {
             filterChain.doFilter(request, response);
         } catch (ExpiredJwtException e) {
@@ -167,13 +185,17 @@ public class ExceptionHandlerFilter extends OncePerRequestFilter {
         } catch (JwtException | IllegalArgumentException e) {
             //유효하지 않은 토큰
             setErrorResponse(response, ErrorCode.INVALID_TOKEN);
+            
+        } catch (NoSuchElementException e){
+            //사용자 찾을 수 없음
+            setErrorResponse(response, ErrorCode.USERNAME_NOT_FOUND);
         }
     }
 
     private void setErrorResponse(HttpServletResponse response, ErrorCode errorCode) {
         Gson gson = new Gson();
         response.setStatus(errorCode.getHttpStatus().value());
-        response.setContentType(MediaType.APPLICATION_JSON_VALUE);
+        response.setContentType("application/json;charset=UTF-8");
         try {
             response.getWriter().write(gson.toJson(Response.error(new ErrorDto(new SNSAppException(errorCode)))));
         } catch (IOException e) {
@@ -182,13 +204,22 @@ public class ExceptionHandlerFilter extends OncePerRequestFilter {
     }
 }
 
+
 ```
 
-위와 같이 구현하였다.
+그리고 필터 예외 핸들러는 위와 같이 구현하였다.
 
 에러를 어떻게 반환하는지에 따라, `setErrorResponse` 메서드는 달라질 것이다.
 
 `setErrorResponse` 에서 `HttpServletResponse` 에 JSON 타입으로 `write()` 파라미터로 넣어주어야 한다.
+
+<br>
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221223234439178.png" alt="image-20221223234439178" style="zoom:80%;" />
+</p>
+
+> 토큰을 담지 않고 POST 요청을 하는 경우
 
 <br>
 
