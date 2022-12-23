@@ -37,7 +37,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 @EnableWebSecurity
 @RequiredArgsConstructor
-public class SecurityConfig {
+public class SecurityConfig  {
     private final UserService userService;
     @Value("${jwt.token.secret}")
     private String secretKey;
@@ -48,8 +48,11 @@ public class SecurityConfig {
                 .csrf().disable()
                 .cors().and()
                 .authorizeRequests()
-                .antMatchers("api/v1/users/join", "/api/v1/users/login").permitAll()
-                .antMatchers(HttpMethod.POST, "api/v1/**").authenticated()
+                .antMatchers("/api/v1/users/join", "/api/v1/users/login").permitAll()
+                .antMatchers(HttpMethod.POST, "/api/v1/**").authenticated()
+                .and()
+                .exceptionHandling()
+                .authenticationEntryPoint(new CustomAuthenticationEntryPointHandler())
                 .and()
                 .sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
@@ -57,12 +60,21 @@ public class SecurityConfig {
                 .addFilterBefore(new JwtTokenFilter(userService, secretKey), UsernamePasswordAuthenticationFilter.class)
                 .addFilterBefore(new ExceptionHandlerFilter(), JwtTokenFilter.class)
                 .build();
+
     }
 }
 ```
 
 <br>
 
+
+```
+.exceptionHandling()
+                .authenticationEntryPoint(new CustomAuthenticationEntryPointHandler())
+                .and()
+```
+
+이 부분과
 ```
  .addFilterBefore(new ExceptionHandlerFilter(), JwtTokenFilter.class)
 ```
@@ -75,6 +87,57 @@ public class SecurityConfig {
 따라서, Token을 검증하는 JwtTokenFilter 앞에, 예외처리를 하는 HandlerFilter를 추가해준다.
 
 <br>
+
+그리고 `exceptionHandling()` 메서드를 활용해서 ` .antMatchers(HttpMethod.POST, "/api/v1/**").authenticated()`
+
+에서 발생하는 예외를 `new CustomAuthenticationEntryPointHandler()` 라는 새로운 Handler를 정의해서 처리했다.
+
+<br>
+
+```java
+import com.google.gson.Gson;
+import likelion.sns.Exception.ErrorCode;
+import likelion.sns.Exception.ErrorDto;
+import likelion.sns.Exception.SNSAppException;
+import likelion.sns.domain.Response;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.MediaType;
+import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.web.AuthenticationEntryPoint;
+import org.springframework.stereotype.Component;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
+@Component
+@Slf4j
+public class CustomAuthenticationEntryPointHandler implements AuthenticationEntryPoint {
+
+
+    @Override
+    public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException authException) throws IOException, ServletException {
+        String exception = (String)request.getAttribute("exception");
+        if(exception == null) {
+            setResponse(response, ErrorCode.INVALID_PERMISSION);
+        }
+    }
+    private void setResponse(HttpServletResponse response, ErrorCode errorCode) throws IOException {
+
+        Gson gson = new Gson();
+        response.setStatus(errorCode.getHttpStatus().value());
+        response.setContentType("application/json;charset=UTF-8");
+        try {
+            response.getWriter().write(gson.toJson(Response.error(new ErrorDto(new SNSAppException(errorCode)))));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+`AuthenticationEntryPoint` 를 상속받아 구현체를 오버라이딩하면 된다.
 
 ```java
 import com.google.gson.Gson;
