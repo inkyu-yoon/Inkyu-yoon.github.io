@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "· Security Chain antMatchers 관련 Exception Handling"
-nav_order: 7
+nav_order: 6
 parent : SpringBoot
 grand_parent: 👩🏻‍💻Language
 permalink: docs/Language/SpringBoot/SecurityChainException
@@ -72,7 +72,7 @@ public enum ErrorCode {
 
 <br>
 
-먼저 위와 같은 메서드를 구현한다.
+먼저 위와 같은 메서드를 구현한다. 여러곳에서 쓰일 수 있기 때문에, static 메서드로 만들었다.
 
 `HttpServletResponse` 에 `status` 와 `contentType` 를 설정하고
 
