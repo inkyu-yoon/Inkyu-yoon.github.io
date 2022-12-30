@@ -182,9 +182,11 @@ Authorization 헤더에 담긴 `Bearer <토큰>` 형식의 JWT 토큰의 유효�
 ```java
 @WebMvcTest(value = PostRestController.class)
 @Import(SecurityConfig.class)
-@WebAppConfiguration //Controller 및 web 환경에 사용되는 빈을 자동으로 생성하여 등록한다.
 class PostRestControllerTest {
-
+    
+    @Autowired MockMvc mockMvc;
+    @Autowired WebApplicationContext wac;
+    
     @BeforeEach
     public void setUpMOckMvc(){
         mockMvc = MockMvcBuilders
