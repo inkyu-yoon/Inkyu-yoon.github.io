@@ -52,13 +52,13 @@ Who am I
 <br>
 
 
-
 NEW
 {: .label .label-yellow }
-- 2022.12.28 [【Security Chain antMatchers 관련 Exception Handling】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/SecurityChainException)
+- 2022.12.30 [【Security Chain Filter 포함해서 Controller Test 하기】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/SecurityChainTest)
 
 December's post
 {: .label .label-yellow }
+- 2022.12.28 [【Security Chain antMatchers 관련 Exception Handling】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/SecurityChainException)
 - 2022.12.21 [【Security Filter에서 발생하는 Exception 처리하기】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/FilterExceptionHandle)
 - 2022.12.20 [【pull 명령 시 denied: access forbidden 에러】](https://inkyu-yoon.github.io/docs/Learned/Error/AccessDeniedError)
 - 2022.12.20 [【Gradle 프로젝트 swagger-ui 적용】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/Swagger)
