@@ -134,7 +134,7 @@ Authorization 헤더에 담긴 `Bearer <토큰>` 형식의 JWT 토큰의 유효�
 
 
 ```java
-@Test
+        @Test
         @DisplayName("게시글 작성 테스트")
         @WithMockUser
         void postWriteSuccess() throws Exception {
@@ -235,7 +235,7 @@ class PostRestControllerTest {
 ### 2. 토큰을 이상하게 담은 경우 (실패)
 
 <p align="center">
-<img src="C:\Users\ikyoo\AppData\Roaming\Typora\typora-user-images\image-20221230224655097.png" alt="image-20221230224655097" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20221230230607504.png" alt="image-20221230230607504" style="zoom: 67%;" />
 </p>
 
 ### 3. 토큰을 정상적으로 담은 경우 (성공)
