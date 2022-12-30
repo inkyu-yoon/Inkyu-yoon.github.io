@@ -250,5 +250,9 @@ class PostRestControllerTest {
 내가 의도한 대로 테스트 결과를 얻을 수 있었다.
 
 
-{: .highlight } 
-참고자료 : [https://stackoverflow.com/questions/44467133/spring-boot-authentication-for-integration-tests/44621066#44621066](https://stackoverflow.com/questions/44467133/spring-boot-authentication-for-integration-tests/44621066#44621066)
+{: .note-title }
+> 참고자료
+> 
+> [https://stackoverflow.com/questions/44467133/spring-boot-authentication-for-integration-tests/44621066#44621066](https://stackoverflow.com/questions/44467133/spring-boot-authentication-for-integration-tests/44621066#44621066)
+> 
+> [https://stackoverflow.com/questions/48189039/authentication-should-not-be-null-in-unit-tests-with-spring-session](https://stackoverflow.com/questions/48189039/authentication-should-not-be-null-in-unit-tests-with-spring-session)
