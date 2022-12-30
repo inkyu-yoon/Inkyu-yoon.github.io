@@ -41,9 +41,13 @@ Chain에서 발생하는 예외를 처리하기 위해서는 `AccessDeniedHandle
 
 
 ```java
- public static void setErrorResponse(HttpServletResponse response, ErrorCode errorCode) throws IOException {
+@RestControllerAdvice
+@Slf4j
+public class ExceptionManager {
 
-        // 4에러 응답코드 설정
+    public static void setErrorResponse(HttpServletResponse response, ErrorCode errorCode) throws IOException {
+
+        // 에러 응답코드 설정
         response.setStatus(errorCode.getHttpStatus().value());
         // 응답 body type JSON 타입으로 설정
         response.setContentType("application/json;charset=UTF-8");
@@ -57,13 +61,14 @@ Chain에서 발생하는 예외를 처리하기 위해서는 `AccessDeniedHandle
         response.getWriter().write(responseBody);
     }
 
+}
 
 @AllArgsConstructor
 @Getter
 public enum ErrorCode {
-    
-    FORBIDDEN_REQUEST(HttpStatus.FORBIDDEN, "ADMIN 회원만 접근할 수 있습니다."),
-    INVALID_TOKEN(HttpStatus.UNAUTHORIZED, "유효하지 않은 토큰입니다.");
+
+    TOKEN_NOT_FOUND(HttpStatus.UNAUTHORIZED, "토큰이 존재하지 않습니다."),
+    FORBIDDEN_REQUEST(HttpStatus.FORBIDDEN, "ADMIN 회원만 접근할 수 있습니다.");
     
     private HttpStatus httpStatus;
     private String message;
