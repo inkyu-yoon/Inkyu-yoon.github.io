@@ -53,10 +53,11 @@ Who am I
 
 NEW
 {: .label .label-yellow }
-- 2022.12.31 [【Controller 에서 요청 객체 변수 유효성 검사하기】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/validation)
+- 2023.01.01 [【22년 12월 회고】](https://inkyu-yoon.github.io/docs/Retrospect/December23)
 
 December's post
 {: .label .label-yellow }
+- 2022.12.31 [【Controller 에서 요청 객체 변수 유효성 검사하기】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/validation)
 - 2022.12.30 [【Security Chain Filter 포함해서 Controller Test 하기】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/SecurityChainTest)
 - 2022.12.28 [【Security Chain antMatchers 관련 Exception Handling】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/SecurityChainException)
 - 2022.12.21 [【Security Filter에서 발생하는 Exception 처리하기】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/FilterExceptionHandle)
