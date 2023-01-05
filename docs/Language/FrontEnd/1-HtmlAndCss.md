@@ -4,7 +4,7 @@ title: "· HTML / CSS 기초"
 nav_order: 1
 parent : FrontEnd
 grand_parent: 👩🏻‍💻Language
-permalink: docs/Language/HTML_CSS/HtmlAndCss
+permalink: docs/Language/FrontEnd/HtmlAndCss
 ---
 
 # HTML / CSS 기초

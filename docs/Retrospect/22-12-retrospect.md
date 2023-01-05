@@ -3,7 +3,7 @@ layout: post
 title: "· 22년 12월 회고"
 nav_order: 5
 parent : ✍🏻회고
-permalink: docs/Retrospect/December23
+permalink: docs/Retrospect/December22
 ---
 
 # 12월 돌아보기

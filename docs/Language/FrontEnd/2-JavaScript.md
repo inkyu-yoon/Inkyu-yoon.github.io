@@ -4,7 +4,7 @@ title: "· JavaScript 기초"
 nav_order: 2
 parent : FrontEnd
 grand_parent: 👩🏻‍💻Language
-permalink: docs/Language/HTML_CSS/JavaScript
+permalink: docs/Language/FrontEnd/JavaScript
 ---
 
 # JavaScript 기초

@@ -4,5 +4,5 @@ title: FrontEnd
 parent: 👩🏻‍💻Language
 nav_order: 5
 has_children: true
-permalink: docs/Language/HTML_CSS
+permalink: docs/Language/FrontEnd
 ---
