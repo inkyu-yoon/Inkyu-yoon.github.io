@@ -53,12 +53,13 @@ Who am I
 
 NEW
 {: .label .label-yellow }
-- 2023.01.06 [【Git branch 기본 내용】](https://inkyu-yoon.github.io/docs/Learned/Git/GitBranch)
-- 2023.01.06 [【Git 기본 명령어 정리】](https://inkyu-yoon.github.io/docs/Learned/Git/GitBasic)
+- 2023.01.07 [【Git 원격 저장소 그리고 pull vs fetch】](https://inkyu-yoon.github.io/docs/Learned/Git/GitRemote)
 
 
 23-January's post
 {: .label .label-yellow }
+- 2023.01.06 [【Git branch 기본 내용】](https://inkyu-yoon.github.io/docs/Learned/Git/GitBranch)
+- 2023.01.06 [【Git 기본 명령어 정리】](https://inkyu-yoon.github.io/docs/Learned/Git/GitBasic)
 - 2023.01.05 [【axios post 요청 전달 시 authorization 토큰 인식 에러 해결】](https://inkyu-yoon.github.io/docs/Language/FrontEnd/AxiosPost)
 - 2023.01.01 [【22년 12월 회고】](https://inkyu-yoon.github.io/docs/Retrospect/December22)
 
