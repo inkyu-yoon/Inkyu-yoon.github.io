@@ -40,7 +40,6 @@ Who am I
 <br>
 <br>
 
-
 [🌀 PS Blog](https://yinq.tistory.com/category/%F0%9F%91%A8%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BB%20Algorithm){: .btn .mr-2 }
 [🚀 GitHub](https://github.com/inkyu-yoon){: .btn .mr-2 }
 [💌 E-mail](mailto:tryingmybest24h@gmail.com){: .btn .mr-2 }
@@ -53,11 +52,12 @@ Who am I
 
 NEW
 {: .label .label-yellow }
-- 2023.01.07 [【Git 원격 저장소 그리고 pull vs fetch】](https://inkyu-yoon.github.io/docs/Learned/Git/GitRemote)
+- 2023.01.10 [【운영체제의 구조와 커널의 종류별 특징】](https://inkyu-yoon.github.io/docs/Learned/OS/OSBasic)
 
 
 23-January's post
 {: .label .label-yellow }
+- 2023.01.07 [【Git 원격 저장소 그리고 pull vs fetch】](https://inkyu-yoon.github.io/docs/Learned/Git/GitRemote)
 - 2023.01.06 [【Git branch 기본 내용】](https://inkyu-yoon.github.io/docs/Learned/Git/GitBranch)
 - 2023.01.06 [【Git 기본 명령어 정리】](https://inkyu-yoon.github.io/docs/Learned/Git/GitBasic)
 - 2023.01.05 [【axios post 요청 전달 시 authorization 토큰 인식 에러 해결】](https://inkyu-yoon.github.io/docs/Language/FrontEnd/AxiosPost)

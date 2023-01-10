@@ -1,8 +1,8 @@
 ---
 layout: default
-title: TIP
+title: 운영체제
 parent: 📚Learned
-nav_order: 10
+nav_order: 9
 has_children: true
-permalink: docs/Learned/TIP
+permalink: docs/Learned/OS
 ---
