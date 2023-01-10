@@ -20,7 +20,7 @@ permalink: docs/Learned/OS/OSBasic
 
 
 
-## 운영체제의 필요성
+# 운영체제의 필요성
 
 <br>
 
@@ -33,15 +33,7 @@ permalink: docs/Learned/OS/OSBasic
 
 <br>
 
-## 운영체제의 구조
-
-<br>
-
-### 커널
-
-커널은 프로세스 관리, 메모리 관리, 저장장치 관리와 같은 **운영체제의 핵심적인 기능을 모아놓은 것**으로, 자동차에 비유하자면 엔진에 해당한다.
-
-커널에 명령을 전달하고 실행 결과를 사용자와 응용 프로그램에 돌려주는 인터페이스(ex. 셸)로 조작할 수 있다.
+# 운영체제의 구조
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20230109101313814.png" alt="image-20230109101313814" style="zoom:80%;" />
@@ -49,11 +41,7 @@ permalink: docs/Learned/OS/OSBasic
 
 <br>
 
-
-
-<br>
-
-#### 시스템 호출
+## 시스템 호출
 
 <br>
 
@@ -66,7 +54,7 @@ permalink: docs/Learned/OS/OSBasic
 
 <br>
 
-#### 드라이버
+## 드라이버
 
 <br>
 
@@ -75,13 +63,24 @@ permalink: docs/Learned/OS/OSBasic
 - 운영체제가 각 하드웨어에 맞는 프로그램을 직접 개발할 수 없기 때문에, 하드웨어 제작자가 **커널과 연결하기 위해 만드는 소프트웨어 이다.**
 - 프린터 드라이버 같은 것을 생각하면 된다.
 
+<br>
 
 
-### 커널의 종류
+## 커널
+
+커널은 프로세스 관리, 메모리 관리, 저장장치 관리와 같은 **운영체제의 핵심적인 기능을 모아놓은 것**으로, 자동차에 비유하자면 엔진에 해당한다.
+
+커널에 명령을 전달하고 실행 결과를 사용자와 응용 프로그램에 돌려주는 인터페이스(ex. 셸)로 조작할 수 있다.
+
 
 <br>
 
-#### 1. 단일형 구조 커널
+
+## 커널의 종류
+
+<br>
+
+### 1. 단일형 구조 커널
 
 <br>
 
@@ -98,7 +97,7 @@ permalink: docs/Learned/OS/OSBasic
 
 <br>
 
-#### 2. 계층형 구조 커널
+### 2. 계층형 구조 커널
 
 <br>
 
@@ -114,7 +113,7 @@ permalink: docs/Learned/OS/OSBasic
 
 <br>
 
-#### 3. 마이크로 구조 커널
+### 3. 마이크로 구조 커널
 
 <br>
 
