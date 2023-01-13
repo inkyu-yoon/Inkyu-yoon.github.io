@@ -49,14 +49,16 @@ Who am I
 ---
 <br>
 
+
 NEW
 {: .label .label-yellow }
-- 2023.01.10 [【Jacoco 라이브러리로 테스트 코드 커버리지 개선하기】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/Jacoco)
-- 2023.01.10 [【운영체제의 구조와 커널의 종류별 특징】](https://inkyu-yoon.github.io/docs/Learned/OS/OSBasic)
+- 2023.01.13 [【javascript async vs defer 옵션】](https://inkyu-yoon.github.io/docs/Language/FrontEnd/JsDefer)
 
 
 23-January's post
 {: .label .label-yellow }
+- 2023.01.10 [【Jacoco 라이브러리로 테스트 코드 커버리지 개선하기】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/Jacoco)
+- 2023.01.10 [【운영체제의 구조와 커널의 종류별 특징】](https://inkyu-yoon.github.io/docs/Learned/OS/OSBasic)
 - 2023.01.07 [【Git 원격 저장소 그리고 pull vs fetch】](https://inkyu-yoon.github.io/docs/Learned/Git/GitRemote)
 - 2023.01.06 [【Git branch 기본 내용】](https://inkyu-yoon.github.io/docs/Learned/Git/GitBranch)
 - 2023.01.06 [【Git 기본 명령어 정리】](https://inkyu-yoon.github.io/docs/Learned/Git/GitBasic)
