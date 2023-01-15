@@ -49,6 +49,12 @@ Who am I
 ---
 <br>
 
+
+POSTS
+{: .fs-8 .fw-700 }
+
+<br>
+
 NEW
 {: .label .label-yellow }
 - 2023.01.15 [【팀원들과 함께 만들어본 코드 컨벤션과 커밋 규칙】](https://inkyu-yoon.github.io/docs/Project/CodeConvention)
@@ -98,23 +104,46 @@ NEW
 - 2022.12.01 [【JPA 객체 간 연관 관계 매핑】](https://inkyu-yoon.github.io/docs/Language/JPA/JPAMapping)
 
 
+22-November's post
+{: .label .label-yellow }
+- 2022.11.30 [【Persistence Context(영속성 컨텍스트)와 변경감지】](https://inkyu-yoon.github.io/docs/Language/JPA/PersistenceContext)
+- 2022.11.30 [【스프링 부트 라이브러리 버전 선택 팁】](https://inkyu-yoon.github.io/docs/Learned/TIP/SelectLibraryVersion)
+- 2022.11.29 [【WebMvcTest 중 NoSuchBeanDefinitionException 에러】](https://inkyu-yoon.github.io/docs/Learned/Error/WebMvcError)
+- 2022.11.24 [【@NotEmpty 사용을 위한 라이브러리 추가】](https://inkyu-yoon.github.io/docs/Learned/TIP/NotEmpty)
+- 2022.11.23 [【OSI · TCP/IP 모델과 캡슐화 · 역캡슐화】](https://inkyu-yoon.github.io/docs/Learned/Network/OSIandTCP)
+- 2022.11.21 [【네트워크의 정의와 장단점】](https://inkyu-yoon.github.io/docs/Learned/Network/NetworkDef)
+- 2022.11.19 [【HTTP 헤더】](https://inkyu-yoon.github.io/docs/Learned/HTTP/HTTPHeader)
+- 2022.11.15 [【JPA 쿼리 파라미터 로그 남기기】](https://inkyu-yoon.github.io/docs/Learned/TIP/SQLLog)
+- 2022.11.15 [【REST API Tutorial 번역】](https://inkyu-yoon.github.io/docs/Learned/HTTP/Restful)
+- 2022.11.11 [【FileReader 시 한글 깨짐 해결】](https://inkyu-yoon.github.io/docs/Learned/TIP/FileReader)
+- 2022.11.10 [【SQLException 에러】](https://inkyu-yoon.github.io/docs/Learned/Error/SQLError)
+- 2022.11.07 [【HTTP 상태 코드】](https://inkyu-yoon.github.io/docs/Learned/HTTP/HTTPStatus)
+- 2022.11.03 [【Docker 명령어와 볼륨】](https://inkyu-yoon.github.io/docs/Learned/Docker/DockerBasic)
+- 2022.11.02 [【HTTP 메서드의 특징】](https://inkyu-yoon.github.io/docs/Learned/HTTP/HTTPMethod)
+- 2022.11.02 [【데이터베이스 데이터 GetMapping 하기】](https://inkyu-yoon.github.io/docs/Learned/Docker/DBMSGetMapping)
+- 2022.11.02 [【Git Bash로 Docker 설치하고 MYSQL 연결하기】](https://inkyu-yoon.github.io/docs/Learned/Docker/DockerAndEc2)
+- 2022.11.01 [【JPA 기본 에너테이션과 메서드】](https://inkyu-yoon.github.io/docs/Language/JPA/JPABasic)
+- 2022.11.01 [【22년 10월 회고】](https://inkyu-yoon.github.io/docs/Retrospect/October22)
+
+
+22-October's post
+{: .label .label-yellow }
+- 2022.10.30 [【cmd를 이용해서 localhost 종료】](https://inkyu-yoon.github.io/docs/Learned/Error/LocalEnd)
+- 2022.10.28 [【API 활용 에너테이션 정리】](https://inkyu-yoon.github.io/docs/Language/Spring/SpringBootBasic)
+- 2022.10.28 [【소수 구하기 (에라토스테네스의 체)】](https://inkyu-yoon.github.io/docs/Learned/Algorithm/Primary)
+- 2022.10.26 [【HTTP의 특징과 구조】](https://inkyu-yoon.github.io/docs/Learned/HTTP/AboutHTTP)
+- 2022.10.25 [【유클리드 호제법 (최대공약수·최소공배수)】](https://inkyu-yoon.github.io/docs/Learned/Algorithm/FindGcd)
+- 2022.10.24 [【함수적 종속성과 정규화(1NF·2NF·3NF·BCNF)】](https://inkyu-yoon.github.io/docs/Learned/DataBase/NF)
+- 2022.10.24 [【세그먼트 트리 구현】](https://inkyu-yoon.github.io/docs/Learned/DataStructure/SegmentTree)
+- 2022.10.24 [【Jdbc Template으로 쉽게 DB 활용하기】](https://inkyu-yoon.github.io/docs/Language/Spring/JdbcTemplate)
+- 2022.10.22 [【2진 탐색 트리(BST) 구현】](https://inkyu-yoon.github.io/docs/Learned/DataStructure/BinSearchTree)
+- 2022.10.21 [【ExecuteQuery() 메서드 분리와 ResultSet 반환 해결】](https://inkyu-yoon.github.io/docs/Language/Spring/ExecuteQuery)
+- 2022.10.21 [【URI (Uniform Resource Identifier)란?】](https://inkyu-yoon.github.io/docs/Learned/HTTP/URLFlow)
+- 2022.10.20 [【Quick Sort(퀵 정렬)】](https://inkyu-yoon.github.io/docs/Learned/Algorithm/QuickSort)
+- 2022.10.19 Tstory -> Git blog 이사
+
 <br>
 
----
-
-
-<br>
-
-Category
-{: .fs-8 .fw-700 }
-
-<br>
-
-[ 👩🏻‍💻Language ](/docs/Language){: .btn .btn-purple }
-
-[ 📚Learned   ](/docs/Learned){: .btn .btn-purple }
-
-[✍🏻Retrospect](/docs/Retrospect){: .btn .btn-purple }
 
 ---
 

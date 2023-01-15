@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "· HTTP 상태 코드"
+title: "· HTTP 헤더"
 nav_order: 7
 parent : HTTP
 grand_parent: 📚Learned
