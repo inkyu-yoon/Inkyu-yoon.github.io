@@ -49,9 +49,9 @@ Who am I
 ---
 <br>
 
-
 NEW
 {: .label .label-yellow }
+- 2023.01.15 [【팀원들과 함께 만들어본 코드 컨벤션과 커밋 규칙】](https://inkyu-yoon.github.io/docs/Project/CodeConvention)
 - 2023.01.15 [【SNS 웹 페이지 구현 프로젝트】](https://inkyu-yoon.github.io/docs/Project/SNSProject)
 
 
