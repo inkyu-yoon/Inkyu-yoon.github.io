@@ -71,7 +71,7 @@ Post post=Post.builder()
 
 ```java
 // Good Examples
-int a;
+        int a;
         int b;
 
 // Bad Examples
@@ -116,7 +116,7 @@ package com.project.restcontroller
 
 // Bad Examples 
 package com.project.restController
-        package com.project.rest_controller
+package com.project.rest_controller
 ```
 
 <br>
@@ -181,7 +181,7 @@ public class PostControllerTest {
 
 ```java
 //변수 이름 Good Examples 
-String userAccount
+        String userAccount
         String userName
 
 //변수 이름 Bad Examples 
@@ -195,7 +195,7 @@ String userAccount
 
 ```java
 // Good Examples 
-void setTopic(Topic topic)
+        void setTopic(Topic topic)
 
 // Bad Examples 
         void setTopic(Topic value)이 아님
@@ -215,7 +215,7 @@ void setTopic(Topic topic)
 
 ```java
 // Good Examples 
-List<> students
+        List<> students
         Page<> posts
 ```
 
@@ -226,7 +226,7 @@ List<> students
 
 ```java
 // Good Examples 
-boolean isDeleted
+        boolean isDeleted
 // 위 경우에 삭제되었으면 true를 반환해야 한다.
 
         boolean isFound
@@ -251,7 +251,7 @@ boolean isDeleted
 ```java
 /* 예시 1 */
 // Post Controller 메소드 이름 
-create()
+        create()
 // Post Service 메소드 이름 
         createPost()
 
@@ -315,11 +315,11 @@ public class Example {
 - 특이사항
 
 ```java
-boolean 관련 속성 일때 _flag
+boolean 관련 속성 일 때 _flag
 
-        date 관련 속성 일때,_date
+date 관련 속성 일 때 _at
 
-        count 조회수 등 속성일 때 _count
+count 조회수 등 속성일 때 _count
 
 //examples
 
@@ -327,7 +327,7 @@ boolean 관련 속성 일때 _flag
 @Column(name = "delete_flag")
 private boolean isDeleted;
 
-@Column(name = "deleted_date")
+@Column(name = "deleted_at")
 private Timestamp deletedAt;
 
 @Column(name = "view_count")
@@ -361,14 +361,18 @@ private Long views;
 
 <br>
 
-1. 엔티티 클래스 `Setter` 사용 금지 → 단, Dto 클래스에서는 사용해도 무관하다.
-2. `@Builder` 패턴은 필드가 4개이상인 클래스에서만 사용하고 그 외는 생성자 방식을 사용한다.
+1. 엔티티 클래스 `Setter` 사용 금지
+   → 단, Dto 클래스에서는 사용해도 무관하다.
+
+
 
 <br>
+
 
 ## 📌 커밋 규칙
 
 <br>
+
 
 - [feat] : 새로운 기능의 추가
 - [fix] : 버그 수정 , 기능관련 수정 (안 쓰는 변수 추가)
@@ -389,21 +393,43 @@ private Long views;
 
 <br>
 
+
 ```java
 // 예시
-[feat]<공백>:<공백>한글로 or 영어로?
+[feat]<공백>:<공백>알아보기 편한 내용으로 작성
 <한칸띄우기>
-1.커밋 설명
+1. 커밋 설명
 <한칸띄우기>
-2.커밋 설명
-        ....
+2. 커밋 설명
+....
 ```
 
 <br>
+
 
 ### 커밋 규칙 관련
 
 <br>
 
 - 브랜치따서 기능을 구현하고 Main Merge Request 할 때, Git Squash 기능을 사용한다.
+- 브랜치 이름은 `<이슈번호>-feat/<기능>` 으로 한다.
 - 각자 브랜치에서 기능을 구현할 땐, 디테일하게 커밋내역을 남긴다.
+
+<br>
+
+
+### Main 에 푸시하기 전!! ⭐ Check✔
+
+<br>
+
+1. 내가 작업하고 있는 브랜치로 잘 작업했는지 확인한다. (혹시 main에서 작업한건 아니었는지, 다른 사람 브랜치에 있는 것은 아닌지…)
+
+2. main 에 변동사항이 있을 수 있으므로 pull을 한다.
+
+3. push 하고 깃허브 pull request 화면으로 가서 팀원들을 reviewer 로 등록한다.
+
+4. 팀원들이 이모지 체크 혹은 코멘트로 확인한다.
+
+5. 팀원들의 확인이 모두 끝나면, merge 시, 커밋 기록에 `[merge] :`   를 붙인다.
+
+6. merge가 되면 모든 팀원들은 main 을 pull 한다.
