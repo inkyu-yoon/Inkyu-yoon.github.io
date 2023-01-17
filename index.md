@@ -53,16 +53,16 @@ Who am I
 POSTS
 {: .fs-8 .fw-700 }
 
-<br>
 
 NEW
 {: .label .label-yellow }
-- 2023.01.15 [【팀원들과 함께 만들어본 코드 컨벤션과 커밋 규칙】](https://inkyu-yoon.github.io/docs/Project/CodeConvention)
-- 2023.01.15 [【SNS 웹 페이지 구현 프로젝트】](https://inkyu-yoon.github.io/docs/Project/SNSProject)
+- 2023.01.17 [【CPU의 구성과 버스의 종류】](https://inkyu-yoon.github.io/docs/Learned/OS/OSCPUandBus)
 
 
 23-January's post
 {: .label .label-yellow }
+- 2023.01.15 [【팀원들과 함께 만들어본 코드 컨벤션과 커밋 규칙】](https://inkyu-yoon.github.io/docs/Project/CodeConvention)
+- 2023.01.15 [【SNS 웹 페이지 구현 프로젝트】](https://inkyu-yoon.github.io/docs/Project/SNSProject)
 - 2023.01.13 [【javascript async vs defer 옵션】](https://inkyu-yoon.github.io/docs/Language/FrontEnd/JsDefer)
 - 2023.01.10 [【Jacoco 라이브러리로 테스트 코드 커버리지 개선하기】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/Jacoco)
 - 2023.01.10 [【운영체제의 구조와 커널의 종류별 특징】](https://inkyu-yoon.github.io/docs/Learned/OS/OSBasic)
