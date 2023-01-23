@@ -55,7 +55,7 @@ POSTS
 
 NEW
 {: .label .label-yellow }
-- 2023.01.22 [【jwt 토큰 저장 위치 LocalStorage vs Cookie】](https://inkyu-yoon.github.io/docs/Learned/TIP/OauthLogin)
+- 2023.01.22 [【jwt 토큰 저장 위치 LocalStorage vs Cookie】](https://inkyu-yoon.github.io/docs/Learned/HTTP/JwtTokenSave)
 
 
 23-January's post

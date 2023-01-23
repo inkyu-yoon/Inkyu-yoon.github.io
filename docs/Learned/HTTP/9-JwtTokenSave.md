@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "· jwt 토큰 저장 위치 LocalStorage vs Cookie"
-nav_order: 5
-parent : TIP
+nav_order: 9
+parent : HTTP
 grand_parent: 📚Learned
-permalink: docs/Learned/TIP/OauthLogin
+permalink: docs/Learned/HTTP/JwtTokenSave
 ---
 
 # jwt 토큰 저장 위치 LocalStorage vs Cookie
