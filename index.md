@@ -55,11 +55,12 @@ POSTS
 
 NEW
 {: .label .label-yellow }
-- 2023.01.22 [【jwt 토큰 저장 위치 LocalStorage vs Cookie】](https://inkyu-yoon.github.io/docs/Learned/HTTP/JwtTokenSave)
+- 2023.01.24 [【프로세스와 스레드】](https://inkyu-yoon.github.io/docs/Learned/OS/Process)
 
 
 23-January's post
 {: .label .label-yellow }
+- 2023.01.22 [【jwt 토큰 저장 위치 LocalStorage vs Cookie】](https://inkyu-yoon.github.io/docs/Learned/HTTP/JwtTokenSave)
 - 2023.01.21 [【Spring Security 소셜 로그인 로직 구현하기】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/OauthLogin)
 - 2023.01.17 [【CPU의 구성과 버스의 종류】](https://inkyu-yoon.github.io/docs/Learned/OS/OSCPUandBus)
 - 2023.01.15 [【팀원들과 함께 만들어본 코드 컨벤션과 커밋 규칙】](https://inkyu-yoon.github.io/docs/Project/CodeConvention)
