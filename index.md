@@ -49,17 +49,17 @@ Who am I
 ---
 <br>
 
-
 POSTS
 {: .fs-8 .fw-700 }
 
 NEW
 {: .label .label-yellow }
-- 2023.01.24 [【프로세스와 스레드】](https://inkyu-yoon.github.io/docs/Learned/OS/Process)
+- 2023.01.26 [【Thymeleaf 기본 문법 정리】](https://inkyu-yoon.github.io/docs/Language/FrontEnd/ThymeleafBasic)
 
 
 23-January's post
 {: .label .label-yellow }
+- 2023.01.24 [【프로세스와 스레드】](https://inkyu-yoon.github.io/docs/Learned/OS/Process)
 - 2023.01.22 [【jwt 토큰 저장 위치 LocalStorage vs Cookie】](https://inkyu-yoon.github.io/docs/Learned/HTTP/JwtTokenSave)
 - 2023.01.21 [【Spring Security 소셜 로그인 로직 구현하기】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/OauthLogin)
 - 2023.01.17 [【CPU의 구성과 버스의 종류】](https://inkyu-yoon.github.io/docs/Learned/OS/OSCPUandBus)
