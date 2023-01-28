@@ -54,11 +54,12 @@ POSTS
 
 NEW
 {: .label .label-yellow }
-- 2023.01.26 [【Thymeleaf 기본 문법 정리】](https://inkyu-yoon.github.io/docs/Language/FrontEnd/ThymeleafBasic)
+- 2023.01.28 [【스크립트 태그 상대경로 설정으로 인한 에러】](https://inkyu-yoon.github.io/docs/Learned/Error/RefusedMIME)
 
 
 23-January's post
 {: .label .label-yellow }
+- 2023.01.26 [【Thymeleaf 기본 문법 정리】](https://inkyu-yoon.github.io/docs/Language/FrontEnd/ThymeleafBasic)
 - 2023.01.24 [【프로세스와 스레드】](https://inkyu-yoon.github.io/docs/Learned/OS/Process)
 - 2023.01.22 [【jwt 토큰 저장 위치 LocalStorage vs Cookie】](https://inkyu-yoon.github.io/docs/Learned/HTTP/JwtTokenSave)
 - 2023.01.21 [【Spring Security 소셜 로그인 로직 구현하기】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/OauthLogin)
