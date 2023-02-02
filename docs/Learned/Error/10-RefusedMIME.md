@@ -12,7 +12,9 @@ permalink: docs/Learned/Error/RefusedMIME
 </p>
 
 ```
-Refused to apply style from '' becuase its MIME type ('application/json') is not a supported stylesheet MIME type, and strict MIME checking is enabled.
+Refused to apply style from 'http://localhost:8080/academy/assets/css/nucleo-icons.css' 
+because its MIME type ('application/json') is not a supported stylesheet MIME type, 
+and strict MIME checking is enabled.
 ```
 
 위와 같은 에러가 발생하면서, css파일을 불러오지 봇했고 결과적으로 ui 테마가 깨지는 현상이 일어났다.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "· 프로세스와 스레드"
-nav_order: 2
+nav_order: 3
 parent : 운영체제
 grand_parent: 📚Learned
 permalink: docs/Learned/OS/Process
