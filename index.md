@@ -54,10 +54,11 @@ POSTS
 
 NEW
 {: .label .label-yellow }
-- 2023.02.07 [【Redis를 활용해서 Refresh Token 구현하기】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/RefreshToken)
+- 2023.02.13 [【교착 상태(DeadLock)과 해결 방법】](https://inkyu-yoon.github.io/docs/Learned/OS/DeadLock)
 
 23-February's post
 {: .label .label-yellow }
+- 2023.02.07 [【Redis를 활용해서 Refresh Token 구현하기】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/RefreshToken)
 - 2023.02.04 [【23년 1월 회고】](https://inkyu-yoon.github.io/docs/Retrospect/January23)
 
 23-January's post

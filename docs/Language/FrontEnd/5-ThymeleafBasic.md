@@ -292,3 +292,50 @@ model.addAttribute("param2", "data2");
 
 <br>
 
+
+## 12. 템플릿 조각
+
+<br>
+
+```html
+<div th:each="region : ${regions}" class="form-check form-check-inline">
+    <input type="checkbox" th:field="*{regions}" th:value="${region.key}"
+           class="form-check-input">
+    <label th:for="${#ids.prev('regions')}"
+           th:text="${region.value}" class="form-check-label">서울</label>
+</div>
+```
+
+루프로 타임리프 변수가 생성되는 경우, `th:field`를 사용하면 , 해당 블록의 id를 순차적으로 1부터 붙여서 명명해준다.
+
+> `th:field` 로 명시하면, model 로 넘긴 객체의 변수명으로 id와 name을 생성해준다. 
+
+<br>
+
+```html
+<input type="checkbox" value="SEOUL" class="form-check-input" id="regions1"
+name="regions">
+<input type="checkbox" value="BUSAN" class="form-check-input" id="regions2"
+name="regions">
+<input type="checkbox" value="JEJU" class="form-check-input" id="regions3"
+name="regions">
+
+```
+
+위와 같은 결과가 나오고,
+
+따라서, label과 같은 태그에 `${#ids.prev('regions')}` 를 붙여주면 동적으로 변하는 id 값을 반영한다.
+
+<br>
+
+## 13. ENUM 타입 사용
+
+<br>
+
+```html
+<div th:each="type : ${T(hello.itemservice.domain.item.ItemType).values()}">
+```
+
+스프링 EL 문법으로 Enum 타입의 위치를 명시해서 사용한다.
+
+<br>
