@@ -99,6 +99,15 @@ Memcached 라는 인메모리 데이터 스토리지도 있지만, 성능차이�
 
 <br>
 
+<p align="center">
+<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20230217041621615.png" alt="image-20230217041621615" style="zoom: 50%;" />
+</p>
+
+위와 같은 원리로 구현하였다.
+
+
+<br>
+
 ```groovy
 	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
 ```
