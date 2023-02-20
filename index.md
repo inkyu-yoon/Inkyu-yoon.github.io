@@ -54,10 +54,12 @@ POSTS
 
 NEW
 {: .label .label-yellow }
-- 2023.02.19 [【메모리 분할 시스템의 종류와 특징】](https://inkyu-yoon.github.io/docs/Learned/OS/MemoryManage)
+- 2023.02.21 [【Docker Compose와 Git Action CI&CD 하기】](https://inkyu-yoon.github.io/ocs/Learned/Docker/GitActionsCICD)
 
 23-February's post
 {: .label .label-yellow }
+- 2023.02.20 [【Git Submodule 프로젝트에 적용】](https://inkyu-yoon.github.io/docs/Learned/Git/GitSubmodule)
+- 2023.02.19 [【메모리 분할 시스템의 종류와 특징】](https://inkyu-yoon.github.io/docs/Learned/OS/MemoryManage)
 - 2023.02.13 [【교착 상태(DeadLock)과 해결 방법】](https://inkyu-yoon.github.io/docs/Learned/OS/DeadLock)
 - 2023.02.07 [【Redis를 활용해서 Refresh Token 구현하기】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/RefreshToken)
 - 2023.02.04 [【23년 1월 회고】](https://inkyu-yoon.github.io/docs/Retrospect/January23)
