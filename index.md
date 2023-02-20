@@ -54,7 +54,7 @@ POSTS
 
 NEW
 {: .label .label-yellow }
-- 2023.02.21 [【Docker Compose와 Git Action CI&CD 하기】](https://inkyu-yoon.github.io/ocs/Learned/Docker/GitActionsCICD)
+- 2023.02.21 [【Docker Compose와 Git Action CI&CD 하기】](https://inkyu-yoon.github.io/docs/Learned/Docker/GitActionsCICD)
 
 23-February's post
 {: .label .label-yellow }
