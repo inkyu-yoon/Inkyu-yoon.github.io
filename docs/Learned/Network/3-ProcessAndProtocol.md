@@ -97,3 +97,34 @@ UDP는 비연결형 프로토콜입니다.
 
 > HTTP/3 (웹 상 정보 전달 프로토콜) 는 QUIC(Quick UDP Internet Connection)이라는 프로토콜 기반이다.
 
+<br>
+
+## TCP 3-way / 4-way handshake
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20230222220547314.png" alt="image-20230222220547314" style="zoom:125%;" />
+</p>
+
+TCP는 연결 지향형 프로토콜이기 때문에, 송신측과 수신측이 연결되어야 합니다.
+
+이를 위해서, TCP 헤더에 TCP 플래그가 있고, TCP 플래그에는 ACK · SYN · FIN 가 사용됩니다.
+
+초기값은 0이고, 이 플래그로 3-way / 4-way handshake를 진행합니다.
+
+1. 연결을 요청할 때, SYN 플래그로 요청을 보냅니다.
+
+2. 연결을 받은 쪽은, 받은 SYN 플래그에 대한 응답으로 ACK 플래그와 연결 확립 요청을 위해 SYN 플래그를 보냅니다.
+
+3. 연결을 처음에 요청했던 쪽은, 확립에 대한 응답으로 ACK 플래그를 보내는 것으로 3-way handshake는 마무리 됩니다.
+
+
+
+연결을 종료하는 과정인 4-way handshake 에서는 FIN 플래그와 ACK 플래그를 사용합니다.
+
+1. 연결 종료 요청을 FIN 플래그와 함께 보냅니다.
+
+2. 종료 요청을 받은 쪽은 ACK 플래그로 응답합니다.
+
+3. 요청 받은 쪽도 FIN 플래그로 연결 종료 확립 요청을 보냅니다.
+
+4. 처음에 연결 종료 요청을 했던 쪽은, ACK 플래그로 연결 종료 확립 응답을 보내는 것으로 마무리 됩니다.
