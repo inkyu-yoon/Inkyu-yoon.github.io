@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "· MockedStatic을 사용해 static method 테스트 코드에 적용하기
+title: "· MockedStatic을 사용해 static method 테스트 코드에 적용하기"
 nav_order: 5
 parent : TIP
 grand_parent: 📚Learned
