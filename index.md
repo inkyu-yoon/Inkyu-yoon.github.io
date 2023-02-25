@@ -66,7 +66,7 @@ POSTS
 
 진짜 내 글
 {: .label .label-yellow }
-- 2023.02.25 [【 QueryDsl를 이용한 쿼리 수와 실행시간 개선 여정기 】](https://inkyu-yoon.github.io/docs/Language/JPA/QuerydslRepo)
+- 2023.02.25 [【 QueryDsl를 이용한 쿼리 수와 실행시간 개선 여정기 】](https://inkyu-yoon.github.io/docs/Language/JPA/UseQuerydsl)
 - 2023.02.23 [【 MockedStatic을 사용해 static method 테스트 코드에 적용하기 】](https://inkyu-yoon.github.io/docs/Learned/TIP/MockedStatic)
 - 2023.02.21 [【 Docker Compose와 Git Action CI&CD 하기 】](https://inkyu-yoon.github.io/docs/Learned/Docker/GitActionsCICD)
 - 2023.02.20 [【 Git Submodule 프로젝트에 적용 】](https://inkyu-yoon.github.io/docs/Learned/Git/GitSubmodule)

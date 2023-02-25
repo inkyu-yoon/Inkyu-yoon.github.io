@@ -4,7 +4,7 @@ title: "· QueryDsl를 이용한 쿼리 수와 실행시간 개선 여정기"
 nav_order: 11
 parent : JPA
 grand_parent: 👩🏻‍💻Language
-permalink: docs/Language/JPA/QuerydslRepo
+permalink: docs/Language/JPA/UseQuerydsl
 ---
 # QueryDsl를 이용한 쿼리 수와 실행시간 개선 여정기
 {: .no_toc }
