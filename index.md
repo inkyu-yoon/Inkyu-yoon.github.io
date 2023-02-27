@@ -66,9 +66,10 @@ POSTS
 
 진짜 내 글
 {: .label .label-yellow }
+- 2023.02.27 [【 Spring Log4jdbc로 쿼리 실행 시간 측정하기 】](https://inkyu-yoon.github.io/docs/Language/JPA/SqlTiming)
 - 2023.02.25 [【 QueryDsl를 이용한 쿼리 수와 실행시간 개선 여정기 】](https://inkyu-yoon.github.io/docs/Language/JPA/UseQuerydsl)
 - 2023.02.23 [【 MockedStatic을 사용해 static method 테스트 코드에 적용하기 】](https://inkyu-yoon.github.io/docs/Learned/TIP/MockedStatic)
-- 2023.02.21 [【 Docker Compose와 Git Action CI&CD 하기 】](https://inkyu-yoon.github.io/docs/Learned/Docker/GitActionsCICD)
+- 2023.02.21 [【 Docker Compose와 Git Actions로 CI/CD 구현하기 】](https://inkyu-yoon.github.io/docs/Learned/Docker/GitActionsCICD)
 - 2023.02.20 [【 Git Submodule 프로젝트에 적용 】](https://inkyu-yoon.github.io/docs/Learned/Git/GitSubmodule)
 - 2023.02.07 [【 Redis를 활용해서 Refresh Token 구현하기 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/RefreshToken)
 - 2023.01.28 [【 스크립트 태그 상대경로 설정으로 인한 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/RefusedMIME)

@@ -1,11 +1,15 @@
 ---
 layout: post
-title: "· Docker Compose와 Git Action CI&CD 하기"
+title: "· Docker Compose와 Git Actions로 CI/CD 구현하기"
 nav_order: 7
 parent : Docker
 grand_parent: 📚Learned
 permalink: docs/Learned/Docker/GitActionsCICD
 ---
+
+# Docker Compose와 Git Actions로 CI/CD 구현하기
+
+<br>
 
 ## 도커 허브 레포지토리 생성
 
