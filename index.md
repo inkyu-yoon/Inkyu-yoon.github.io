@@ -106,9 +106,10 @@ POSTS
 - 2022.11.02 [【 Git Bash로 Docker 설치하고 MYSQL 연결하기 】](https://inkyu-yoon.github.io/docs/Learned/Docker/DockerAndEc2)
 - 2022.10.24 [【 Jdbc Template으로 쉽게 DB 활용하기 】](https://inkyu-yoon.github.io/docs/Language/Spring/JdbcTemplate)
 - 2022.10.21 [【 ExecuteQuery() 메서드 분리와 ResultSet 반환 해결 】](https://inkyu-yoon.github.io/docs/Language/Spring/ExecuteQuery)
-
+  
 TIL 정리 글
 {: .label .label-yellow }
+- 2023.03.02 [【 숫자 순열 사전식 다음 순서 찾기 & 모든 순열 조합 찾기 : 나라야나 판디트 알고리즘 】](https://inkyu-yoon.github.io/docs/Learned/Algorithm/NarayanaPanditas)
 - 2023.02.28 [【 구간 합 알고리즘 (Prefix Sum Algorithm) 】](https://inkyu-yoon.github.io/docs/Learned/Algorithm/PrefixAlgorithm)
 - 2023.02.22 [【 SSL HandShake와 대칭키 · 비대칭키 방식 】](https://inkyu-yoon.github.io/docs/Learned/Network/SecureKey)
 - 2023.02.22 [【 도메인 접속시 발생하는 과정과 TCP/UDP의 특징 】](https://inkyu-yoon.github.io/docs/Learned/Network/ProcessAndProtocol)
