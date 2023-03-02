@@ -34,8 +34,9 @@ permalink: docs/Learned/Algorithm/NarayanaPanditas
 
 <br>
 
-| 2    | 3    | 6    | 5    | 4    | 1    |
-| ---- | ---- | ---- | ---- | ---- | ---- |
+| 0   | 1   | 2   | 3   | 4    | 5   |
+|-----|-----|-----|-----| ---- |-----|
+| 2   | 3   | 6   | 5   | 4    | 1   |
 
 위와 같이 있다고 할때,
 
@@ -51,8 +52,10 @@ permalink: docs/Learned/Algorithm/NarayanaPanditas
 
 ⓒ a[1]=3 과 a[4]=4 이 위치를 바꾸면
 
-| 2    | 4    | 6    | 5    | 3    | 1    |
-| ---- | ---- | ---- | ---- | ---- | ---- |
+| 0   | 1   | 2   | 3   | 4    | 5   |
+|-----|-----|-----|-----| ---- |-----|
+| 2    | 4    | 6    | 5    | 3    | 1   |
+
 
 위와 같이 된다.
 
@@ -60,8 +63,10 @@ permalink: docs/Learned/Algorithm/NarayanaPanditas
 
 <br>
 
+| 0   | 1   | 2   | 3   | 4    | 5   |
+|-----|-----|-----|-----| ---- |-----|
 | 2    | 4    | 1    | 3    | 5    | 6    |
-| ---- | ---- | ---- | ---- | ---- | ---- |
+
 
 위와 같이 되고, 2 3 6 5 4 1 다음 사전식 순서인 2 4 1 3 5 6 이 된다.
 
@@ -95,6 +100,6 @@ def next(arr):
 <br>
 
 {: .highlight}
-출처: https://stevenpcurtis.medium.com/leetcode-31-next-permutation-narayana-panditas-algorithm-eb1dcb4686a7
+출처: [https://stevenpcurtis.medium.com/leetcode-31-next-permutation-narayana-panditas-algorithm-eb1dcb4686a7](https://stevenpcurtis.medium.com/leetcode-31-next-permutation-narayana-panditas-algorithm-eb1dcb4686a7)
 
  
