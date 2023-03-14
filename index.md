@@ -64,9 +64,9 @@ POSTS
 - 2022.10.01 [【 22년 9월 회고 】](https://inkyu-yoon.github.io/docs/Retrospect/September22)
 - 2022.09.02 [【 22년 8월 회고 】](https://inkyu-yoon.github.io/docs/Retrospect/August22)
 
-
 진짜 내 글
 {: .label .label-yellow }
+- 2023.03.14 [【 Docker Container에 exec sh -c command로 여러개의 명령 보내기 】](https://inkyu-yoon.github.io/docs/Learned/Docker/ExecCommand)
 - 2023.02.27 [【 Spring Log4jdbc로 쿼리 실행 시간 측정하기 】](https://inkyu-yoon.github.io/docs/Language/JPA/SqlTiming)
 - 2023.02.25 [【 QueryDsl를 이용한 쿼리 수와 실행시간 개선 여정기 】](https://inkyu-yoon.github.io/docs/Language/JPA/UseQuerydsl)
 - 2023.02.23 [【 MockedStatic을 사용해 static method 테스트 코드에 적용하기 】](https://inkyu-yoon.github.io/docs/Learned/TIP/MockedStatic)
