@@ -52,7 +52,7 @@ Fully-Quailified Class Name (ex.`java.lang.Character$Subset`) 형식으로  저�
 {: .note-title }
 > 참고
 >
-> 예를 들어 `.class`  파일에 `Temp` 라는 클래스가 있다고 해도, 사용하지 않으면 로드하지 않는다. 사용시점에서 로드한다.
+> 예를 들어 `.class`  파일에 `Temp` 라는 클래스가 있다고 해도, 사용하지 않으면 로드하지 않는다. 사용 시점에서 로드한다.
 >
 >
 >
@@ -62,16 +62,16 @@ Fully-Quailified Class Name (ex.`java.lang.Character$Subset`) 형식으로  저�
 >
 > `Temp` 라는 클래스에 `static String value` 라는 static 변수가 있다고 가정할 때, `Temp.value` 라는 명령어를 만나게 되면, `Temp` 클래스도 함께 로드된다. (static 메서드나 static 클래스도 마찬가지다.)
 >
-> 만약 `Temp` 라는 클래스가 `Parent` 라는 클래스를 상속하고 있다면 부모 객체 먼저 로드한 뒤, 자식 객체를 로드한다.
+> 혹은, `Temp` 라는 클래스가 `Parent` 라는 클래스를 상속하고 있다면 부모 객체 먼저 로드한 뒤, 자식 객체를 로드한다.
 >
 >
 >
-> **클래스 내 맴버를 사용하지만, 클래스를 로드하지 않는 경우도 있다.**
+> **반대로 클래스 내 맴버를 사용하지만, 클래스를 로드하지 않는 경우도 있다.**
 >
 >  `static final String VALUE` 라는 static final 변수가 있을 때, `Temp.VALUE` 라는 명령어를 만나면, `Temp` 클래스는 로드되지 않는다.
 > 그 이유는 상수는 JVM 의 Constant Pool에 따로 저장되어 관리되기 때문이다.
 >
-> `static class INNER`와 같은 내부 클래스가 있을때, `new Temp.INNER()`의 경우에는 인스턴스를 생성할때, 외부 클래스가 꼭 필요한게 아니기 때문에 외부 클래스인 `Temp`를 로드하지 않는다.
+> 그리고 `static class INNER`와 같은 내부 클래스가 있을때, `new Temp.INNER()`의 경우에는 인스턴스를 생성할때, 외부 클래스가 꼭 필요한게 아니기 때문에 외부 클래스인 `Temp`를 로드하지 않는다.
 
 <br>
 
@@ -83,7 +83,7 @@ Fully-Quailified Class Name (ex.`java.lang.Character$Subset`) 형식으로  저�
 
 1. Verify(검증) : 클래스가 자바 언어 명세 및 JVM 명세에 명시된 대로 구성되어 있는지 검사한다. 검증을 실패하면 런타임에러 `java.lang.VerifyError` 를 발생시킨다.
 
-   > 검증된 컴파일러가 만든 class 파일이 아닌 제 3자가 수동으로 변경한 경우에도 검증을 실패한다. 따라서 악의적인 변경을 방지한다.
+   > **검증된 컴파일러가 만든 class 파일이 아닌**, 제 3자가 수동으로 변경한 경우에도 검증을 실패한다. 따라서 악의적인 변경을 방지한다.
 
 2. Preapre(준비) : 클래스가 필요로 하는 메모리를 할당하고 클래스의 필드, 메서드, 인터페이스를 나타내는 데이터 구조를 준비한다.
 
@@ -92,8 +92,7 @@ Fully-Quailified Class Name (ex.`java.lang.Character$Subset`) 형식으로  저�
 3. Resolve(분석) : 클래스의 상수 풀 내 모든 심볼릭 레퍼런스를 실제 메모리 레퍼런스로 교체한다.
 
    > 심볼릭 레퍼런스 : 메모리 번지가 아닌 이름에 의한 참조
-
-
+   
 
 <br>
 
@@ -131,8 +130,8 @@ Fully-Quailified Class Name (ex.`java.lang.Character$Subset`) 형식으로  저�
 > 5. 애플리케이션 클래스 로더는 환경 변수로 지정된 class path에 해당 클래스가 있는지 확인하고 존재하지 않으면 예외를 발생시킨다.
 >
 > > Class Path (클래스 패스) : JVM이 시스템 모든 폴더를 검사할 수 없으므로 JVM에 파일 경로를 제공해야한다.
->
-> 
+
+
 <br>
 
 ### 1. 부트스트랩 클래스로더
@@ -169,11 +168,11 @@ Fully-Quailified Class Name (ex.`java.lang.Character$Subset`) 형식으로  저�
 
 상위 클래스로더가 찾지 못한 클래스를 하위 클래스로더가 찾는 경우가 존재하게 되므로, 상위 클래스로더는 하위 클래스로드가 로드한 클래스를 볼 수 없다.
 
+<br>
 
 {: .highlight-title }
 > 참고한 블로그
 > 
-> 1. [https://blog.hexabrain.net/397](https://blog.hexabrain.net/397) 
-> 2. [https://beststar-1.tistory.com/13#%ED%81%B4%EB%9E%98%EC%8A%A4_%EB%A1%9C%EB%94%A9_Step_2_-_%EB%A7%81%ED%81%AC(Linking)](https://beststar-1.tistory.com/13#%ED%81%B4%EB%9E%98%EC%8A%A4_%EB%A1%9C%EB%94%A9_Step_2_-_%EB%A7%81%ED%81%AC(Linking))  
-> 3. [https://inpa.tistory.com/entry/JAVA-%E2%98%95-JVM-%EB%82%B4%EB%B6%80-%EA%B5%AC%EC%A1%B0-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%98%81%EC%97%AD-%EC%8B%AC%ED%99%94%ED%8E%B8](https://inpa.tistory.com/entry/JAVA-%E2%98%95-JVM-%EB%82%B4%EB%B6%80-%EA%B5%AC%EC%A1%B0-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%98%81%EC%97%AD-%EC%8B%AC%ED%99%94%ED%8E%B8)
+> 1. [https://blog.hexabrain.net/397](https://blog.hexabrain.net/397)   
+> 2. [https://inpa.tistory.com/entry/JAVA-%E2%98%95-JVM-%EB%82%B4%EB%B6%80-%EA%B5%AC%EC%A1%B0-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%98%81%EC%97%AD-%EC%8B%AC%ED%99%94%ED%8E%B8](https://inpa.tistory.com/entry/JAVA-%E2%98%95-JVM-%EB%82%B4%EB%B6%80-%EA%B5%AC%EC%A1%B0-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%98%81%EC%97%AD-%EC%8B%AC%ED%99%94%ED%8E%B8)
 
