@@ -110,6 +110,7 @@ POSTS
   
 TIL 정리 글
 {: .label .label-yellow }
+- 2023.03.17 [【 Spring IoC와 DI, 그리고 DI 주입 방법 】](https://inkyu-yoon.github.io/docs/Language/Spring/SpringIocAndDI)
 - 2023.03.15 [【 JVM Class Loader(클래스 로더) 동작 과정 】](https://inkyu-yoon.github.io/docs/Language/Java/ClassLoader)
 - 2023.03.13 [【 JVM의 간략한 동작 과정 】](https://inkyu-yoon.github.io/docs/Language/Java/AboutJVM)
 - 2023.03.02 [【 숫자 순열 사전식 다음 순서 찾기 & 모든 순열 조합 찾기 : 나라야나 판디트 알고리즘 】](https://inkyu-yoon.github.io/docs/Learned/Algorithm/NarayanaPanditas)
