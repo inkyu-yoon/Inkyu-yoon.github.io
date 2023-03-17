@@ -130,7 +130,29 @@ class Parent{
 
  확인해보니 Parent 클래스가 로드된 뒤, Parent 클래스를 상속하는 Temp 클래스도 로드되었다.
 
+```java
+public class Test {
+    public static void main(String[] args) {
+        new Temp().new Inner(); 
+    }
 
+}
+
+class Temp {
+    // inner 클래스
+    class Inner {
+        Inner() { }
+    }
+}
+```
+
+내부 클래스를 호출하는 상황에서도 내부 클래스를 갖는 외부 클래스를 로드한다.
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20230317160855617.png" alt="image-20230317160855617" style="zoom:80%;" />
+</p>
+
+<br>
 
  **클래스 내 맴버를 사용하지만, 클래스를 로드하지 않는 경우도 있다.**
 
