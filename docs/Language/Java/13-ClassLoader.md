@@ -49,29 +49,119 @@ Fully-Quailified Class Name (ex.`java.lang.Character$Subset`) 형식으로  저�
 
 로딩이 끝나면 해당 클래스 타입의 객체를 생성하여 메모리의 `Heap` 영역에 저장한다.
 
-{: .note-title }
-> 참고
->
-> 예를 들어 `.class`  파일에 `Temp` 라는 클래스가 있다고 해도, 사용하지 않으면 로드하지 않는다. 사용 시점에서 로드한다.
->
->
->
-> **단, 클래스를 명시적으로 초기화 하지 않아도 로드하는 경우가 있는데,**
->
-> 클래스를 초기화 하지 않고 바로 클래스 내부에 있는 static 변수를 호출할 때이다.
->
-> `Temp` 라는 클래스에 `static String value` 라는 static 변수가 있다고 가정할 때, `Temp.value` 라는 명령어를 만나게 되면, `Temp` 클래스도 함께 로드된다. (static 메서드나 static 클래스도 마찬가지다.)
->
-> 혹은, `Temp` 라는 클래스가 `Parent` 라는 클래스를 상속하고 있다면 부모 객체 먼저 로드한 뒤, 자식 객체를 로드한다.
->
->
->
-> **반대로 클래스 내 맴버를 사용하지만, 클래스를 로드하지 않는 경우도 있다.**
->
->  `static final String VALUE` 라는 static final 변수가 있을 때, `Temp.VALUE` 라는 명령어를 만나면, `Temp` 클래스는 로드되지 않는다.
-> 그 이유는 상수는 JVM 의 Constant Pool에 따로 저장되어 관리되기 때문이다.
->
-> 그리고 `static class INNER`와 같은 내부 클래스가 있을때, `new Temp.INNER()`의 경우에는 인스턴스를 생성할때, 외부 클래스가 꼭 필요한게 아니기 때문에 외부 클래스인 `Temp`를 로드하지 않는다.
+
+동적로딩에 대해 좀더 살펴보자.
+
+<br>
+
+ ```java
+ public class Test {
+     public static void main(String[] args) {
+     }
+     static class Temp{
+     }
+ }
+ ```
+
+
+
+ 예를 들어 `.class`  파일에 `Temp` 라는 클래스가 있다고 해도, 사용하지 않으면 로드하지 않는다. 사용시점에서 로드한다.
+
+ 위와 같은 소스파일을 `java -verbose:class Test.java` 명령어로 로드된 클래스를 확인해보자
+
+<p align="center">
+ <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20230317150257625.png" alt="image-20230317150257625"  />
+</p>
+
+ Temp 라는 클래스를 사용하지 않았으므로 로드되지 않았다.
+
+ ```java
+ public class Test {
+     public static void main(String[] args) {
+         Temp temp = new Temp();
+     }
+     static class Temp{
+     }
+ }
+ ```
+
+<p align="center">
+ <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20230317150157093.png" alt="image-20230317150157093" style="zoom:67%;" />
+</p>
+
+ 반면에 위 경우에는 명시적으로 사용했으므로 로드된 것을 확인할 수 있다.
+
+
+
+ **단, 클래스를 명시적으로 초기화 하지 않아도 로드하는 경우가 있는데,**
+
+ 클래스를 초기화 하지 않고 바로 클래스 내부에 있는 static 변수를 호출할 때이다.
+
+ ```java
+ public class Test {
+     public static void main(String[] args) {
+         String test = Temp.value;
+     }
+     static class Temp extends Parent{
+         static String value = "value";
+     }
+ }
+ 
+ class Parent{
+ }
+ ```
+
+
+
+ `Temp` 라는 클래스에 `static String value` 라는 static 변수가 있다고 가정할 때, `Temp.value` 라는 명령어를 만나게 되면, `Temp` 클래스도 함께 로드된다. (static 메서드나 static 클래스도 마찬가지다.)
+
+ 만약 `Temp` 라는 클래스가 `Parent` 라는 클래스를 상속하고 있다면 부모 객체 먼저 로드한 뒤, 자식 객체를 로드한다.
+
+<p align="center">
+ <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20230317150805217.png" alt="image-20230317150805217" style="zoom:80%;" />
+</p>
+
+ 확인해보니 Parent 클래스가 로드된 뒤, Parent 클래스를 상속하는 Test 클래스도 로드되었다.
+
+
+
+ **클래스 내 맴버를 사용하지만, 클래스를 로드하지 않는 경우도 있다.**
+
+ ```java
+ public class Test {
+     public static void main(String[] args) {
+         String test = Temp.VALUE;
+     }
+     static class Temp {
+         static final String VALUE = "value";
+     }
+ }
+ 
+ ```
+
+ `static final String VALUE` 라는 static final 변수가 있을 때, `Temp.VALUE` 라는 명령어를 만나면, `Temp` 클래스는 로드되지 않는다.
+
+ 그 이유는 상수는  JVM 의 Constant Pool에 따로 저장되어 관리되기 때문이다.
+
+ ```java
+ public class Test {
+     public static void main(String[] args) {
+         Temp.Inner test = new Temp.Inner();
+     }
+ 
+ }
+ 
+ class Temp{
+     static class Inner{
+ 
+     }
+ }
+ ```
+<p align="center">
+ <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20230317151138772.png" alt="image-20230317151138772" style="zoom:80%;" />
+</p>
+
+ 혹은 `static class Inner`와 같은 내부 클래스가 있을때, `new Temp.Inner()`의 경우에는 인스턴스를 생성할때, 외부 클래스가 꼭 필요한게 아니기 때문에 외부 클래스인 `Temp`를 로드하지 않는다.
 
 <br>
 
@@ -176,3 +266,6 @@ Fully-Quailified Class Name (ex.`java.lang.Character$Subset`) 형식으로  저�
 > 1. [https://blog.hexabrain.net/397](https://blog.hexabrain.net/397)   
 > 2. [https://inpa.tistory.com/entry/JAVA-%E2%98%95-JVM-%EB%82%B4%EB%B6%80-%EA%B5%AC%EC%A1%B0-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%98%81%EC%97%AD-%EC%8B%AC%ED%99%94%ED%8E%B8](https://inpa.tistory.com/entry/JAVA-%E2%98%95-JVM-%EB%82%B4%EB%B6%80-%EA%B5%AC%EC%A1%B0-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%98%81%EC%97%AD-%EC%8B%AC%ED%99%94%ED%8E%B8)
 
+
+{: .highlight}
+[JVM의 실행 엔진(Execution Engine) 구성 요소와 역할](https://inkyu-yoon.github.io/docs/Language/Java/ExecutionEngine)
