@@ -49,18 +49,21 @@ Fully-Quailified Class Name (ex.`java.lang.Character$Subset`) 형식으로  저�
 
 로딩이 끝나면 해당 클래스 타입의 객체를 생성하여 메모리의 `Heap` 영역에 저장한다.
 
+<br>
 
 동적로딩에 대해 좀더 살펴보자.
 
 <br>
 
  ```java
- public class Test {
-     public static void main(String[] args) {
-     }
-     static class Temp{
-     }
- }
+public class Test {
+   public static void main(String[] args) {
+   }
+}
+
+class Temp{
+
+}
  ```
 
 
@@ -76,22 +79,24 @@ Fully-Quailified Class Name (ex.`java.lang.Character$Subset`) 형식으로  저�
  Temp 라는 클래스를 사용하지 않았으므로 로드되지 않았다.
 
  ```java
- public class Test {
-     public static void main(String[] args) {
-         Temp temp = new Temp();
-     }
-     static class Temp{
-     }
- }
+public class Test {
+   public static void main(String[] args) {
+      Temp temp = new Temp();
+   }
+}
+
+class Temp{
+
+}
  ```
 
 <p align="center">
- <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20230317150157093.png" alt="image-20230317150157093" style="zoom:67%;" />
+ <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20230317155441628.png" alt="image-20230317155441628" style="zoom:67%;" />
 </p>
 
  반면에 위 경우에는 명시적으로 사용했으므로 로드된 것을 확인할 수 있다.
 
-
+<br>
 
  **단, 클래스를 명시적으로 초기화 하지 않아도 로드하는 경우가 있는데,**
 
@@ -99,16 +104,18 @@ Fully-Quailified Class Name (ex.`java.lang.Character$Subset`) 형식으로  저�
 
  ```java
  public class Test {
-     public static void main(String[] args) {
-         String test = Temp.value;
-     }
-     static class Temp extends Parent{
-         static String value = "value";
-     }
- }
- 
- class Parent{
- }
+   public static void main(String[] args) {
+      String value = Temp.value;
+   }
+}
+
+class Temp extends Parent{
+   static String value = "value";
+}
+
+class Parent{
+
+}
  ```
 
 
@@ -118,26 +125,29 @@ Fully-Quailified Class Name (ex.`java.lang.Character$Subset`) 형식으로  저�
  만약 `Temp` 라는 클래스가 `Parent` 라는 클래스를 상속하고 있다면 부모 객체 먼저 로드한 뒤, 자식 객체를 로드한다.
 
 <p align="center">
- <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20230317150805217.png" alt="image-20230317150805217" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20230317155659173.png" alt="image-20230317155659173" style="zoom:67%;" /> 
 </p>
 
- 확인해보니 Parent 클래스가 로드된 뒤, Parent 클래스를 상속하는 Test 클래스도 로드되었다.
+ 확인해보니 Parent 클래스가 로드된 뒤, Parent 클래스를 상속하는 Temp 클래스도 로드되었다.
 
 
 
  **클래스 내 맴버를 사용하지만, 클래스를 로드하지 않는 경우도 있다.**
 
  ```java
- public class Test {
-     public static void main(String[] args) {
-         String test = Temp.VALUE;
-     }
-     static class Temp {
-         static final String VALUE = "value";
-     }
- }
- 
- ```
+public class Test {
+   public static void main(String[] args) {
+      String value = Temp.VALUE;
+   }
+}
+
+class Temp {
+   static final String VALUE = "value";
+}
+
+
+
+```
 
  `static final String VALUE` 라는 static final 변수가 있을 때, `Temp.VALUE` 라는 명령어를 만나면, `Temp` 클래스는 로드되지 않는다.
 
