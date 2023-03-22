@@ -300,4 +300,4 @@ class Temp {
 
 
 {: .highlight}
-[JVM의 실행 엔진(Execution Engine) 구성 요소와 역할](https://inkyu-yoon.github.io/docs/Language/Java/ExecutionEngine)
+[JVM의 실행 엔진(Execution Engine) 구성 요소와 역할 알아보기](https://inkyu-yoon.github.io/docs/Language/Java/ExecutionEngine)

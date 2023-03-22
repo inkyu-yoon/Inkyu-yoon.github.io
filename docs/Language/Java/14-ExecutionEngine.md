@@ -391,7 +391,8 @@ Z GC는 개발되고 있는 알고리즘이다.
 > 8. [https://huisam.tistory.com/entry/jvmgc](https://huisam.tistory.com/entry/jvmgc)
 
 
-
+{: .highlight}
+[【 JVM 메모리 구조 (RunTime Data Area) 알아보기 】](https://inkyu-yoon.github.io/docs/Language/Java/JVMRuntimeDataArea)
 
 
 
