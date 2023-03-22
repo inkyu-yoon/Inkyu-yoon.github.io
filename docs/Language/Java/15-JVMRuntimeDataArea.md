@@ -27,9 +27,9 @@ permalink: docs/Language/Java/JVMRuntimeDataArea
 
 개발자가 `.java` 파일을 만들면 자바 컴파일러는 이 소스 파일을 `.class` 파일로 변환하고, 클래스 로더는 이 클래스 파일을 바탕으로 JVM 메서드 영역에 동적로딩을 한다. 그리고 동적 로딩된 데이터를 바탕으로 JIT 컴파일러는 객체를 Heap 영역에 생성하고 Heap 영역에 생성된 객체는 GC를 통해 불필요한 데이터를 정리한다.
 
-이제 JVM이 +운영체제로부터 할당받은 메모리 영역인 RunTime Data Area에 대해서 알아보겠다.
+이제 JVM이 운영체제로부터 할당받은 메모리 영역인 RunTime Data Area에 대해서 알아보겠다.
 
-위 그림과 같이 **Method Area** · **Heap **· **PC Register** · **JVM Stack** · **Native Method Stack** 로 크게 나눌 수 있다.
+위 그림과 같이 **Method Area** · **Heap**· **PC Register** · **JVM Stack** · **Native Method Stack** 로 크게 나눌 수 있다.
 
 RunTime Data Area를 자세히 살펴보면
 
@@ -141,6 +141,9 @@ Thread가 어떤 명령을 실행하게 될지 기록한다.
 
 Java 외의 언어로 작성된 네이티브 코드(C 혹은 C++)를 위한 stack이다.
 
+
+
+<br>
 
 {: .highlight-title }
 > 참고한 블로그

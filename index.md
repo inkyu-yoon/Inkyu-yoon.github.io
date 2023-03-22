@@ -111,7 +111,7 @@ POSTS
   
 TIL 정리 글
 {: .label .label-yellow }
-- 2023.03.21 [【 JVM 메모리 구조 (RunTime Data Area) 】](https://inkyu-yoon.github.io/docs/Language/Java/JVMRuntimeDataArea)
+- 2023.03.22 [【 JVM 메모리 구조 (RunTime Data Area) 】](https://inkyu-yoon.github.io/docs/Language/Java/JVMRuntimeDataArea)
 - 2023.03.21 [【 JVM의 실행 엔진(Execution Engine) 구성 요소와 역할 】](https://inkyu-yoon.github.io/docs/Language/Java/ExecutionEngine)
 - 2023.03.17 [【 Spring IoC와 DI, 그리고 DI 주입 방법 】](https://inkyu-yoon.github.io/docs/Language/Spring/SpringIocAndDI)
 - 2023.03.15 [【 JVM Class Loader(클래스 로더) 동작 과정 】](https://inkyu-yoon.github.io/docs/Language/Java/ClassLoader)
