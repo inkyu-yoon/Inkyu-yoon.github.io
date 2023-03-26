@@ -66,7 +66,7 @@ POSTS
 
 진짜 내 글
 {: .label .label-yellow }
-- 2023.03.25 [【 Spring Boot Github 소셜 로그인 구현하기 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/GithubLogin)
+- 2023.03.25 [【 Spring Boot Github 소셜 로그인 구현하기 (RestTemplate · WebClient) 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/GithubLogin)
 - 2023.03.14 [【 Docker, 같은 Network로 연결되어 있을 경우, 컨테이너 간 통신 】](https://inkyu-yoon.github.io/docs/Learned/Docker/DockerNetworkConnect)
 - 2023.03.14 [【 Docker Container에 exec sh -c command로 여러개의 명령 보내기 】](https://inkyu-yoon.github.io/docs/Learned/Docker/ExecCommand)
 - 2023.02.27 [【 Spring Log4jdbc로 쿼리 실행 시간 측정하기 】](https://inkyu-yoon.github.io/docs/Language/JPA/SqlTiming)

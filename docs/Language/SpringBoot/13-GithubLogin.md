@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "· Spring Boot Github 소셜 로그인 구현하기"
+title: "· Spring Boot Github 소셜 로그인 구현하기 (RestTemplate · WebClient)"
 nav_order: 13
 parent : SpringBoot
 grand_parent: 👩🏻‍💻Language
 permalink: docs/Language/SpringBoot/GithubLogin
 ---
 
-# Spring Boot Github 소셜 로그인 구현하기
+# Spring Boot Github 소셜 로그인 구현하기 (RestTemplate · WebClient)
 {: .no_toc }
 
 ## Table of contents
@@ -320,6 +320,147 @@ public class GithubProfile {
 access_token이 잘 전달되면 인증한 사용자의 다양한 정보를 받을 수 있는데, 나는 필요한 정보 몇개만 받도록 하였다.
 
 이제 이 객체를 `userService.login`으로 전달해서 원하는 로직을 실행하도록 하면 된다!
+
+
+
+## WebClient 이용
+
+
+
+찾아보니 `RestTemplate` 보다 `WebClient` 를 사용하는 것을 권장한다는 말을 봤다.
+
+```
+NOTE: As of 5.0 this class is in maintenance mode, with only minor requests for changes and bugs to be accepted going forward. Please, consider using the org.springframework.web.reactive.client.WebClient which has a more modern API and supports sync, async, and streaming scenarios.
+```
+
+<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20230326192217582.png" alt="image-20230326192217582" style="zoom:80%;" />
+
+RestTemplate에  Note 에도 위와 같은 내용이 써있었다.
+
+그래서 WebClient 방식으로 변경했는데, WebClient 방식도 정리해보겠다.
+
+```java
+@Controller
+@Slf4j
+@RequiredArgsConstructor
+public class UserLoginController {
+
+    private final WebClientService webClientService;
+    private final UserJoinService userJoinService;
+
+    @GetMapping("/oauth2/redirect")
+    public String githubLogin(@RequestParam String code) {
+        String accessToken = webClientService.getAccessToken(code);
+        return "redirect:/githubLogin/success?access_token="+accessToken;
+    }
+
+    @GetMapping("/githubLogin/success")
+    public String githubLoginSuccess(@RequestParam(name = "access_token") String accessToken) {
+        UserProfile userInfo = webClientService.getUserInfo(accessToken);
+
+        userJoinService.login(userInfo);
+
+        return "redirect:/";
+    }
+}
+
+```
+
+먼저 Controller 로직이 좀 더 깔끔해진 것 같다.
+
+Webclient 를 사용하는 로직은 Service 클래스를 하나 더 만들어서 분리시켰다.
+
+방식은 동일하다. 사용자가 로그인 인증을 한 뒤에 받은 `code` 로 `access_token`을 입력 받은 뒤, 그 `access_token`을 사용해서 사용자 정보를 GET 하는 과정이다.
+
+```java
+@Service
+public class WebClientService {
+    @Value("${spring.security.oauth2.client.registration.github.client-id}")
+    private String clientId;
+    @Value("${spring.security.oauth2.client.registration.github.client-secret}")
+    private String clientSecret;
+
+
+    public String getAccessToken(String code) {
+        WebClient webClient = WebClient.builder()
+                .baseUrl("https://github.com")
+                .defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
+                .build();
+
+        AccessTokenRequest requestBody = AccessTokenRequest.builder()
+                .clientId(clientId)
+                .clientSecret(clientSecret)
+                .code(code)
+                .build();
+
+        String response = webClient.post()
+                .uri("/login/oauth/access_token")
+                .bodyValue(requestBody)
+                .retrieve()
+                .toEntity(String.class)
+                .block().getBody();
+
+
+        return TextParsingUtil.parsingFormData(response).get("access_token");
+    }
+    public UserProfile getUserInfo(String accessToken) {
+        WebClient webClient = WebClient.builder()
+                .baseUrl("https://api.github.com")
+                .build();
+
+        return webClient.get()
+                .uri("/user")
+                .header("Authorization", "token " + accessToken)
+                .retrieve()
+                .toEntity(UserProfile.class)
+                .block().getBody();
+
+    }
+
+}
+
+```
+
+getAccessToken은 WebClient를 이용해서 `code`를 request body 에 담아 요청하도록 했다.
+
+응답 받은 값을 바로 매핑하고 싶었는데 데이터가 form 형식으로 넘어와서 `TextParsingUtil` 이라는 클래스를 만들어서 String으로 받은 뒤 parsing 하였다.
+
+```
+access_token={값}&expires_in={값}&refresh_token={값}&refresh_token_expires_in={값}&scope=&token_type={값}
+```
+
+`code`를 담아서 요청하면 데이터가 위와 같이 넘어온다.
+
+json 형식으로 오는게 아니라서 바로 매핑이 안됐다..ㅎ
+
+```java
+public class TextParsingUtil {
+
+    public static Map<String, String> parsingFormData(String formData) {
+        Map<String, String> map = new HashMap<>();
+        String[] splited = formData.split("&");
+        for (String s : splited) {
+            String[] data = s.split("=");
+            if (data.length >= 2) {
+                map.put(data[0], data[1]);
+            }
+        }
+        return map;
+    }
+}
+
+```
+
+Parding 하는 메서드는 위와 같이 구성하였다.
+
+먼저 `&` 단위로 쪼갠 뒤에 `=`로 split 해서 key value 형식으로 저장하였다.
+
+중간에 `scope`는 값이 존재하지 않아서 parsing 과정에서 오류가 생길 수 있으므로
+
+`=`로 split 했을 때, 길이가 2이상인 경우에만 저장하도록 했다.
+
+그렇게 accessToken을 추출해서 Webclient로 다시 GET 요청을 보낸 뒤, 바로 `UserProfile`로 매핑되도록 구현하였다!
+
 
 
 {: .highlight-title }
