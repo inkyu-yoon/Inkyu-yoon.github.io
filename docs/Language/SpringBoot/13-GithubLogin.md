@@ -74,13 +74,6 @@ Callback URL 은 어떤 사용자가 깃허브 로그인을 성공하면 깃허�
 
 `Client Secret`은 민감정보 이므로 노출되지 않도록 주의하자.
 
-<br>
-
-## 기능 구현
-
-<br>
-
-참고로 자바 17 jdk를 사용하였다.
 
 <br>
 
@@ -142,7 +135,7 @@ html 코드는 어떤 방식이든 상관없다.
 
 <br>
 
-### UserLoginController
+## RestTemplate 방식
 
 <br>
 
@@ -323,17 +316,19 @@ access_token이 잘 전달되면 인증한 사용자의 다양한 정보를 받�
 
 
 
-## WebClient 이용
+## WebClient 방식
 
+<br>
 
-
-찾아보니 `RestTemplate` 보다 `WebClient` 를 사용하는 것을 권장한다는 말을 봤다.
+`RestTemplate` 방식으로 구현을 다해놓고 찾아보니 `RestTemplate` 보다 `WebClient` 를 사용하는 것을 권장한다는 말을 봤다.
 
 ```
 NOTE: As of 5.0 this class is in maintenance mode, with only minor requests for changes and bugs to be accepted going forward. Please, consider using the org.springframework.web.reactive.client.WebClient which has a more modern API and supports sync, async, and streaming scenarios.
 ```
 
+<p align="center">
 <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20230326192217582.png" alt="image-20230326192217582" style="zoom:80%;" />
+</p>
 
 RestTemplate에  Note 에도 위와 같은 내용이 써있었다.
 
