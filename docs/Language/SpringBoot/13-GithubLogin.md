@@ -21,9 +21,11 @@ permalink: docs/Language/SpringBoot/GithubLogin
 
 <br>
 
-팀 프로젝트때 구글, 네이버 OAuth 로그인 기능을 구현한 경험이 있어서 Github 로그인도 쉽게 구현할 줄 알았는데 꽤나 고전했었다.
+Oauth Dependency 를 사용하지 않고, RestTemplate 와 WebClient 같은 Spring에서 Rest 통신을 지원해주는 객체를 이용해서
 
-내가 한 방법이 확실하게 맞는지는 모르겠지만, Github 계정 인증 후, DB에 저장하는 과정을 성공했기에 기록해본다.
+GitHub 소셜 로그인을 구현하였다.
+
+직접 통신을 연결해보니 OAuth 인증 흐름이 더 눈에 보여, 이해도를 높일 수 있었다.
 
 <br>
 
@@ -92,17 +94,10 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
-  security:
-    oauth2:
-      client:
-        registration:
-          github:
-            client-id:
-            client-secret:
-server:
-  servlet:
-    encoding:
-      force-response: true
+
+github:
+  client-id:
+  client-secret:
 ```
 
 application.yml 설정은 위와 같다.
@@ -110,7 +105,7 @@ application.yml 설정은 위와 같다.
 받아온 정보를 MySQL db에 저장하게끔 구현하였는데, 서비스 로직 설명은 생략하겠다.
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20230325172614710.png" alt="image-20230325172614710" style="zoom: 67%;" />
+<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20230329220455823.png" alt="image-20230329220455823" style="zoom:80%;" />
 </p>
 
 client-id와 client-secret는 인텔리제이 환경변수로 넣어주었다.
@@ -145,9 +140,9 @@ html 코드는 어떤 방식이든 상관없다.
 @RequiredArgsConstructor
 public class UserLoginController {
 
-    @Value("${spring.security.oauth2.client.registration.github.client-id}")
+    @Value("${github.client-id}")
     private String clientId;
-    @Value("${spring.security.oauth2.client.registration.github.client-secret}")
+    @Value("${github.client-secret}")
     private String clientSecret;
 
     private final UserService userService;
@@ -392,9 +387,9 @@ public class WebClientConfig {
 @Service
 @RequiredArgsConstructor
 public class WebClientService {
-    @Value("${spring.security.oauth2.client.registration.github.client-id}")
+    @Value("${github.client-id}")
     private String clientId;
-    @Value("${spring.security.oauth2.client.registration.github.client-secret}")
+    @Value("${github.client-secret}")
     private String clientSecret;
 
     private final WebClient webClient;
