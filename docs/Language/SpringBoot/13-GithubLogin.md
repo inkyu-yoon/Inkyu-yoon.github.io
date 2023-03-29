@@ -343,44 +343,63 @@ public class UserLoginController {
     private final WebClientService webClientService;
     private final UserJoinService userJoinService;
 
+
     @GetMapping("/oauth2/redirect")
     public String githubLogin(@RequestParam String code) {
-        String accessToken = webClientService.getAccessToken(code);
+        String accessToken = webClientService.getAccessToken(code,"https://github.com/login/oauth/access_token");
         return "redirect:/githubLogin/success?access_token="+accessToken;
     }
 
     @GetMapping("/githubLogin/success")
-    public String githubLoginSuccess(@RequestParam(name = "access_token") String accessToken) {
-        UserProfile userInfo = webClientService.getUserInfo(accessToken);
+    public String githubLoginSuccess(HttpServletResponse response, @RequestParam(name = "access_token") String accessToken) {
+        UserProfile userInfo = webClientService.getUserInfo(accessToken,"https://api.github.com/user");
 
-        userJoinService.login(userInfo);
+        String jwt = userJoinService.login(userInfo);
+
+        CookieUtil.setCookie(response, JWT_COOKIE_NAME,jwt,COOKIE_AGE);
 
         return "redirect:/";
     }
 }
-
 ```
 
 먼저 Controller 로직이 좀 더 깔끔해진 것 같다.
 
 Webclient 를 사용하는 로직은 Service 클래스를 하나 더 만들어서 분리시켰다.
 
+그리고 테스트 코드 작성 시, 편의성을 위해 url을 파라미터로 입력받게끔 구현하였다.
+
 방식은 동일하다. 사용자가 로그인 인증을 한 뒤에 받은 `code` 로 `access_token`을 입력 받은 뒤, 그 `access_token`을 사용해서 사용자 정보를 GET 하는 과정이다.
 
 ```java
+@Configuration
+public class WebClientConfig {
+
+    @Bean
+    public WebClient webClient() {
+        return WebClient.builder().build();
+    }
+}
+
+```
+
+위와 같은 **Config** 클래스를 정의해서 **WebClient**가 빈으로서 등록되어 DI 주입될 수 있도록 한다.
+
+<br>
+
+```java
+
 @Service
+@RequiredArgsConstructor
 public class WebClientService {
     @Value("${spring.security.oauth2.client.registration.github.client-id}")
     private String clientId;
     @Value("${spring.security.oauth2.client.registration.github.client-secret}")
     private String clientSecret;
 
+    private final WebClient webClient;
 
-    public String getAccessToken(String code) {
-        WebClient webClient = WebClient.builder()
-                .baseUrl("https://github.com")
-                .defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
-                .build();
+    public String getAccessToken(String code,String uri) {
 
         AccessTokenRequest requestBody = AccessTokenRequest.builder()
                 .clientId(clientId)
@@ -389,7 +408,8 @@ public class WebClientService {
                 .build();
 
         String response = webClient.post()
-                .uri("/login/oauth/access_token")
+                .uri(uri)
+                .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
                 .bodyValue(requestBody)
                 .retrieve()
                 .toEntity(String.class)
@@ -398,23 +418,21 @@ public class WebClientService {
 
         return TextParsingUtil.parsingFormData(response).get("access_token");
     }
-    public UserProfile getUserInfo(String accessToken) {
-        WebClient webClient = WebClient.builder()
-                .baseUrl("https://api.github.com")
-                .build();
+    public UserProfile getUserInfo(String accessToken,String uri) {
 
         return webClient.get()
-                .uri("/user")
+                .uri(uri)
                 .header("Authorization", "token " + accessToken)
                 .retrieve()
                 .toEntity(UserProfile.class)
                 .block().getBody();
 
     }
-
 }
 
 ```
+
+**WebClient** 객체는 DI 받게될 것이다.
 
 getAccessToken은 WebClient를 이용해서 `code`를 request body 에 담아 요청하도록 했다.
 
@@ -446,7 +464,7 @@ public class TextParsingUtil {
 
 ```
 
-Parding 하는 메서드는 위와 같이 구성하였다.
+Parsing 하는 메서드는 위와 같이 구성하였다.
 
 먼저 `&` 단위로 쪼갠 뒤에 `=`로 split 해서 key value 형식으로 저장하였다.
 
@@ -454,7 +472,7 @@ Parding 하는 메서드는 위와 같이 구성하였다.
 
 `=`로 split 했을 때, 길이가 2이상인 경우에만 저장하도록 했다.
 
-그렇게 accessToken을 추출해서 Webclient로 다시 GET 요청을 보낸 뒤, 바로 `UserProfile`로 매핑되도록 구현하였다!
+그렇게 accessToken을 추출해서 WebclientService의 getUserInfo메서드로 다시 GET 요청을 보낸 뒤, 바로 `UserProfile`로 매핑되도록 구현하였다!
 
 
 
