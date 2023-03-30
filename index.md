@@ -110,7 +110,12 @@ POSTS
 - 2022.11.02 [【 Git Bash로 Docker 설치하고 MYSQL 연결하기 】](https://inkyu-yoon.github.io/docs/Learned/Docker/DockerAndEc2)
 - 2022.10.24 [【 Jdbc Template으로 쉽게 DB 활용하기 】](https://inkyu-yoon.github.io/docs/Language/Spring/JdbcTemplate)
 - 2022.10.21 [【 ExecuteQuery() 메서드 분리와 ResultSet 반환 해결 】](https://inkyu-yoon.github.io/docs/Language/Spring/ExecuteQuery)
-  
+
+면접 대비 정리 글
+{: .label .label-yellow }
+- 2023.03.30 [【 자바의 접근 제어자 】](https://inkyu-yoon.github.io/docs/Language/Java/AccessModifier)
+- 2023.03.30 [【 Managed · UnManaged 언어의 특징 】](https://inkyu-yoon.github.io/docs/Learned/OS/ManagedUnManaged)
+
 TIL 정리 글
 {: .label .label-yellow }
 - 2023.03.22 [【 JVM 메모리 구조 (RunTime Data Area) 】](https://inkyu-yoon.github.io/docs/Language/Java/JVMRuntimeDataArea)
@@ -164,6 +169,7 @@ TIL 정리 글
 - 2022.10.19 Tstory -> Git blog 이사
 
 <br>
+
 
 
 ---
