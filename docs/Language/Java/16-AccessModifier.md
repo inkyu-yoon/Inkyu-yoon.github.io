@@ -48,7 +48,7 @@ permalink: docs/Language/Java/AccessModifier
 
 자바는 접근제어자를 통해 변수나 메서드의 접근을 제어할 수 있다.
 
-접근 제어자는 **private **· **default **· **protected **· **public**  4가지가 있다.
+접근 제어자는 **private**· **default**· **protected**· **public**  4가지가 있다.
 
 <br>
 
@@ -56,7 +56,7 @@ permalink: docs/Language/Java/AccessModifier
 
 <br>
 
-**private **접근 제어자를 사용하면 해당 클래스만 사용할 수 있다.
+**private** 접근 제어자를 사용하면 해당 클래스만 사용할 수 있다.
 
 ```java
 public class Sample {

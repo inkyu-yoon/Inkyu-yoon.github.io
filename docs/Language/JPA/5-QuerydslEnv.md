@@ -173,3 +173,40 @@ compileQuerydsl {
 `complieQuerydsl` 을 더블클릭하여 build 한다.
 
 > 새로운 엔티티 클래스를 생성하고, 이를 Querydsl 활용을 하기 위해서, 위 빌드 과정을 거쳐야한다.
+
+
+<br>
+
+## SpringBoot 3.0 이상
+<br>
+
+```groovy
+	// == 스프링 부트 3.0 이상 == Querydsl
+	implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'
+	annotationProcessor "com.querydsl:querydsl-apt:5.0.0:jakarta"
+	annotationProcessor "jakarta.annotation:jakarta.annotation-api"
+	annotationProcessor "jakarta.persistence:jakarta.persistence-api"
+```
+
+위 내용 디팬던시 추가
+
+```groovy
+// === ⭐ QueryDsl 빌드 옵셥 ===
+def querydslDir = "$buildDir/generated/querydsl"
+
+sourceSets {
+	main.java.srcDirs += [ querydslDir ]
+}
+
+tasks.withType(JavaCompile) {
+	options.annotationProcessorGeneratedSourcesDirectory = file(querydslDir)
+}
+
+clean.doLast {
+	file(querydslDir).deleteDir()
+}
+```
+
+위 내용 build.gradle 추가
+
+other -> complieJava 실행
