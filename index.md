@@ -56,6 +56,7 @@ POSTS
 
 회고
 {: .label .label-yellow }
+- (3~6) 2분기 회고로 돌아올 예정
 - 2023.03.04 [【 23년 2월 회고 】](https://inkyu-yoon.github.io/docs/Retrospect/February23)
 - 2023.02.04 [【 23년 1월 회고 】](https://inkyu-yoon.github.io/docs/Retrospect/January23)
 - 2023.01.01 [【 22년 12월 회고 】](https://inkyu-yoon.github.io/docs/Retrospect/December22)
@@ -112,18 +113,19 @@ POSTS
 - 2022.10.24 [【 Jdbc Template으로 쉽게 DB 활용하기 】](https://inkyu-yoon.github.io/docs/Language/Spring/JdbcTemplate)
 - 2022.10.21 [【 ExecuteQuery() 메서드 분리와 ResultSet 반환 해결 】](https://inkyu-yoon.github.io/docs/Language/Spring/ExecuteQuery)
 
-면접 대비 정리 글
+필수 지식 정리
 {: .label .label-yellow }
+- 2023.04.03 [【 람다식과 함수 인터페이스 】](https://inkyu-yoon.github.io/docs/Language/Java/AboutLambda)
+- 2023.03.22 [【 JVM 메모리 구조 (RunTime Data Area) 】](https://inkyu-yoon.github.io/docs/Language/Java/JVMRuntimeDataArea)
+- 2023.03.21 [【 JVM의 실행 엔진(Execution Engine) 구성 요소와 역할 】](https://inkyu-yoon.github.io/docs/Language/Java/ExecutionEngine)
+- 2023.03.15 [【 JVM Class Loader(클래스 로더) 동작 과정 】](https://inkyu-yoon.github.io/docs/Language/Java/ClassLoader)
+- 2023.03.13 [【 JVM의 간략한 동작 과정 】](https://inkyu-yoon.github.io/docs/Language/Java/AboutJVM)
 - 2023.03.30 [【 자바의 접근 제어자 】](https://inkyu-yoon.github.io/docs/Language/Java/AccessModifier)
 - 2023.03.30 [【 Managed · UnManaged 언어의 특징 】](https://inkyu-yoon.github.io/docs/Learned/OS/ManagedUnManaged)
 
 TIL 정리 글
 {: .label .label-yellow }
-- 2023.03.22 [【 JVM 메모리 구조 (RunTime Data Area) 】](https://inkyu-yoon.github.io/docs/Language/Java/JVMRuntimeDataArea)
-- 2023.03.21 [【 JVM의 실행 엔진(Execution Engine) 구성 요소와 역할 】](https://inkyu-yoon.github.io/docs/Language/Java/ExecutionEngine)
 - 2023.03.17 [【 Spring IoC와 DI, 그리고 DI 주입 방법 】](https://inkyu-yoon.github.io/docs/Language/Spring/SpringIocAndDI)
-- 2023.03.15 [【 JVM Class Loader(클래스 로더) 동작 과정 】](https://inkyu-yoon.github.io/docs/Language/Java/ClassLoader)
-- 2023.03.13 [【 JVM의 간략한 동작 과정 】](https://inkyu-yoon.github.io/docs/Language/Java/AboutJVM)
 - 2023.03.02 [【 숫자 순열 사전식 다음 순서 찾기 & 모든 순열 조합 찾기 : 나라야나 판디트 알고리즘 】](https://inkyu-yoon.github.io/docs/Learned/Algorithm/NarayanaPanditas)
 - 2023.02.28 [【 구간 합 알고리즘 (Prefix Sum Algorithm) 】](https://inkyu-yoon.github.io/docs/Learned/Algorithm/PrefixAlgorithm)
 - 2023.02.22 [【 SSL HandShake와 대칭키 · 비대칭키 방식 】](https://inkyu-yoon.github.io/docs/Learned/Network/SecureKey)
