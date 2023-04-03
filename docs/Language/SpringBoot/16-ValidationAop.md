@@ -41,7 +41,7 @@ public class UserCreateRequest {
     private String password;
     @NotBlank(message = "닉네임은 필수 입력 항목입니다.")
     private String nickname;
-	@NotBlank(message = "핸드폰 번호는 필수 입력 항목입니다.")
+    @NotBlank(message = "핸드폰 번호는 필수 입력 항목입니다.")
     private String phone;
 
 }
@@ -82,7 +82,7 @@ validation 어노테이션을 적용한 뒤에는, ***@RequestBody*** 어노테�
 <br>
 
 
-‼ 적용하고나니, 여기서 더 개선하고 싶은 부분이 보였다.
+💡 적용하고나니, 여기서 더 개선하고 싶은 부분이 보였다.
 
 ```java
 if (br.hasErrors()) {
@@ -110,7 +110,7 @@ testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter
 
 위 라이브러리를 추가하면, 스프링 부트 자동 설정으로 ***AnnotationAwareAspectJAutoProxyCreator*** 라는 빈 후처리기가 스프링 빈에 등록된다.
 
-> :pushpin: ***빈 후처리기(BeanPostProcessor)*** 빈 등록을 하기 전에 빈을 원하는 대로 조작할 수 있는 기능을 제공한다.
+> 📌 ***빈 후처리기(BeanPostProcessor)*** 빈 등록을 하기 전에 빈을 원하는 대로 조작할 수 있는 기능을 제공한다.
 >
 > <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20230404005142965.png" alt="image-20230404005142965" style="zoom:80%;" />
 >
@@ -154,9 +154,9 @@ public class BindingCheck {
 
 > 📌 ***PointCut*** : 부가 기능을 적용할 대상인지 아닌지를 판별해주는 필터링 로직, 주로 클래스와 메서드 이름을 가지고 판별하며 적용 대상이라면 부가 기능을 추가하고, 적용대상이 아닌 경우 실제 타깃의 메서드만을 실행
 >
-> :pushpin: ***Advice*** : 타깃 오브젝트에 적용할 부가기능을 담은 오브젝트
+> 📌 ***Advice*** : 타깃 오브젝트에 적용할 부가기능을 담은 오브젝트
 >
-> :pushpin: ***Advisor*** : PointCut과 Advice를 갖고 있는, 즉  부가기능과 부가기능을 적용할 대상을 알고 있는 오브젝트
+> 📌 ***Advisor*** : PointCut과 Advice를 갖고 있는, 즉  부가기능과 부가기능을 적용할 대상을 알고 있는 오브젝트
 
 <br>
 
@@ -238,6 +238,61 @@ public class UserApiController {
     }
 }
 ```
+
+<br>
+
+Controller 코드가 정말 깔끔해졌다.
+
+<br>
+
+### 테스트 코드
+
+<br>
+
+먼저, Controller 테스트를 WebMvcTest에 직접 설정한 Spring Security를 import 해서 사용하고 있었다.
+
+aop 적용을 위해서는 이전에 설명했듯, 테스트용 라이브러리도 추가해주어야 하지만 추가 어노테이션을 달아야한다.
+
+```java
+@WebMvcTest(value = UserApiController.class)
+@EnableAspectJAutoProxy
+@Import({SecurityConfig.class, BindingCheck.class})
+class UserApiControllerTest {
+    
+   .....
+   
+}
+```
+
+***@EnableAspectJAutoProxy*** 과 정의한 어드바이져 클래스인 ***BindingCheck.class*** 를 추가해주었다.
+
+<br>
+
+
+```java
+@Test
+@DisplayName("회원가입 실패 테스트 (Binding Error 발생)")
+void error3() throws Exception{
+
+        UserCreateRequest request = new UserCreateRequest("email@email.com", "password1!", null, "010-0000-0000");
+
+        mockMvc.perform(post("/api/v1/users")
+                .contentType(APPLICATION_JSON)
+                .content(objectMapper.writeValueAsString(request)))
+                .andDo(print())
+                .andExpect(jsonPath("$.message").exists())
+                .andExpect(jsonPath("$.message").value("ERROR"))
+                .andExpect(jsonPath("$.result").exists());
+        }
+```
+
+위와 같이 Controller 테스트 코드를 작성해보았다. nickName 부분이 null로 입력되어있고, BindingError가 발생될 것이다.
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20230404014520104.png" alt="image-20230404014520104" style="zoom:80%;" />
+</p>
+
+테스트 코드도 정상 동작됨이 확인된다!
 
 <br>
 
