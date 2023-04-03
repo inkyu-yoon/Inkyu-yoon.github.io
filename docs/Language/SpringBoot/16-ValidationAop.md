@@ -232,7 +232,7 @@ public class UserApiController {
     private final UserService userService;
 
     @PostMapping
-    public ResponseEntity<Response<UserCreateResponse>> create(@Validated @RequestBody UserCreateRequest request) {
+    public ResponseEntity<Response<UserCreateResponse>> create(@Validated @RequestBody UserCreateRequest request, BindingResult br) {
         UserCreateResponse response = userService.createUser(request);
         return ResponseEntity.status(HttpStatus.CREATED).body(Response.success(response));
     }
@@ -242,6 +242,8 @@ public class UserApiController {
 <br>
 
 Controller 코드가 정말 깔끔해졌다.
+
+참고로, 메서드 파라미터에 ***BindingResult br*** 는 존재해야 정상 동작한다! 
 
 <br>
 
