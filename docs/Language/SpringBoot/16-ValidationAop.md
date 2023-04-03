@@ -86,8 +86,8 @@ validation 어노테이션을 적용한 뒤에는, ***@RequestBody*** 어노테�
 
 ```java
 if (br.hasErrors()) {
-    throw new BindingException(ErrorCode.REQUEST_BINDING_ERROR, br.getFieldError().getDefaultMessage());
-}	
+        throw new BindingException(br.getFieldError().getDefaultMessage());
+}
 ```
 
 validation을 통해 예외처리를 하다보면, 이 부분이 공통적으로 사용될 것이 예상되었다.
@@ -110,7 +110,7 @@ testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter
 
 위 라이브러리를 추가하면, 스프링 부트 자동 설정으로 ***AnnotationAwareAspectJAutoProxyCreator*** 라는 빈 후처리기가 스프링 빈에 등록된다.
 
-> 📌 ***빈 후처리기(BeanPostProcessor)*** 빈 등록을 하기 전에 빈을 원하는 대로 조작할 수 있는 기능을 제공한다.
+> 📌 ***빈 후처리기(BeanPostProcessor)*** : 빈 등록을 하기 전에 빈을 원하는 대로 조작할 수 있는 기능을 제공한다.
 >
 > <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20230404005142965.png" alt="image-20230404005142965" style="zoom:80%;" />
 >
