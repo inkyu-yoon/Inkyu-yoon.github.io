@@ -67,6 +67,7 @@ POSTS
 
 진짜 내 글
 {: .label .label-yellow }
+- 2023.04.03 [【 Dto Validation 예외 처리를 AOP적으로 개선하기 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/ValidationAop)
 - 2023.04.01 [【 @RequestParam 다이렉트로 Enum 타입으로 매핑하기 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/RequestParamEnum)
 - 2023.03.30 [【 WebClient 테스트 MockWebServer vs WireMock 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/WebClientTest)
 - 2023.03.25 [【 Spring Boot Github 소셜 로그인 구현하기 (RestTemplate · WebClient) 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/GithubLogin)
