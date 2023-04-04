@@ -116,6 +116,7 @@ POSTS
 
 필수 지식 정리
 {: .label .label-yellow }
+- 2023.04.03 [【 JAVA Stream API 특징 】](https://inkyu-yoon.github.io/docs/Language/Java/AboutStream)
 - 2023.04.03 [【 람다식과 함수 인터페이스 】](https://inkyu-yoon.github.io/docs/Language/Java/AboutLambda)
 - 2023.03.22 [【 JVM 메모리 구조 (RunTime Data Area) 】](https://inkyu-yoon.github.io/docs/Language/Java/JVMRuntimeDataArea)
 - 2023.03.21 [【 JVM의 실행 엔진(Execution Engine) 구성 요소와 역할 】](https://inkyu-yoon.github.io/docs/Language/Java/ExecutionEngine)
