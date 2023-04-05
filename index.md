@@ -118,6 +118,7 @@ POSTS
 
 필수 지식 정리
 {: .label .label-yellow }
+- 2023.04.03 [【 JAVA Fail-Safe · Fail-Fast Iterator란? 】](https://inkyu-yoon.github.io/docs/Language/Java/FailSafeFast)
 - 2023.04.03 [【 JAVA for each 문의 특징 】](https://inkyu-yoon.github.io/docs/Language/Java/ForEachLoop)
 - 2023.04.03 [【 JAVA Stream API 특징 】](https://inkyu-yoon.github.io/docs/Language/Java/AboutStream)
 - 2023.04.03 [【 람다식과 함수 인터페이스 】](https://inkyu-yoon.github.io/docs/Language/Java/AboutLambda)
