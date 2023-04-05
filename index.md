@@ -114,9 +114,11 @@ POSTS
 - 2022.11.02 [【 Git Bash로 Docker 설치하고 MYSQL 연결하기 】](https://inkyu-yoon.github.io/docs/Learned/Docker/DockerAndEc2)
 - 2022.10.24 [【 Jdbc Template으로 쉽게 DB 활용하기 】](https://inkyu-yoon.github.io/docs/Language/Spring/JdbcTemplate)
 - 2022.10.21 [【 ExecuteQuery() 메서드 분리와 ResultSet 반환 해결 】](https://inkyu-yoon.github.io/docs/Language/Spring/ExecuteQuery)
+  
 
 필수 지식 정리
 {: .label .label-yellow }
+- 2023.04.03 [【 JAVA for each 문의 특징 】](https://inkyu-yoon.github.io/docs/Language/Java/ForEachLoop)
 - 2023.04.03 [【 JAVA Stream API 특징 】](https://inkyu-yoon.github.io/docs/Language/Java/AboutStream)
 - 2023.04.03 [【 람다식과 함수 인터페이스 】](https://inkyu-yoon.github.io/docs/Language/Java/AboutLambda)
 - 2023.03.22 [【 JVM 메모리 구조 (RunTime Data Area) 】](https://inkyu-yoon.github.io/docs/Language/Java/JVMRuntimeDataArea)

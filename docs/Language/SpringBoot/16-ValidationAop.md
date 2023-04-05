@@ -222,6 +222,28 @@ if (br.hasErrors()) {
 
 <br>
 
+위 코드 원리를 바탕으로 Stream API 방식으로 변경하면 다음과 같다.
+
+```java
+@Around(value = "execution(* com.shoekream.controller..*.*(..))")
+    public Object validAdviceHandler(ProceedingJoinPoint joinPoint) throws Throwable {
+
+        Stream.of(joinPoint.getArgs())
+                .filter(arg -> arg instanceof BindingResult)
+                .map(arg -> (BindingResult) arg)
+                .filter(br -> br.hasErrors())
+                .findAny()
+                .ifPresent((br)->{
+                    String errorMessage = br.getFieldError().getDefaultMessage();
+                    throw new BindingException(errorMessage);
+                });
+
+        return joinPoint.proceed();
+    }
+```
+
+<br>
+
 ## 개선 후
 
 ```java
