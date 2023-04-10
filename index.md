@@ -111,6 +111,7 @@ POSTS
 
 필수 지식 정리
 {: .label .label-yellow }
+- 2023.04.10 [【 JAVA volatile과 Atomic 변수 · CAS 】](https://inkyu-yoon.github.io/docs/Language/Java/Volatile)
 - 2023.04.10 [【 JAVA 동기화와 Synchronized 】](https://inkyu-yoon.github.io/docs/Language/Java/Synchronized)
 - 2023.04.05 [【 JAVA Fail-Safe · Fail-Fast Iterator란? 】](https://inkyu-yoon.github.io/docs/Language/Java/FailSafeFast)
 - 2023.04.05 [【 JAVA for each 문의 특징 】](https://inkyu-yoon.github.io/docs/Language/Java/ForEachLoop)
