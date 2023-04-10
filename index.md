@@ -111,6 +111,7 @@ POSTS
 
 필수 지식 정리
 {: .label .label-yellow }
+- 2023.04.10 [【 JAVA 동기화와 Synchronized 】](https://inkyu-yoon.github.io/docs/Language/Java/Synchronized)
 - 2023.04.05 [【 JAVA Fail-Safe · Fail-Fast Iterator란? 】](https://inkyu-yoon.github.io/docs/Language/Java/FailSafeFast)
 - 2023.04.05 [【 JAVA for each 문의 특징 】](https://inkyu-yoon.github.io/docs/Language/Java/ForEachLoop)
 - 2023.04.03 [【 JAVA Stream API 특징 】](https://inkyu-yoon.github.io/docs/Language/Java/AboutStream)
@@ -136,7 +137,7 @@ POSTS
 TIL 정리 글
 {: .label .label-yellow }
 - 2023.03.17 [【 Spring IoC와 DI, 그리고 DI 주입 방법 】](https://inkyu-yoon.github.io/docs/Language/Spring/SpringIocAndDI)
-- 2023.03.02 [【 숫자 순열 사전식 다음 순서 찾기 & 모든 순열 조합 찾기 : 나라야나 판디트 알고리즘 】](https://inkyu-yoon.github.io/docs/Learned/Algorithm/NarayanaPanditas)
+- 2023.03.02 [【 나라야나 판디트 알고리즘 】](https://inkyu-yoon.github.io/docs/Learned/Algorithm/NarayanaPanditas)
 - 2023.02.28 [【 구간 합 알고리즘 (Prefix Sum Algorithm) 】](https://inkyu-yoon.github.io/docs/Learned/Algorithm/PrefixAlgorithm)
 - 2023.02.22 [【 SSL HandShake와 대칭키 · 비대칭키 방식 】](https://inkyu-yoon.github.io/docs/Learned/Network/SecureKey)
 - 2023.02.22 [【 도메인 접속시 발생하는 과정과 TCP/UDP의 특징 】](https://inkyu-yoon.github.io/docs/Learned/Network/ProcessAndProtocol)
