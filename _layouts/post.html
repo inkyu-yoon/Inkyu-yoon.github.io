@@ -9,7 +9,7 @@ layout: table_wrappers
 <body>
 <a class="skip-to-main" href="#main-content">Skip to main content</a>
 {% include icons/icons.html %}
-<div class="main" id="top">
+<div class="main" id="top" style="">
     {% include components/header.html %}
     <div id="main-content-wrap" class="main-content-wrap">
         {% include components/breadcrumbs.html %}
@@ -23,7 +23,25 @@ layout: table_wrappers
             {% if page.has_children == true and page.has_toc != false %}
             {% include components/children_nav.html toc_list=toc_list %}
             {% endif %}
+            <br>
+            <hr>
+            <br>
 
+            <script src="https://giscus.app/client.js"
+                    data-repo="inkyu-yoon/blog_comments"
+                    data-repo-id="R_kgDOIVTv-w"
+                    data-category="Announcements"
+                    data-category-id="DIC_kwDOIVTv-84CSQ6A"
+                    data-mapping="pathname"
+                    data-strict="0"
+                    data-reactions-enabled="1"
+                    data-emit-metadata="0"
+                    data-input-position="top"
+                    data-theme="light"
+                    data-lang="ko"
+                    crossorigin="anonymous"
+                    async>
+            </script>
             {% include components/footer.html %}
 
         </div>
@@ -39,22 +57,3 @@ layout: table_wrappers
 </body>
 </html>
 
-<br>
-<hr>
-<br>
-
-<script src="https://giscus.app/client.js"
-        data-repo="inkyu-yoon/blog_comments"
-        data-repo-id="R_kgDOIVTv-w"
-        data-category="Announcements"
-        data-category-id="DIC_kwDOIVTv-84CSQ6A"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="light"
-        data-lang="ko"
-        crossorigin="anonymous"
-        async>
-</script>
