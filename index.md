@@ -80,23 +80,19 @@ POSTS
 - 2023.02.21 [【 Docker Compose와 Git Actions로 CI/CD 구현하기 】](https://inkyu-yoon.github.io/docs/Learned/Docker/GitActionsCICD)
 - 2023.02.20 [【 Git Submodule 프로젝트에 적용 】](https://inkyu-yoon.github.io/docs/Learned/Git/GitSubmodule)
 - 2023.02.07 [【 Redis를 활용해서 Refresh Token 구현하기 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/RefreshToken)
-- 2023.01.28 [【 스크립트 태그 상대경로 설정으로 인한 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/RefusedMIME)
 - 2023.01.22 [【 jwt 토큰 저장 위치 LocalStorage vs Cookie 】](https://inkyu-yoon.github.io/docs/Learned/HTTP/JwtTokenSave)
 - 2023.01.21 [【 Spring Security 소셜 로그인 로직 구현하기 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/OauthLogin)
 - 2023.01.15 [【 팀원들과 함께 만들어본 코드 컨벤션과 커밋 규칙 】](https://inkyu-yoon.github.io/docs/Project/CodeConvention)
 - 2023.01.15 [【 SNS 웹 페이지 구현 프로젝트 】](https://inkyu-yoon.github.io/docs/Project/SNSProject)
 - 2023.01.10 [【 Jacoco 라이브러리로 테스트 코드 커버리지 개선하기 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/Jacoco)
-- 2023.01.05 [【 axios post 요청 전달 시 authorization 토큰 인식 에러 해결 】](https://inkyu-yoon.github.io/docs/Language/FrontEnd/AxiosPost)
 - 2022.12.30 [【 Security Chain Filter 포함해서 Controller Test 하기 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/SecurityChainTest)
 - 2022.12.28 [【 Security Chain antMatchers 관련 Exception Handling 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/SecurityChainException)
 - 2022.12.21 [【 Security Filter에서 발생하는 Exception 처리하기 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/FilterExceptionHandle)
-- 2022.12.20 [【 pull 명령 시 denied: access forbidden 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/AccessDeniedError)
 - 2022.12.20 [【 Gradle 프로젝트 swagger-ui 적용 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/Swagger)
 - 2022.12.15 [【 crontab 설정을 통한 자동 업데이트 배포 pipeline 구축 】](https://inkyu-yoon.github.io/docs/Learned/Docker/DockerCICDCrontab)
 - 2022.12.14 [【 JdbcTemplate batchUpdate() 사용하여 대용량 데이터 입력 최적화 】](https://inkyu-yoon.github.io/docs/Language/Spring/JdbcBatchUpdate)
 - 2022.12.14 [【 전국 병·의원 데이터 웹 페이지 만들기 미니 프로젝트 】](https://inkyu-yoon.github.io/docs/Project/HospitalWeb)
 - 2022.12.08 [【 JPA BaseEntity Auditing 적용 】](https://inkyu-yoon.github.io/docs/Language/JPA/JpaAuditing)
-- 2022.12.07 [【 Jwt 토큰 생성 시 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/SecretKeyError)
 - 2022.12.06 [【 간단한 예제로 Spring Security & Jwts 흐름 정리 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/SecurityWithJwts)
 - 2022.12.06 [【 Jwt 토큰으로 특정 POST 접근 제한하기 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/SpringSecurityToken)
 - 2022.12.05 [【 Jwts를 이용한 로그인 구현 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/SpringSecurityLogin)
@@ -104,12 +100,9 @@ POSTS
 - 2022.12.04 [【 Querydsl 환경 세팅하기 】](https://inkyu-yoon.github.io/docs/Language/JPA/QuerydslEnv)
 - 2022.12.02 [【 【IntelliJ 】 콘솔 창 한글 깨짐 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/KoreanError)
 - 2022.11.30 [【 스프링 부트 라이브러리 버전 선택 팁 】](https://inkyu-yoon.github.io/docs/Learned/TIP/SelectLibraryVersion)
-- 2022.11.29 [【 WebMvcTest 중 NoSuchBeanDefinitionException 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/WebMvcError)
 - 2022.11.24 [【 @NotEmpty 사용을 위한 라이브러리 추가 】](https://inkyu-yoon.github.io/docs/Learned/TIP/NotEmpty)
 - 2022.11.15 [【 JPA 쿼리 파라미터 로그 남기기 】](https://inkyu-yoon.github.io/docs/Learned/TIP/SQLLog)
 - 2022.11.15 [【 REST API Tutorial 번역 】](https://inkyu-yoon.github.io/docs/Learned/HTTP/Restful)
-- 2022.11.11 [【 FileReader 시 한글 깨짐 해결 】](https://inkyu-yoon.github.io/docs/Learned/TIP/FileReader)
-- 2022.11.10 [【 SQLException 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/SQLError)
 - 2022.11.02 [【 데이터베이스 데이터 GetMapping 하기 】](https://inkyu-yoon.github.io/docs/Learned/Docker/DBMSGetMapping)
 - 2022.11.02 [【 Git Bash로 Docker 설치하고 MYSQL 연결하기 】](https://inkyu-yoon.github.io/docs/Learned/Docker/DockerAndEc2)
 - 2022.10.24 [【 Jdbc Template으로 쉽게 DB 활용하기 】](https://inkyu-yoon.github.io/docs/Language/Spring/JdbcTemplate)
@@ -118,8 +111,8 @@ POSTS
 
 필수 지식 정리
 {: .label .label-yellow }
-- 2023.04.03 [【 JAVA Fail-Safe · Fail-Fast Iterator란? 】](https://inkyu-yoon.github.io/docs/Language/Java/FailSafeFast)
-- 2023.04.03 [【 JAVA for each 문의 특징 】](https://inkyu-yoon.github.io/docs/Language/Java/ForEachLoop)
+- 2023.04.05 [【 JAVA Fail-Safe · Fail-Fast Iterator란? 】](https://inkyu-yoon.github.io/docs/Language/Java/FailSafeFast)
+- 2023.04.05 [【 JAVA for each 문의 특징 】](https://inkyu-yoon.github.io/docs/Language/Java/ForEachLoop)
 - 2023.04.03 [【 JAVA Stream API 특징 】](https://inkyu-yoon.github.io/docs/Language/Java/AboutStream)
 - 2023.04.03 [【 람다식과 함수 인터페이스 】](https://inkyu-yoon.github.io/docs/Language/Java/AboutLambda)
 - 2023.03.22 [【 JVM 메모리 구조 (RunTime Data Area) 】](https://inkyu-yoon.github.io/docs/Language/Java/JVMRuntimeDataArea)
@@ -128,6 +121,17 @@ POSTS
 - 2023.03.13 [【 JVM의 간략한 동작 과정 】](https://inkyu-yoon.github.io/docs/Language/Java/AboutJVM)
 - 2023.03.30 [【 자바의 접근 제어자 】](https://inkyu-yoon.github.io/docs/Language/Java/AccessModifier)
 - 2023.03.30 [【 Managed · UnManaged 언어의 특징 】](https://inkyu-yoon.github.io/docs/Learned/OS/ManagedUnManaged)
+
+에러 정리 글
+{: .label .label-yellow }
+- 2023.01.28 [【 스크립트 태그 상대경로 설정으로 인한 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/RefusedMIME)
+- 2023.01.05 [【 axios post 요청 전달 시 authorization 토큰 인식 에러 해결 】](https://inkyu-yoon.github.io/docs/Language/FrontEnd/AxiosPost)
+- 2022.12.20 [【 pull 명령 시 denied: access forbidden 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/AccessDeniedError)
+- 2022.12.07 [【 Jwt 토큰 생성 시 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/SecretKeyError)
+- 2022.11.29 [【 WebMvcTest 중 NoSuchBeanDefinitionException 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/WebMvcError)
+- 2022.11.11 [【 FileReader 시 한글 깨짐 해결 】](https://inkyu-yoon.github.io/docs/Learned/TIP/FileReader)
+- 2022.11.10 [【 SQLException 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/SQLError)
+
 
 TIL 정리 글
 {: .label .label-yellow }

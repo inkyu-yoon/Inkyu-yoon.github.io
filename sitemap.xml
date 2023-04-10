@@ -9,737 +9,787 @@
 
     <url>
         <loc>https://inkyu-yoon.github.io/</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>1.00</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/Java</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/Java/StringTokenizer</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/Java/classAndVariable</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/Java/VariablesAndStatic</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/Java/Calendar</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/Java/FormatClass</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/Java/TimePackage</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/Java/toStringMethod</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/Java/CopyMethod</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/Java/StaticImport</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/Java/Comparator</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/Java/FileReader</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/Java/AboutJVM</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/Java/ClassLoader</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/Java/ExecutionEngine</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/Java/JVMRuntimeDataArea</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://inkyu-yoon.github.io/docs/Language/Java/AccessModifier</loc>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://inkyu-yoon.github.io/docs/Language/Java/AboutLambda</loc>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://inkyu-yoon.github.io/docs/Language/Java/AboutStream</loc>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://inkyu-yoon.github.io/docs/Language/Java/ForEachLoop</loc>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://inkyu-yoon.github.io/docs/Language/Java/FailSafeFast</loc>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/Spring</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/Spring/ControllerAndMapping</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/Spring/SpringMethod</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/Spring/IsEqualIsSame</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/Spring/SpringBean</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/Spring/Singleton</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/Spring/Solid</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/Spring/ExecuteQuery</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/Spring/JdbcTemplate</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/Spring/SpringBootBasic</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/Spring/JdbcBatchUpdate</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/Spring/SpringIocAndDI</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/JPA</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/JPA/JPABasic</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/JPA/PersistenceContext</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/JPA/JPAMapping</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/JPA/ProxyAndCascade</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/JPA/QuerydslEnv</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/JPA/QuerydslCreateQuery</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/JPA/QuerydslJoin</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/JPA/QuerydslProjection</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/JPA/JpaAuditing</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/JPA/QuerydslRepo</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/JPA/UseQuerydsl</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/JPA/SqlTiming</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/SpringBoot</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/SpringBoot/SpringSecurityJoin</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/SpringBoot/SpringSecurityLogin</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/SpringBoot/SpringSecurityToken</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/SpringBoot/SecurityWithJwts</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/SpringBoot/Swagger</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/SpringBoot/SecurityChainException</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/SpringBoot/FilterExceptionHandle</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/SpringBoot/SecurityChainTest</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/SpringBoot/validation</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/SpringBoot/Jacoco</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/SpringBoot/OauthLogin</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/SpringBoot/RefreshToken</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/SpringBoot/GithubLogin</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://inkyu-yoon.github.io/docs/Language/SpringBoot/WebClientTest</loc>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://inkyu-yoon.github.io/docs/Language/SpringBoot/RequestParamEnum</loc>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://inkyu-yoon.github.io/docs/Language/SpringBoot/ValidationAop</loc>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://inkyu-yoon.github.io/docs/Language/SpringBoot/EnumValidation</loc>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/FrontEnd</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/FrontEnd/HtmlAndCss</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/FrontEnd/JavaScript</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/FrontEnd/AxiosPost</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/FrontEnd/JsDefer</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Language/FrontEnd/ThymeleafBasic</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Algorithm</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Algorithm/QuickSort</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Algorithm/FindGcd</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Algorithm/Primary</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Algorithm/PrefixAlgorithm</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Algorithm/NarayanaPanditas</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/DataBase</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/DataBase/Relation</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/DataBase/Integrity</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/DataBase/RelationAlgebra</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/DataBase/RelationRule</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/DataBase/NF</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/DataBase/Join</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/DataStructure</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/DataStructure/BinSearchTree</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/DataStructure/SegmentTree</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/HTTP</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/HTTP/Protocol</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/HTTP/URLFlow</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/HTTP/AboutHTTP</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/HTTP/HTTPMethod</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/HTTP/HTTPStatus</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/HTTP/Restful</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/HTTP/HTTPHeader</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/HTTP/Cache</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/HTTP/JwtTokenSave</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Error</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Error/GitUserError</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Error/OutOfError</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Error/TestError</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Error/LocalEnd</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Error/SQLError</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Error/WebMvcError</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Error/KoreanError</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Error/SecretKeyError</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Error/AccessDeniedError</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Error/RefusedMIME</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Git</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Git/GitBasic</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Git/GitBranch</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Git/GitRemote</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Git/GitSubmodule</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Docker</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Docker/DockerAndEc2</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Docker/DBMSGetMapping</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Docker/DockerBasic</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Docker/DockerCICDCrontab</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Docker/DockerNetwork</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Docker/DockerDockerfile</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Docker/GitActionsCICD</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Docker/ExecCommand</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Docker/DockerNetworkConnect</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Network</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Network/NetworkDef</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Network/OSIandTCP</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Network/ProcessAndProtocol</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/Network/SecureKey</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/OS</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/OS/OSBasic</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/OS/OSCPUandBus</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/OS/Process</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/OS/Scheduler</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/OS/ProcessCommunication</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/OS/DeadLock</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/OS/MemoryManage</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://inkyu-yoon.github.io/docs/Learned/OS/ManagedUnManaged</loc>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/TIP</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/TIP/FileReader</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/TIP/SQLLog</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/TIP/NotEmpty</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/TIP/SelectLibraryVersion</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Learned/TIP/MockedStatic</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Project</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Project/HospitalWeb</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Project/SNSProject</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Project/CodeConvention</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Retrospect</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Retrospect/August22</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Retrospect/September22</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Retrospect/October22</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Retrospect/November22</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Retrospect/December22</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Retrospect/January23</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://inkyu-yoon.github.io/docs/Retrospect/February23</loc>
-        <lastmod>2023-03-25T08:55:59+00:00</lastmod>
+        <lastmod>2023-04-05T14:31:14+00:00</lastmod>
         <priority>0.80</priority>
     </url>
 
