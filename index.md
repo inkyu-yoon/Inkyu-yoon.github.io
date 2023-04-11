@@ -67,7 +67,7 @@ POSTS
 
 진짜 내 글
 {: .label .label-yellow }
-- 2023.04.04 [【 Redis를 이용해 사용자 이메일 인증 후 권한 변경 구현하기 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/RedisAndAuth)
+- 2023.04.12 [【 Redis로 사용자 인증 구현하기 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/RedisAndAuth)
 - 2023.04.04 [【 Request Dto에 있는 Enum 타입 필드 validation 예외처리 개선하기 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/EnumValidation)
 - 2023.04.03 [【 Dto Validation 예외 처리를 AOP적으로 개선하기 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/ValidationAop)
 - 2023.04.01 [【 @RequestParam 다이렉트로 Enum 타입으로 매핑하기 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/RequestParamEnum)

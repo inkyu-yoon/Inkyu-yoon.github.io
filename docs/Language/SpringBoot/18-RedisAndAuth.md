@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "· Redis를 이용해 사용자 이메일 인증 후 권한 변경 구현하기"
+title: "· Redis로 사용자 인증 구현하기"
 nav_order: 18
 parent : SpringBoot
 grand_parent: 👩🏻‍💻Language
 permalink: docs/Language/SpringBoot/RedisAndAuth
 ---
 
-# Redis를 이용해 사용자 이메일 인증 후 권한 변경 구현하기
+# Redis로 사용자 인증 구현하기
 {: .no_toc }
 
 ## Table of contents
@@ -330,4 +330,4 @@ email을 request body에 담아 요청한다.
 
 Redis 컨테이너에 접속해서 데이터를 확인해보니 정상적으로 key - value 형식으로 저장된것을 확인할 수 있다.
 
-링크를 클릭하면 UserRole이 변경된 것을 확인할 수 있다.
+이메일로 받은 링크를 클릭하면 사용자 인증 처리까지 된 것을 확인할 수 있다!
