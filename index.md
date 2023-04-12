@@ -112,6 +112,8 @@ POSTS
 
 필수 지식 정리
 {: .label .label-yellow }
+- 2023.04.12 [【 JAVA Call By Value vs Call By Reference? 】](https://inkyu-yoon.github.io/docs/Language/Java/CallByValue)
+- 2023.04.12 [【 JAVA Wrapper Class 란? 】](https://inkyu-yoon.github.io/docs/Language/Java/WrapperClass)
 - 2023.04.11 [【 JAVA String 클래스의 특징 】](https://inkyu-yoon.github.io/docs/Language/Java/String)
 - 2023.04.11 [【 JAVA final 키워드의 역할 】](https://inkyu-yoon.github.io/docs/Language/Java/Final)
 - 2023.04.10 [【 JAVA volatile과 Atomic 변수 · CAS 】](https://inkyu-yoon.github.io/docs/Language/Java/Volatile)
