@@ -99,7 +99,6 @@ POSTS
 - 2022.12.05 [【 Jwts를 이용한 로그인 구현 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/SpringSecurityLogin)
 - 2022.12.04 [【 Spring Security를 이용한 회원가입 구현 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/SpringSecurityJoin)
 - 2022.12.04 [【 Querydsl 환경 세팅하기 】](https://inkyu-yoon.github.io/docs/Language/JPA/QuerydslEnv)
-- 2022.12.02 [【 【IntelliJ 】 콘솔 창 한글 깨짐 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/KoreanError)
 - 2022.11.30 [【 스프링 부트 라이브러리 버전 선택 팁 】](https://inkyu-yoon.github.io/docs/Learned/TIP/SelectLibraryVersion)
 - 2022.11.24 [【 @NotEmpty 사용을 위한 라이브러리 추가 】](https://inkyu-yoon.github.io/docs/Learned/TIP/NotEmpty)
 - 2022.11.15 [【 JPA 쿼리 파라미터 로그 남기기 】](https://inkyu-yoon.github.io/docs/Learned/TIP/SQLLog)
@@ -112,6 +111,7 @@ POSTS
 
 필수 지식 정리
 {: .label .label-yellow }
+- 2023.04.14 [【 Java Generic 이란? 】](https://inkyu-yoon.github.io/docs/Language/Java/Generic)
 - 2023.04.14 [【 JAVA 직렬화(Serialization)과 역직렬화(Deserialization) 】](https://inkyu-yoon.github.io/docs/Language/Java/Serialization)
 - 2023.04.13 [【 JAVA Interface와 Abstract Class에 대한 고찰 】](https://inkyu-yoon.github.io/docs/Language/Java/InterFaceAndAbstract)
 - 2023.04.12 [【 JAVA Call By Value vs Call By Reference? 】](https://inkyu-yoon.github.io/docs/Language/Java/CallByValue)
@@ -137,6 +137,7 @@ POSTS
 - 2023.01.05 [【 axios post 요청 전달 시 authorization 토큰 인식 에러 해결 】](https://inkyu-yoon.github.io/docs/Language/FrontEnd/AxiosPost)
 - 2022.12.20 [【 pull 명령 시 denied: access forbidden 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/AccessDeniedError)
 - 2022.12.07 [【 Jwt 토큰 생성 시 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/SecretKeyError)
+- 2022.12.02 [【 【IntelliJ 】 콘솔 창 한글 깨짐 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/KoreanError)
 - 2022.11.29 [【 WebMvcTest 중 NoSuchBeanDefinitionException 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/WebMvcError)
 - 2022.11.11 [【 FileReader 시 한글 깨짐 해결 】](https://inkyu-yoon.github.io/docs/Learned/TIP/FileReader)
 - 2022.11.10 [【 SQLException 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/SQLError)
