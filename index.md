@@ -111,7 +111,8 @@ POSTS
 
 필수 지식 정리
 {: .label .label-yellow }
-- 2023.04.14 [【 Java Generic 이란? 】](https://inkyu-yoon.github.io/docs/Language/Java/Generic)
+- 2023.04.17 [【 Java Equals()와 == 의 차이 】](https://inkyu-yoon.github.io/docs/Language/Java/EqualsOverride)
+- 2023.04.17 [【 Java Generic 이란? 】](https://inkyu-yoon.github.io/docs/Language/Java/Generic)
 - 2023.04.14 [【 JAVA 직렬화(Serialization)과 역직렬화(Deserialization) 】](https://inkyu-yoon.github.io/docs/Language/Java/Serialization)
 - 2023.04.13 [【 JAVA Interface와 Abstract Class에 대한 고찰 】](https://inkyu-yoon.github.io/docs/Language/Java/InterFaceAndAbstract)
 - 2023.04.12 [【 JAVA Call By Value vs Call By Reference? 】](https://inkyu-yoon.github.io/docs/Language/Java/CallByValue)

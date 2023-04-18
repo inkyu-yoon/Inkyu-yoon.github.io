@@ -44,8 +44,6 @@ public class Test {
         Sample sample = new Sample();
         int i = sample.get(1);
         String text = sample.get("문자열");
-        System.out.println(i);
-        System.out.println(text);
     }
 }
 
@@ -85,8 +83,6 @@ public class Test {
         Sample sample = new Sample();
         String text = (String)sample.get("text");
         int i = (int) sample.get(1);
-        System.out.println(i);
-        System.out.println(text);
     }
 }
 ```
@@ -109,9 +105,11 @@ public class Test {
 
 우리가 리스트 컬렉션을 사용할 때도 위와 같은 이유로 제네릭 타입을 항상 명시해주는 이유이다.
 
-💡 위 상황은 **List에 타입을 명시해주지 않을 경우** Object로 보관을 하기 때문에, 넣었을 땐 String 형식이었지만 반환할 때는 **다시 형변환을 해주어야** 에러가 발생하지 않는다.
+💡 위 상황은 **List에 타입을 명시해주지 않을 경우** Object로 보관을 하기 때문에, 
 
-`List<String> list = new ArrayList<>();` 로 list를 생성하면 **String 타입의 객체만 입력됨을 보장**해주기 때문에 **Casting(형 변환) 없이 반환받을 수 있던 것**이다.
+반환할 때는 **다시 String 형변환을 해주어야** 에러가 발생하지 않는다.
+
+`List<String> list = new ArrayList<>();` 로 list를 생성하면 **String 타입의 객체만 입력됨을 보장**해주기 때문에 **Casting(형 변환) 없이 String으로 반환받을 수 있던 것**이다.
 
  <br>
 
@@ -305,8 +303,6 @@ class Dad{
 ### 제네릭 타입 와일드 카드
 
 ```java
-package test.prac;
-
 public class Test {
     public static void main(String[] args) {
         Ex.getName(new Family<Dad>());
@@ -337,7 +333,7 @@ Family 객체는 `Family<Dad> family = new Family<>();` 혹은 `Family<Son> fami
 
 <br>
 
-이를 메개변수로 받아 처리하는 메서드를 만든다고 생각해보면,
+이를 매개변수로 받아 처리하는 메서드를 만든다고 생각해보면,
 
 위와 같이 타입 기호안에 있는 객체는 다형성이 성립하지 않기 때문에 `getName()` 메서드를 2개 정의해주어야 한다.
 
@@ -345,15 +341,13 @@ Family 객체는 `Family<Dad> family = new Family<>();` 혹은 `Family<Son> fami
 
 하지만, 컴파일에러가 발생한다.
 
-이유는 **지네릭 타입이 다른것 만으로는 오버로딩이 성립하지 않아서, 메서드 중복 정의 문제로 컴파일 에러가 발생하는 것**이다.
+이유는 **제네릭 타입이 다른것 만으로는 오버로딩이 성립하지 않아서, 메서드 중복 정의 문제로 컴파일 에러가 발생하기 때문이다.**
 
 이럴때 사용할 수 있는 것이 `?` 를 이용한 와일드 카드이다.
 
 <br>
 
 ```java
-package test.prac;
-
 public class Test {
     public static void main(String[] args) {
         Ex.getName(new Family<Dad>());
