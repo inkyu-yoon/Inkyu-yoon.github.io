@@ -67,10 +67,11 @@ POSTS
 
 진짜 내 글
 {: .label .label-yellow }
+- 2023.04.21 [【 메일 전송 기능을 EventHandler와 AOP를 적용해 개선하기 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/EmailAop)
 - 2023.04.19 [【 이메일 전송 기능을 비동기 처리해서 응답속도 개선하기 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/EmailAsync)
 - 2023.04.12 [【 Redis로 사용자 인증 구현하기 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/RedisAndAuth)
 - 2023.04.04 [【 Request Dto에 있는 Enum 타입 필드 validation 예외처리 개선하기 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/EnumValidation)
-- 2023.04.03 [【 Dto Validation 예외 처리를 AOP적으로 개선하기 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/ValidationAop)
+- 2023.04.03 [【 Dto Validation 예외 처리를 AOP를 적용해 개선하기 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/ValidationAop)
 - 2023.04.01 [【 @RequestParam 다이렉트로 Enum 타입으로 매핑하기 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/RequestParamEnum)
 - 2023.03.30 [【 WebClient 테스트 MockWebServer vs WireMock 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/WebClientTest)
 - 2023.03.25 [【 Spring Boot Github 소셜 로그인 구현하기 (RestTemplate · WebClient) 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/GithubLogin)

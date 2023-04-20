@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "· Dto Validation 예외 처리를 AOP적으로 개선하기"
+title: "· Dto Validation 예외 처리를 AOP를 적용해 개선하기"
 nav_order: 16
 parent : SpringBoot
 grand_parent: 👩🏻‍💻Language
 permalink: docs/Language/SpringBoot/ValidationAop
 ---
 
-# Dto Validation 예외 처리를 AOP적으로 개선하기
+# Dto Validation 예외 처리를 AOP를 적용해 개선하기
 {: .no_toc }
 
 ## Table of contents
