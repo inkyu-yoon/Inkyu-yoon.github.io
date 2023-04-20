@@ -160,7 +160,7 @@ public class SendMailEventAop implements ApplicationEventPublisherAware {
 
 ***getDeclaredConstructor()*** 메서드를 이용하여 해당 클래스의 생성자를 가져오고, ***newInstance()*** 메서드를 이용하여 이벤트 객체를 생성한다.
 
-이러한 방식으로 객체를 형변환 한 뒤에 이벤트를 발행하는 이유는, afterReturning 메서드의 범용성을 향상시키기 위해서이다.
+이러한 방식으로 객체를 생성한 뒤에 이벤트를 발행하는 이유는, afterReturning 메서드의 범용성을 향상시키기 위해서이다.
 
 > 지금 상황에서는 retVal은 UserFindPasswordResponse 일 것이다.
 
