@@ -21,17 +21,17 @@ permalink: docs/Language/SpringBoot/EmailAop
 <br>
 
 
+
+
 ## EventHandler를 적용하는 이유
-
-aspectj에서 제공하는 ***@AfterReturning*** 어노테이션으로, 메소드가 정상적으로 실행되고 반환값을 반환한 이후에 실행되게끔 할 수 있다.
-
-<br>
 
 메일을 임시 비밀번호 발급 · 사용자 인증번호 전송 · 낙찰 성공 정보 전송 등등 여러가지 기능에 쓰이기 때문에,
 
 Aop 클래스에서 emailService를 의존해서 여러 메서드를 호출하기보다는
 
-**이벤트 발행 역할 하나만 맡는 것이 단일 책임 원칙에 적합하다고 생각이 들었다.**
+Aop 클래스는 **이벤트 발행 역할 하나만 맡는 것이 단일 책임 원칙에 적합하다고 생각이 들었다.**
+
+따라서 EmailEventListener 클래스가, Aop가 발행하는 이벤트에 따라 여러 동작을 수행하도록 구현할 것이다.
 
 <br>
 
@@ -50,7 +50,7 @@ public @interface SendMail {
 
 ### @Target(ElementType.METHOD)
 
-Method에 적용할 것이기 떄문에 MTHOD로 설정한다.
+Method에 적용할 것이기 떄문에 METHOD로 설정한다.
 
 <br>
 
@@ -89,7 +89,7 @@ public UserFindPasswordResponse findPassword(UserFindPasswordRequest request) th
 
 ***@SendMail(classInfo = UserFindPasswordResponse.class)*** 와 같이 반환되는 객체의 클래스 정보를 넘겨준다.
 
-그리고 해당 클래스를 통해서,이벤트를 발생시켜 이벤트가 동작하도록 정의할 것이다.
+그리고 어노테이션 옵션으로 지정한 클래스로 이벤트를 발생시켜, 특정 이벤트가 동작하도록 정의할 것이다.
 
 
 
@@ -160,6 +160,10 @@ public class SendMailEventAop implements ApplicationEventPublisherAware {
 
 ***getDeclaredConstructor()*** 메서드를 이용하여 해당 클래스의 생성자를 가져오고, ***newInstance()*** 메서드를 이용하여 이벤트 객체를 생성한다.
 
+이러한 방식으로 객체를 형변환 한 뒤에 이벤트를 발행하는 이유는 메서드이 범용성을 향상시키기 위해서이다.
+
+> 지금 상황에서는 retVal은 UserFindPasswordResponse 일 것이다.
+
 <br>
 
 ```java
@@ -179,7 +183,7 @@ public class UserFindPasswordResponse {
 
 <br>
 
-마지막으로  ***eventPublisher.publishEvent(event);*** 메서드가 동작하면서 이벤트를 발생시킨다.
+마지막으로  ***eventPublisher.publishEvent(event);*** 메서드가 동작하면서 이벤트를 발생시키게 된다.
 
 <br>
 
