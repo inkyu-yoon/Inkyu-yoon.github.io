@@ -137,6 +137,7 @@ POSTS
 
 에러 정리 글
 {: .label .label-yellow }
+- 2023.04.25 [【 도커로 실행한 MySQL, command not found 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/MysqlCommandError)
 - 2023.01.28 [【 스크립트 태그 상대경로 설정으로 인한 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/RefusedMIME)
 - 2023.01.05 [【 axios post 요청 전달 시 authorization 토큰 인식 에러 해결 】](https://inkyu-yoon.github.io/docs/Language/FrontEnd/AxiosPost)
 - 2022.12.20 [【 pull 명령 시 denied: access forbidden 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/AccessDeniedError)
