@@ -67,6 +67,7 @@ POSTS
 
 진짜 내 글
 {: .label .label-yellow }
+- 2023.04.27 [【 NCP 서버 생성 후 접속하기 】](https://inkyu-yoon.github.io/docs/Learned/TIP/NCPServer)
 - 2023.04.21 [【 메일 전송 기능을 EventHandler와 AOP를 활용해 개선하기 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/EmailAop)
 - 2023.04.19 [【 이메일 전송 기능을 비동기 처리해서 응답속도 개선하기 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/EmailAsync)
 - 2023.04.12 [【 Redis로 사용자 인증 구현하기 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/RedisAndAuth)
