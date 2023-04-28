@@ -212,7 +212,7 @@ public class DataSourceConfig {
 
 
 
-### Master용 Bean, Slave용 Bean 정의
+### 어노테이션 정리
 
 ```java
 @Configuration
@@ -237,6 +237,7 @@ JPA를 자동 구성으로 사용할 때는, ***DataSourceAutoConfiguration*** �
 
 ***@EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class})*** 를 추가함으로서 자동 구성된 빈 때문에 빈 충돌이 발생하는 것을 방지한다.
 
+### PlatformTransactionManager 정의
 
 
 ***@EnableTransactionManagement*** 어노테이션은 트랜잭션 관리를 위해 필요한 여러 구성 요소를 자동으로 구성해주기 때문에 필요하다.
@@ -261,6 +262,9 @@ JPA를 자동 구성으로 사용할 때는, ***DataSourceAutoConfiguration*** �
 
 <br>
 
+### DataSource Master용 Bean, Slave용 Bean 정의
+
+
 ```java
     @Bean(name = "masterDataSource")
     @ConfigurationProperties(prefix = "spring.datasource.master")
@@ -278,7 +282,6 @@ JPA를 자동 구성으로 사용할 때는, ***DataSourceAutoConfiguration*** �
 `application.yml` 에서 입력한 master와 slave 관련 설정들이 주입된 ***DataSource*** 빈을 생성하는 구문이다.
 
 이렇게 만든 2개의 ***DataSource*** 빈을, 적절한 때에 적절한 것을 사용하게끔 하는 것이다.
-
 
 
 ```java
@@ -313,6 +316,9 @@ JPA를 자동 구성으로 사용할 때는, ***DataSourceAutoConfiguration*** �
 
 <br>
 
+### LazyConnectionDataSourceProxy 정의
+
+
 ```java
     @DependsOn({"routingDataSource"})
     @Bean
@@ -332,6 +338,9 @@ JPA를 자동 구성으로 사용할 때는, ***DataSourceAutoConfiguration*** �
 이를 통해, 애플리케이션 시작 시점에 모든 데이터 소스를 초기화하는 것이 아니라, 필요한 데이터 소스가 요청되는 시점에 초기화될 수 있도록 구현할 수 있다.
 
 <br>
+
+### entityManagerFactory 정의
+
 
 ```java
     @Bean
