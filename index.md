@@ -112,7 +112,19 @@ POSTS
 - 2022.11.02 [【 Git Bash로 Docker 설치하고 MYSQL 연결하기 】](https://inkyu-yoon.github.io/docs/Learned/Docker/DockerAndEc2)
 - 2022.10.24 [【 Jdbc Template으로 쉽게 DB 활용하기 】](https://inkyu-yoon.github.io/docs/Language/Spring/JdbcTemplate)
 - 2022.10.21 [【 ExecuteQuery() 메서드 분리와 ResultSet 반환 해결 】](https://inkyu-yoon.github.io/docs/Language/Spring/ExecuteQuery)
-  
+
+에러 정리 글
+{: .label .label-yellow }
+- 2023.04.25 [【 도커로 실행한 MySQL, command not found 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/MysqlCommandError)
+- 2023.01.28 [【 스크립트 태그 상대경로 설정으로 인한 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/RefusedMIME)
+- 2023.01.05 [【 axios post 요청 전달 시 authorization 토큰 인식 에러 해결 】](https://inkyu-yoon.github.io/docs/Language/FrontEnd/AxiosPost)
+- 2022.12.20 [【 pull 명령 시 denied: access forbidden 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/AccessDeniedError)
+- 2022.12.07 [【 Jwt 토큰 생성 시 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/SecretKeyError)
+- 2022.12.02 [【 【IntelliJ 】 콘솔 창 한글 깨짐 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/KoreanError)
+- 2022.11.29 [【 WebMvcTest 중 NoSuchBeanDefinitionException 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/WebMvcError)
+- 2022.11.11 [【 FileReader 시 한글 깨짐 해결 】](https://inkyu-yoon.github.io/docs/Learned/TIP/FileReader)
+- 2022.11.10 [【 SQLException 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/SQLError)
+
 
 필수 지식 정리
 {: .label .label-yellow }
@@ -138,23 +150,15 @@ POSTS
 - 2023.03.30 [【 자바의 접근 제어자 】](https://inkyu-yoon.github.io/docs/Language/Java/AccessModifier)
 - 2023.03.30 [【 Managed · UnManaged 언어의 특징 】](https://inkyu-yoon.github.io/docs/Learned/OS/ManagedUnManaged)
 
-에러 정리 글
+스프링 정리 글
 {: .label .label-yellow }
-- 2023.04.25 [【 도커로 실행한 MySQL, command not found 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/MysqlCommandError)
-- 2023.01.28 [【 스크립트 태그 상대경로 설정으로 인한 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/RefusedMIME)
-- 2023.01.05 [【 axios post 요청 전달 시 authorization 토큰 인식 에러 해결 】](https://inkyu-yoon.github.io/docs/Language/FrontEnd/AxiosPost)
-- 2022.12.20 [【 pull 명령 시 denied: access forbidden 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/AccessDeniedError)
-- 2022.12.07 [【 Jwt 토큰 생성 시 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/SecretKeyError)
-- 2022.12.02 [【 【IntelliJ 】 콘솔 창 한글 깨짐 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/KoreanError)
-- 2022.11.29 [【 WebMvcTest 중 NoSuchBeanDefinitionException 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/WebMvcError)
-- 2022.11.11 [【 FileReader 시 한글 깨짐 해결 】](https://inkyu-yoon.github.io/docs/Learned/TIP/FileReader)
-- 2022.11.10 [【 SQLException 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/SQLError)
+- 2023.05.08 [【 Spring Weaving(RTW · PCW · CTW · LTW)의 특징 】](https://inkyu-yoon.github.io/docs/Language/Spring/spring-aop-weaving)
+- 2023.03.17 [【 Spring IoC와 DI, 그리고 DI 주입 방법 】](https://inkyu-yoon.github.io/docs/Language/Spring/SpringIocAndDI)
 
 
 TIL 정리 글
 {: .label .label-yellow }
 - 2023.04.11 [【 Race Condition과 Mutex · Semaphore 】](https://inkyu-yoon.github.io/docs/Learned/OS/RaceCondition)
-- 2023.03.17 [【 Spring IoC와 DI, 그리고 DI 주입 방법 】](https://inkyu-yoon.github.io/docs/Language/Spring/SpringIocAndDI)
 - 2023.03.02 [【 나라야나 판디트 알고리즘 】](https://inkyu-yoon.github.io/docs/Learned/Algorithm/NarayanaPanditas)
 - 2023.02.28 [【 구간 합 알고리즘 (Prefix Sum Algorithm) 】](https://inkyu-yoon.github.io/docs/Learned/Algorithm/PrefixAlgorithm)
 - 2023.02.22 [【 SSL HandShake와 대칭키 · 비대칭키 방식 】](https://inkyu-yoon.github.io/docs/Learned/Network/SecureKey)
