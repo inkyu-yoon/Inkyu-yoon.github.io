@@ -18,7 +18,7 @@ permalink: docs/Language/Spring/Solid
 
 ---
 
-## S : SRP(Single Reposibility Principle), 단일 책임 원칙
+## S : SRP(Single Responsibility  Principle), 단일 책임 원칙
 
 <br>
 
@@ -62,7 +62,7 @@ permalink: docs/Language/Spring/Solid
 
 ------
 
-## L : LSP(Liskov Substitutuion Principle), 리스코프 치환 법칙
+## L : LSP(Liskov Substitutuion Principle), 리스코프 치환 원칙
 
 <br>
 
@@ -84,7 +84,7 @@ ex) 자동차 인터페이스의 엑셀을 앞으로 가능 기능이라고 했�
 
 ------
 
-## I : ISP(Interface Segregation Principle), 인터페이스 분리 법칙
+## I : ISP(Interface Segregation Principle), 인터페이스 분리 원칙
 
 <br>
 
