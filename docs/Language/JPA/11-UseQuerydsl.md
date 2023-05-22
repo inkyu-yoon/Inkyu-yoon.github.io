@@ -24,17 +24,9 @@ permalink: docs/Language/JPA/UseQuerydsl
 
 <br>
 
-개인 프로젝트와 팀 프로젝트를 진행하면서, 아쉬웠던 점이 하나 있었다.
-
-열심히 Querydsl 강의를 들었지만, 활용하지 못했다는 것..
-
-핑계일 수 있겠지만, 일단 결과물을 완성시켜야 한다는 생각이 앞서서 쿼리문을 잔뜩 남발했다.
+일단 결과물을 완성시켜야 한다는 생각이 앞서서 쿼리문을 잔뜩 남발했다.
 
 '쿼리문을 여러개 날려도 원하는 결과만 반환되면 되니까?!' 라고 생각했었다. 🤔
-
-
-
-지금은 프로젝트가 다 끝났고, 좀 여유가 생겨서 꼭 리팩토링하자고 다짐했었다!
 
 먼저 문제점을 살펴보자.
 
@@ -43,10 +35,10 @@ permalink: docs/Language/JPA/UseQuerydsl
 내가 진행했던 SNS 프로젝트에서 알람을 조회하는 기능이 있었다.
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20230225210348237.png" alt="image-20230225210348237" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20230522213330013.png" alt="image-20230522213330013" style="zoom:50%;" />
 </p>
 
-위 기능은, 내가 작성한 글에 댓글이나 좋아요를 다른 사용자가 클릭했을 때 목록을 가져와서 최신 알림 순으로 보여주는 기능이다.
+위 기능은, 내가 작성한 글에 댓글을 달거나 좋아요를 다른 사용자가 입력했을 때 목록을 가져와서 최신 알림 순으로 보여주는 기능이다.
 
 그렇다면, 이 기능을 위해서 몇개의 쿼리를 날렸었을까?
 
@@ -119,44 +111,34 @@ permalink: docs/Language/JPA/UseQuerydsl
 
 
 ```java
-package likelion.sns.repository;
-
-import com.querydsl.core.group.GroupBy;
+import com.growith.domain.alarm.dto.AlarmGetListResponse;
 import com.querydsl.core.types.Projections;
 import com.querydsl.jpa.impl.JPAQueryFactory;
-import likelion.sns.domain.dto.alarm.AlarmListDetailsDto;
-import likelion.sns.repository.custom.AlarmCustomRepository;
-import org.springframework.stereotype.Repository;
+import lombok.RequiredArgsConstructor;
 
 import java.util.List;
 
-import static likelion.sns.domain.entity.QAlarm.alarm;
-import static likelion.sns.domain.entity.QPost.post;
-import static likelion.sns.domain.entity.QUser.user;
+import static com.growith.domain.alarm.QAlarm.*;
+import static com.growith.domain.post.QPost.*;
+import static com.growith.domain.user.QUser.*;
+import static com.querydsl.core.group.GroupBy.groupBy;
 
-@Repository
+@RequiredArgsConstructor
 public class AlarmCustomRepositoryImpl implements AlarmCustomRepository {
 
     private final JPAQueryFactory jpaQueryFactory;
 
-    public AlarmCustomRepositoryImpl(JPAQueryFactory jpaQueryFactory) {
-        this.jpaQueryFactory = jpaQueryFactory;
-    }
-
-
     @Override
-    public List<AlarmListDetailsDto> getAlarmListByUserId(Long userId) {
-        List<AlarmListDetailsDto> result = jpaQueryFactory.from(alarm)
+    public List<AlarmGetListResponse> getAlarms(Long userId) {
+        List<AlarmGetListResponse> result = jpaQueryFactory.from(alarm)
                 .where(alarm.user.id.eq(userId))
                 .join(user).on(user.id.eq(alarm.fromUserId))
                 .join(post).on(post.id.eq(alarm.targetId))
-                .orderBy(alarm.createdAt.desc())
-                .transform(GroupBy
-                        .groupBy(alarm.id).list(
-                                Projections.constructor(AlarmListDetailsDto.class,
-                                        alarm, user.userName, post.title)));
-
-            return result;
+                .orderBy(alarm.createdDate.desc())
+                .transform(groupBy(alarm.id).list(
+                        Projections.constructor(AlarmGetListResponse.class,
+                                alarm, user.nickName, post.title)));
+        return result;
     }
 }
 
