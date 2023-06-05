@@ -67,6 +67,7 @@ POSTS
 
 진짜 내 글
 {: .label .label-yellow }
+- 2023.06.05 [【 AWS S3 IAM 사용자 계정 생성 및 엑세스 키 발급받기 】](https://inkyu-yoon.github.io/docs/Learned/TIP/s3-setting)
 - 2023.04.27 [【 Spring Boot MySQL Master-Slave 기능 구현하기 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/datasource-replication)
 - 2023.04.27 [【 MySQL Replication Master-Slave 이중화 시스템 구현하기 】](https://inkyu-yoon.github.io/docs/Learned/DataBase/mysql-replication)
 - 2023.04.27 [【 NCP 서버 생성 후 접속하기 】](https://inkyu-yoon.github.io/docs/Learned/TIP/NCPServer)
