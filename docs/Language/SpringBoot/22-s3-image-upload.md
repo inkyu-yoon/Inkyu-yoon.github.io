@@ -370,7 +370,28 @@ public String upload(MultipartFile file, String bucket, String folder) {
 
 조회한 url과 Product 엔티티를 통해 `ProductImage` 엔티티에도 저장한다.
 
+### Controller 로직
 
+```java
+@RestController
+@RequestMapping("api/v1")
+@RequiredArgsConstructor
+public class FileApiController {
+    private final AwsS3Service awsS3Service;
+
+    @PostMapping("/products/{productId}/images")
+    public ResponseEntity<Response<FileResponse>> uploadProductFiles(Authentication authentication, @PathVariable(name = "productId") Long productId, @RequestPart List<MultipartFile> multipartFiles) {
+        FileResponse response = awsS3Service.uploadProductFiles(productId, multipartFiles);
+        return ResponseEntity.status(CREATED).body(Response.success(response));
+    }
+}
+```
+
+위와 같이 `Controller` 코드를 작성해준다.
+
+Post 요청을 받아 Service 로직을 실행시켜주는 간단한 코드이다.
+
+`@RequestPart` 어노테이션을 통해 파일 형태로 전달되는 데이터를 `MultiPart` 객체로 매핑해준다.
 
 ### 테스트
 
