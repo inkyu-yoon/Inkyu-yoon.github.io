@@ -20,6 +20,7 @@ permalink: docs/Language/Java/JVMRuntimeDataArea
 
 {: .important-title}
 > 핵심
+> 
 > JVM 의 메모리구조는 Method Area · Heap · JVM Stack · Native Method Stack · PC Registers 로 구성되어 있습니다.
 > 
 > Method Area와 Heap 영역은 모든 쓰레드가 공유하는 영역이고 JVM Stack, Native Method Stack, PC Register 는 스레드 별로 각각 갖고 있습니다.
@@ -31,9 +32,13 @@ permalink: docs/Language/Java/JVMRuntimeDataArea
 > 각 영역이 하는 역할은 무엇인가요?
 > 
 > Method Area는 클래스 혹은 인터페이스의 정보와 상수, 메서드 그리고 정적변수를 보관합니다.
+> 
 > Heap 은 동적으로 생성되는 인스턴스 객체와 배열이 저장되는 공간이며 GC에 의해 정리되는 영역입니다.
+> 
 > JVM Stack 은 메서드 호출과 관련된 정보를 저장하는 곳으로 지역 변수, 매개 변수, 리턴 값 등이 저장됩니다.
+> 
 > Native Method Stack 은 자바가 아닌 다른 언어로 작성된 코드를 위한 영역으로 JVM Stack 과 비슷한 역할은 수행합니다.
+> 
 > PC Register는 JVM의 명령어를 정확하게 제어할 수 있도록 도와주는 역할을 한다.
 
 <br>
