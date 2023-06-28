@@ -295,13 +295,13 @@ public String upload(MultipartFile file, String bucket, String folder) {
 
 
 
-코드에서 주목해야할 부분은 ` amazonS3Client.putObject()` 이다.
+코드에서 주목해야할 부분은 `amazonS3Client.putObject()` 이다.
 
 파라미터로 파일을 저장할 `버킷명`, `경로와 파일이름` , `입력 스트림`, `메타데이터` 를 전달하고
 
 `.withCannedAcl(CannedAccessControlList.PublicRead));` 메서드를 통해 파일을 공개 읽기 권한으로 설정한다.
 
-그러면 ` amazonS3Client.getUrl(bucket, key).toString();` 을 통해서 해당 파일이 저장된 url 을 조회할 수 있게된다.
+그러면 `amazonS3Client.getUrl(bucket, key).toString();` 을 통해서 해당 파일이 저장된 url 을 조회할 수 있게된다.
 
 
 

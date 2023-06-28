@@ -18,6 +18,23 @@ permalink: docs/Language/Java/JVMRuntimeDataArea
 
 ---
 
+{: .important-title}
+> 핵심
+> JVM 의 메모리구조는 Method Area · Heap · JVM Stack · Native Method Stack · PC Registers 로 구성되어 있습니다.
+> 
+> Method Area와 Heap 영역은 모든 쓰레드가 공유하는 영역이고 JVM Stack, Native Method Stack, PC Register 는 스레드 별로 각각 갖고 있습니다.
+> 
+
+<br>
+
+{: .important-title}
+> 각 영역이 하는 역할은 무엇인가요?
+> 
+> Method Area는 클래스 혹은 인터페이스의 정보와 상수, 메서드 그리고 정적변수를 보관합니다.
+> Heap 은 동적으로 생성되는 인스턴스 객체와 배열이 저장되는 공간이며 GC에 의해 정리되는 영역입니다.
+> JVM Stack 은 메서드 호출과 관련된 정보를 저장하는 곳으로 지역 변수, 매개 변수, 리턴 값 등이 저장됩니다.
+> Native Method Stack 은 자바가 아닌 다른 언어로 작성된 코드를 위한 영역으로 JVM Stack 과 비슷한 역할은 수행합니다.
+> PC Register는 JVM의 명령어를 정확하게 제어할 수 있도록 도와주는 역할을 한다.
 
 <br>
 
@@ -25,7 +42,11 @@ permalink: docs/Language/Java/JVMRuntimeDataArea
 <img src="https://raw.githubusercontent.com/buinq/imageServer/main/img/image-20230315131741806.png" alt="image-20230315131741806" style="zoom:67%;" />
 </p>
 
-개발자가 `.java` 파일을 만들면 자바 컴파일러는 이 소스 파일을 `.class` 파일로 변환하고, 클래스 로더는 이 클래스 파일을 바탕으로 JVM 메서드 영역에 동적로딩을 한다. 그리고 동적 로딩된 데이터를 바탕으로 JIT 컴파일러는 객체를 Heap 영역에 생성하고 Heap 영역에 생성된 객체는 GC를 통해 불필요한 데이터를 정리한다.
+개발자가 `.java` 파일을 만들면 자바 컴파일러는 이 소스 파일을 `.class` 파일로 변환하고, 
+
+클래스 로더는 이 클래스 파일을 바탕으로 JVM 메서드 영역(Method Area)에 동적로딩을 한다.  
+
+그리고 동적 로딩된 데이터를 바탕으로 JIT 컴파일러는 객체를 Heap 영역에 생성하고 Heap 영역에 생성된 객체는 GC를 통해 불필요한 데이터를 정리한다.
 
 이제 JVM이 운영체제로부터 할당받은 메모리 영역인 RunTime Data Area에 대해서 알아보겠다.
 
@@ -44,13 +65,14 @@ RunTime Data Area를 자세히 살펴보면
 ### Method Area
 
 <br>
+
 클래스 로더는 class 정보를 Method Area에 동적 로딩한다고 했었다.
 
 메모리 공간에 정보가 있어야 실행을 할 수 있으니 필요하다. 프로그램의 흐름을 구성한다고 볼 수 있다.
 
 동적로딩으로 올려지기 때문에, 불필요한 바이트코드를 제외한 프로그램을 실행하는데 필요한 데이터들이 모여있는 영역이라고 할 수 있겠다.
 
-
+클래스, 인터페이스의 코드와 상수, 정적변수, 메서드 등이 저장된다.
 
 저장되는 데이터는 다음과 같다.
 
@@ -129,9 +151,7 @@ Java Stack영역이 가득 차게 되면 StackOverflowError가 발생된다.
 
 <br>
 
-Java 에서 Thread 는 각자의 메소드를 실행하게 된다.
-
-Thread가 어떤 명령을 실행하게 될지 기록한다.
+현재 실행 중인 명령어의 주소를 저장하는 역할을 한다. 그리고 다음에 실행할 명령어를 가리키는 역할을 한다.
 
 <br>
 
@@ -141,6 +161,13 @@ Thread가 어떤 명령을 실행하게 될지 기록한다.
 
 Java 외의 언어로 작성된 네이티브 코드(C 혹은 C++)를 위한 stack이다.
 
+네이티브 메서드 스택은 네이티브 메서드 호출 시 인수, 지역 변수, 리턴 값 등을 저장한다.
+
+자바 코드와 네이티브 코드 간의 상호작용을 지원하기 위해 필요하다.  
+
+이를 통해 자바 언어의 간결성과 이식성을 유지하면서도 네이티브 코드를 활용하여 하드웨어나 운영체제에 특화된 작업을 수행할 수 있다.  
+
+예를 들어, 네이티브 메서드를 사용하여 그래픽 처리, 네트워크 통신, 파일 시스템 접근 등의 작업을 자바 프로그램에 통합할 수 있다.
 
 
 <br>

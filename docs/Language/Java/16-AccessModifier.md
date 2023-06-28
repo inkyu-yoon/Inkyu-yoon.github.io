@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "· 자바의 접근 제어자"
+title: "· 자바의 접근 제어자와 protected와 private는 왜 사용되는가?"
 nav_order: 16
 parent : Java
 grand_parent: 👩🏻‍💻Language
 permalink: docs/Language/Java/AccessModifier
 ---
 
-# 자바의 접근 제어자
+# 자바의 접근 제어자와 protected와 private는 왜 사용되는가?
 {: .no_toc }
 
 ## Table of contents
@@ -22,7 +22,7 @@ permalink: docs/Language/Java/AccessModifier
 
 
 {: .important-title}
-> 접근 제어자 정리
+> 핵심
 > 
 > 접근제어자는 private, default, protected, public 가 있으며,
 >
@@ -32,17 +32,12 @@ permalink: docs/Language/Java/AccessModifier
 >
 > protected는 같은 패키지에 있거나 다른 패키지인 경우 상속받은 클래스만 접근할 수 있고
 >
-> public은 어디서든 접근할 수 있다.
+> public은 어디서든 접근할 수 있습니다.
 >
 >
->
-> 접근 제어자를 사용하는 이유는 클래스 내부에 선언된 데이터를 보호하기 위해서이다.
->
-> 데이터가 유효한 값을 유지하도록 또는 외부에서 변경하지 못하도록 외부로부터 접근을 제어하는 것이다.
->
->
->
-> 데이터가 변경되는 경우에도, private는 클래스 내부만 확인하면 되지만 public의 경우 확인해야하는 범위가 넓어진다.
+> 제가 생각하기에는 protected 제어자의 경우 외부의 접근은 제한하지만 상속받는 객체에게 필드나 메서드를 사용 또는 확장하도록 강조하고 싶을 때 사용한다고 생각합니다.
+> 
+> private 제어자의 경우 외부에서 직접 접근할 수 없기 때문에 정보의 은닉화와 캡슐화를 위해 사용한다고 생각합니다.
 
 <br>
 

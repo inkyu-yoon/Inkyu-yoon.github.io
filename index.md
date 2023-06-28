@@ -53,18 +53,6 @@ Who am I
 POSTS
 {: .fs-8 .fw-700 }
 
-
-회고
-{: .label .label-yellow }
-- (3~6) 2분기 회고로 돌아올 예정
-- 2023.03.04 [【 23년 2월 회고 】](https://inkyu-yoon.github.io/docs/Retrospect/February23)
-- 2023.02.04 [【 23년 1월 회고 】](https://inkyu-yoon.github.io/docs/Retrospect/January23)
-- 2023.01.01 [【 22년 12월 회고 】](https://inkyu-yoon.github.io/docs/Retrospect/December22)
-- 2022.12.04 [【 22년 11월 회고 】](https://inkyu-yoon.github.io/docs/Retrospect/November22)
-- 2022.11.01 [【 22년 10월 회고 】](https://inkyu-yoon.github.io/docs/Retrospect/October22)
-- 2022.10.01 [【 22년 9월 회고 】](https://inkyu-yoon.github.io/docs/Retrospect/September22)
-- 2022.09.02 [【 22년 8월 회고 】](https://inkyu-yoon.github.io/docs/Retrospect/August22)
-
 진짜 내 글
 {: .label .label-yellow }
 - 2023.06.08 [【 Spring Boot AWS S3 에 파일 업로드 하기 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/s3-image-upload)
@@ -127,86 +115,16 @@ POSTS
 - 2022.11.11 [【 FileReader 시 한글 깨짐 해결 】](https://inkyu-yoon.github.io/docs/Learned/TIP/FileReader)
 - 2022.11.10 [【 SQLException 에러 】](https://inkyu-yoon.github.io/docs/Learned/Error/SQLError)
 
-
-필수 지식 정리
+회고
 {: .label .label-yellow }
-- 2023.04.24 [【 Java Vector·Stack 대신 Deque를 사용하자 】](https://inkyu-yoon.github.io/docs/Language/Java/Deque)
-- 2023.04.17 [【 Java Equals()와 == 의 차이 】](https://inkyu-yoon.github.io/docs/Language/Java/EqualsOverride)
-- 2023.04.17 [【 Java Generic 이란? 】](https://inkyu-yoon.github.io/docs/Language/Java/Generic)
-- 2023.04.14 [【 JAVA 직렬화(Serialization)과 역직렬화(Deserialization) 】](https://inkyu-yoon.github.io/docs/Language/Java/Serialization)
-- 2023.04.13 [【 JAVA Interface와 Abstract Class에 대한 고찰 】](https://inkyu-yoon.github.io/docs/Language/Java/InterFaceAndAbstract)
-- 2023.04.12 [【 JAVA Call By Value vs Call By Reference? 】](https://inkyu-yoon.github.io/docs/Language/Java/CallByValue)
-- 2023.04.12 [【 JAVA Wrapper Class 란? 】](https://inkyu-yoon.github.io/docs/Language/Java/WrapperClass)
-- 2023.04.11 [【 JAVA String 클래스의 특징 】](https://inkyu-yoon.github.io/docs/Language/Java/String)
-- 2023.04.11 [【 JAVA final 키워드의 역할 】](https://inkyu-yoon.github.io/docs/Language/Java/Final)
-- 2023.04.10 [【 JAVA volatile과 Atomic 변수 · CAS 】](https://inkyu-yoon.github.io/docs/Language/Java/Volatile)
-- 2023.04.10 [【 JAVA 동기화와 Synchronized 】](https://inkyu-yoon.github.io/docs/Language/Java/Synchronized)
-- 2023.04.05 [【 JAVA Fail-Safe · Fail-Fast Iterator란? 】](https://inkyu-yoon.github.io/docs/Language/Java/FailSafeFast)
-- 2023.04.05 [【 JAVA for each 문의 특징 】](https://inkyu-yoon.github.io/docs/Language/Java/ForEachLoop)
-- 2023.04.03 [【 JAVA Stream API 특징 】](https://inkyu-yoon.github.io/docs/Language/Java/AboutStream)
-- 2023.04.03 [【 람다식과 함수 인터페이스 】](https://inkyu-yoon.github.io/docs/Language/Java/AboutLambda)
-- 2023.03.22 [【 JVM 메모리 구조 (RunTime Data Area) 】](https://inkyu-yoon.github.io/docs/Language/Java/JVMRuntimeDataArea)
-- 2023.03.21 [【 JVM의 실행 엔진(Execution Engine) 구성 요소와 역할 】](https://inkyu-yoon.github.io/docs/Language/Java/ExecutionEngine)
-- 2023.03.15 [【 JVM Class Loader(클래스 로더) 동작 과정 】](https://inkyu-yoon.github.io/docs/Language/Java/ClassLoader)
-- 2023.03.13 [【 JVM의 간략한 동작 과정 】](https://inkyu-yoon.github.io/docs/Language/Java/AboutJVM)
-- 2023.03.30 [【 자바의 접근 제어자 】](https://inkyu-yoon.github.io/docs/Language/Java/AccessModifier)
-- 2023.03.30 [【 Managed · UnManaged 언어의 특징 】](https://inkyu-yoon.github.io/docs/Learned/OS/ManagedUnManaged)
-
-스프링 정리 글
-{: .label .label-yellow }
-- 2023.05.08 [【 Spring Weaving(RTW · PCW · CTW · LTW)의 특징 】](https://inkyu-yoon.github.io/docs/Language/Spring/spring-aop-weaving)
-- 2023.03.17 [【 Spring IoC와 DI, 그리고 DI 주입 방법 】](https://inkyu-yoon.github.io/docs/Language/Spring/SpringIocAndDI)
-
-
-TIL 정리 글
-{: .label .label-yellow }
-- 2023.04.11 [【 Race Condition과 Mutex · Semaphore 】](https://inkyu-yoon.github.io/docs/Learned/OS/RaceCondition)
-- 2023.03.02 [【 나라야나 판디트 알고리즘 】](https://inkyu-yoon.github.io/docs/Learned/Algorithm/NarayanaPanditas)
-- 2023.02.28 [【 구간 합 알고리즘 (Prefix Sum Algorithm) 】](https://inkyu-yoon.github.io/docs/Learned/Algorithm/PrefixAlgorithm)
-- 2023.02.22 [【 SSL HandShake와 대칭키 · 비대칭키 방식 】](https://inkyu-yoon.github.io/docs/Learned/Network/SecureKey)
-- 2023.02.22 [【 도메인 접속시 발생하는 과정과 TCP/UDP의 특징 】](https://inkyu-yoon.github.io/docs/Learned/Network/ProcessAndProtocol)
-- 2023.02.19 [【 메모리 분할 시스템의 종류와 특징 】](https://inkyu-yoon.github.io/docs/Learned/OS/MemoryManage)
-- 2023.02.13 [【 교착 상태(DeadLock)과 해결 방법 】](https://inkyu-yoon.github.io/docs/Learned/OS/DeadLock)
-- 2023.01.31 [【 CPU 스케줄러와 스케줄링 알고리즘 】](https://inkyu-yoon.github.io/docs/Learned/OS/Scheduler)
-- 2023.01.26 [【 Thymeleaf 기본 문법 정리 】](https://inkyu-yoon.github.io/docs/Language/FrontEnd/ThymeleafBasic)
-- 2023.01.24 [【 프로세스와 스레드 】](https://inkyu-yoon.github.io/docs/Learned/OS/Process)
-- 2023.01.17 [【 CPU의 구성과 버스의 종류 】](https://inkyu-yoon.github.io/docs/Learned/OS/OSCPUandBus)
-- 2023.01.13 [【 javascript async vs defer 옵션 】](https://inkyu-yoon.github.io/docs/Language/FrontEnd/JsDefer)
-- 2023.01.10 [【 운영체제의 구조와 커널의 종류별 특징 】](https://inkyu-yoon.github.io/docs/Learned/OS/OSBasic)
-- 2023.01.07 [【 Git 원격 저장소 그리고 pull vs fetch 】](https://inkyu-yoon.github.io/docs/Learned/Git/GitRemote)
-- 2023.01.06 [【 Git branch 기본 내용 】](https://inkyu-yoon.github.io/docs/Learned/Git/GitBranch)
-- 2023.01.06 [【 Git 기본 명령어 정리 】](https://inkyu-yoon.github.io/docs/Learned/Git/GitBasic)
-- 2022.12.31 [【 Controller 에서 요청 객체 변수 유효성 검사하기 】](https://inkyu-yoon.github.io/docs/Language/SpringBoot/validation)
-- 2022.12.18 [【 Dockerfile 최적화 작성 및 빌드 】](https://inkyu-yoon.github.io/docs/Learned/Docker/DockerDockerfile)
-- 2022.12.15 [【 도커 네트워크 & Bridge 】](https://inkyu-yoon.github.io/docs/Learned/Docker/DockerNetwork)
-- 2022.12.08 [【 Querydsl 사용자 정의 레포지토리 & 페이징 】](https://inkyu-yoon.github.io/docs/Language/JPA/QuerydslRepo)
-- 2022.12.07 [【 Querydsl Projection 과 동적 쿼리 】](https://inkyu-yoon.github.io/docs/Language/JPA/QuerydslProjection)
-- 2022.12.06 [【 Querydsl Join & 서브쿼리 & Concat 】](https://inkyu-yoon.github.io/docs/Language/JPA/QuerydslJoin)
-- 2022.12.04 [【 Querydsl 기본적인 쿼리문 작성하기 】](https://inkyu-yoon.github.io/docs/Language/JPA/QuerydslCreateQuery)
-- 2022.12.03 [【 캐시와 검증헤더 】](https://inkyu-yoon.github.io/docs/Learned/HTTP/Cache)
-- 2022.12.01 [【 JPA 프록시와 영속성 전이 】](https://inkyu-yoon.github.io/docs/Language/JPA/ProxyAndCascade)
-- 2022.12.01 [【 JPA 객체 간 연관 관계 매핑 】](https://inkyu-yoon.github.io/docs/Language/JPA/JPAMapping)
-- 2022.11.30 [【 Persistence Context(영속성 컨텍스트)와 변경감지 】](https://inkyu-yoon.github.io/docs/Language/JPA/PersistenceContext)
-- 2022.11.23 [【 OSI · TCP/IP 모델과 캡슐화 · 역캡슐화 】](https://inkyu-yoon.github.io/docs/Learned/Network/OSIandTCP)
-- 2022.11.21 [【 네트워크의 정의와 장단점 】](https://inkyu-yoon.github.io/docs/Learned/Network/NetworkDef)
-- 2022.11.19 [【 HTTP 헤더 】](https://inkyu-yoon.github.io/docs/Learned/HTTP/HTTPHeader)
-- 2022.11.07 [【 HTTP 상태 코드 】](https://inkyu-yoon.github.io/docs/Learned/HTTP/HTTPStatus)
-- 2022.11.03 [【 Docker 명령어와 볼륨 】](https://inkyu-yoon.github.io/docs/Learned/Docker/DockerBasic)
-- 2022.11.02 [【 HTTP 메서드의 특징 】](https://inkyu-yoon.github.io/docs/Learned/HTTP/HTTPMethod)
-- 2022.11.01 [【 JPA 기본 에너테이션과 메서드 】](https://inkyu-yoon.github.io/docs/Language/JPA/JPABasic)
-- 2022.10.30 [【 cmd를 이용해서 localhost 종료 】](https://inkyu-yoon.github.io/docs/Learned/Error/LocalEnd)
-- 2022.10.28 [【 API 활용 에너테이션 정리 】](https://inkyu-yoon.github.io/docs/Language/Spring/SpringBootBasic)
-- 2022.10.28 [【 소수 구하기 (에라토스테네스의 체) 】](https://inkyu-yoon.github.io/docs/Learned/Algorithm/Primary)
-- 2022.10.26 [【 HTTP의 특징과 구조 】](https://inkyu-yoon.github.io/docs/Learned/HTTP/AboutHTTP)
-- 2022.10.25 [【 유클리드 호제법 (최대공약수·최소공배수) 】](https://inkyu-yoon.github.io/docs/Learned/Algorithm/FindGcd)
-- 2022.10.24 [【 함수적 종속성과 정규화(1NF·2NF·3NF·BCNF) 】](https://inkyu-yoon.github.io/docs/Learned/DataBase/NF)
-- 2022.10.24 [【 세그먼트 트리 구현 】](https://inkyu-yoon.github.io/docs/Learned/DataStructure/SegmentTree)
-- 2022.10.22 [【 2진 탐색 트리(BST) 구현 】](https://inkyu-yoon.github.io/docs/Learned/DataStructure/BinSearchTree)
-- 2022.10.21 [【 URI (Uniform Resource Identifier)란? 】](https://inkyu-yoon.github.io/docs/Learned/HTTP/URLFlow)
-- 2022.10.20 [【 Quick Sort(퀵 정렬) 】](https://inkyu-yoon.github.io/docs/Learned/Algorithm/QuickSort)
-- 2022.10.19 Tstory -> Git blog 이사
-
-<br>
+- (3~6) 2분기 회고로 돌아올 예정
+- 2023.03.04 [【 23년 2월 회고 】](https://inkyu-yoon.github.io/docs/Retrospect/February23)
+- 2023.02.04 [【 23년 1월 회고 】](https://inkyu-yoon.github.io/docs/Retrospect/January23)
+- 2023.01.01 [【 22년 12월 회고 】](https://inkyu-yoon.github.io/docs/Retrospect/December22)
+- 2022.12.04 [【 22년 11월 회고 】](https://inkyu-yoon.github.io/docs/Retrospect/November22)
+- 2022.11.01 [【 22년 10월 회고 】](https://inkyu-yoon.github.io/docs/Retrospect/October22)
+- 2022.10.01 [【 22년 9월 회고 】](https://inkyu-yoon.github.io/docs/Retrospect/September22)
+- 2022.09.02 [【 22년 8월 회고 】](https://inkyu-yoon.github.io/docs/Retrospect/August22)
 
 
 
