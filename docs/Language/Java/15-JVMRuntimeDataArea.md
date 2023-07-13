@@ -39,7 +39,7 @@ permalink: docs/Language/Java/JVMRuntimeDataArea
 > 
 > Native Method Stack 은 자바가 아닌 다른 언어로 작성된 코드를 위한 영역으로 JVM Stack 과 비슷한 역할은 수행합니다.
 > 
-> PC Register는 JVM의 명령어를 정확하게 제어할 수 있도록 도와주는 역할을 한다.
+> PC Register는 JVM의 명령어를 정확하게 제어할 수 있도록 실행중인 JVM의 명령어 주소를 저장하는 역할을 한다.
 
 <br>
 
@@ -157,6 +157,8 @@ Java Stack영역이 가득 차게 되면 StackOverflowError가 발생된다.
 <br>
 
 현재 실행 중인 명령어의 주소를 저장하는 역할을 한다. 그리고 다음에 실행할 명령어를 가리키는 역할을 한다.
+
+멀티 스레드 환경에서 스레드가 작업을 하다가 중단되고 다시 시작할때 이전 작업에 이어서 실행해야하기 때문이다.
 
 <br>
 
